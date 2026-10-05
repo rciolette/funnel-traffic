@@ -18,3 +18,10 @@ Formato: data · decisão · motivo. Nunca apagar; uma decisão revertida ganha 
 - 2026-10-04 · Stack padrão Fábrica de Apps: Vite + React 18 + TS + shadcn/ui + Tailwind + React Query + react-router, React Flow, Supabase, Cloudflare Workers, vitest + Playwright · Padrão do dono; trocar só com motivo aqui.
 - 2026-10-05 · Scaffold com React 19, Tailwind v4 e componentes shadcn/ui escritos no repo (sem CLI) · Versões atuais do Vite; o CLI do shadcn não era alcançável no ambiente, então os componentes vivem em src/components/ui e são editáveis.
 - 2026-10-05 · Este repositório é também o modelo de app da RC Digitais (`docs/MODELO.md`, `scripts/novo-app.sh`) · Um só lugar para evoluir o padrão.
+- 2026-10-05 · Dedupe de eventos em `eventos_chaves` (PK workspace + conector + idExterno + evento), fora da tabela particionada · Unique em tabela particionada exigiria incluir `ocorrido_em` e deixaria passar reenvio com outra data.
+- 2026-10-05 · Partição mensal de `eventos` criada sob demanda (`eventos_garantir_particao`), sem partição default; 2026–2027 já criadas · Importação de histórico antigo não falha nem cai num balde default que trava novas partições.
+- 2026-10-05 · Conector em modo sombra grava em `eventos_sombra`, nunca em `eventos` · O motor não precisa filtrar sombra; ativar não arrasta eventos de teste para o canvas.
+- 2026-10-05 · Sem policy de DELETE em tabela de dados; remoção é `removida_em`/`arquivado_em` · Regra "nada de histórico apagado" garantida no banco.
+- 2026-10-05 · Dado pessoal (pessoas, identidades, eventos, ingest_bruto) só para admin+ via RLS; editor e visualizador leem por funções do motor (agregado ou mascarado) · Papel conferido no banco, nunca no front.
+- 2026-10-05 · Cadastro público desligado no Auth (`enable_signup = false`); workspace nasce por `workspace_criar()` · Só o dono cria contas.
+- 2026-10-05 · Testes de banco rodam em Postgres puro com esqueleto do Supabase (`supabase/testes/00_stub_supabase.sql`, `npm run test:banco`) e no CI · Máquina do dono não tem Docker; o mesmo script roda no GitHub Actions.

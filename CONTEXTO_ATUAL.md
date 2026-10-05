@@ -4,21 +4,19 @@ Atualizar ao fim de cada sessão. Quem abre um chat lê isto primeiro, depois `C
 
 ## Estado (05/10/2026)
 
-- Fase 0 — Fundação. Scaffold completo (modo demo): login, shell, 5 páginas, canvas React Flow de exemplo, ErrorBoundary 3 níveis, regras puras com teste, CI, Worker. `npm run typecheck`, `npm test` e `npm run test:e2e` passam.
-- PRD aprovado pelo dono em 04/10/2026 (Claude Docs). Protótipo visual em `docs/prototipo/`.
-- Decisões fechadas em `docs/DECISOES.md`. Catálogo de conectores em `docs/conectores/CATALOGO.md`.
+- Em andamento: construção do MVP (Fase 0 + Fase 1) em 9 blocos, alvo instância ROI Ventures em `funnel-traffic.roiventures.com.br`.
+- **Bloco 1 — Banco: feito no repositório.** Migration `supabase/migrations/20261005041500_fundacao.sql` (24 tabelas, RLS em todas, papéis, partição de eventos, auditoria), seed local, testes de RLS em `supabase/testes/`, job `banco` no CI. `npm run test:banco` passa em Postgres 17 local.
+- Não aplicado em nenhum Supabase remoto (projeto ainda não existe).
+- Scaffold do front segue em modo demo.
 
 ## Próximo passo
 
-1. Configurar remoto GitHub e subir `main` e `preview`.
-2. Projeto Supabase próprio do produto (criar na conta RC Digitais; registrar id em `docs/DECISOES.md`).
-3. Migration 0001: contas, workspaces, workspace_membros, conectores, conector_templates, ingest_bruto, pessoas, identidades, eventos — com RLS.
-4. Edge Function `ingest` (grava bruto, responde 202) + worker (mapper, dedupe, identidade).
-5. Função `jornada_calcular` + teste de contrato com os dados do protótipo.
+1. Resposta do dono sobre onde criar o projeto Supabase (ver Pendências).
+2. Bloco 2 — Motor SQL + teste de contrato com `NODES`/`EDGES` do protótipo.
 
 ## Pendências do dono
 
-- URL do remoto GitHub (`git remote add origin ...`).
-- Criar projeto Supabase do produto.
-- Ordem dos projetos a conectar (define a ordem dos templates de mapper).
-- Comprar domínio.
+- Infra da instância: o pedido de 05/10 manda criar o Supabase na organização ROI e publicar em roiventures.com.br; `docs/DECISOES.md` (04/10) diz infra própria da RC Digitais. Confirmar e registrar a decisão.
+- Advisors de segurança só rodam com o projeto remoto criado.
+- Docker não está instalado: `supabase db reset` local não roda; os testes usam Postgres puro (`npm run test:banco`).
+- Fluxo n8n do lançamento vigente para o Bloco 9 (`docs/lancamentos/` não existe).

@@ -11,7 +11,8 @@
     "test": "vitest",
     "test:e2e": "playwright test",
     "lint": "oxlint src worker",
-    "novo-app": "bash scripts/novo-app.sh"
+    "novo-app": "bash scripts/novo-app.sh",
+    "test:banco": "bash scripts/testar-banco.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",

@@ -14,3 +14,16 @@ jobs:
       - run: npm run typecheck
       - run: npm test -- --run
       - run: npm run build
+  banco:
+    # Migrations + seed + testes de RLS e do motor num Postgres puro (esqueleto do Supabase em supabase/testes/00_stub_supabase.sql)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env: { POSTGRES_PASSWORD: postgres }
+        ports: ["5432:5432"]
+        options: --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/testar-banco.sh
+        env: { PGURL: "postgres://postgres:postgres@127.0.0.1:5432" }
