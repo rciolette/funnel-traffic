@@ -4,13 +4,13 @@ Atualizar ao fim de cada sessão. Quem abre um chat lê isto primeiro, depois `C
 
 ## Estado (05/10/2026)
 
-- Fase 0 — Fundação. Repositório criado, ainda sem código.
+- Fase 0 — Fundação. Scaffold completo (modo demo): login, shell, 5 páginas, canvas React Flow de exemplo, ErrorBoundary 3 níveis, regras puras com teste, CI, Worker. `npm run typecheck`, `npm test` e `npm run test:e2e` passam.
 - PRD aprovado pelo dono em 04/10/2026 (Claude Docs). Protótipo visual em `docs/prototipo/`.
 - Decisões fechadas em `docs/DECISOES.md`. Catálogo de conectores em `docs/conectores/CATALOGO.md`.
 
 ## Próximo passo
 
-1. Scaffold Vite + React 18 + TypeScript + shadcn/ui + Tailwind (padrão Fábrica de Apps), branch `preview`.
+1. Configurar remoto GitHub e subir `main` e `preview`.
 2. Projeto Supabase próprio do produto (criar na conta RC Digitais; registrar id em `docs/DECISOES.md`).
 3. Migration 0001: contas, workspaces, workspace_membros, conectores, conector_templates, ingest_bruto, pessoas, identidades, eventos — com RLS.
 4. Edge Function `ingest` (grava bruto, responde 202) + worker (mapper, dedupe, identidade).

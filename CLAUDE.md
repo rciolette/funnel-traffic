@@ -39,11 +39,15 @@ Identidade em cascata: idExterno conhecido → e-mail normalizado → telefone E
 
 ## Stack (padrão Fábrica de Apps — trocar só com motivo em docs/DECISOES.md)
 
-Vite + React 18 + TypeScript + shadcn/ui + Tailwind + React Query + react-router + react-hook-form/zod · React Flow (canvas) · Supabase (Auth, Postgres + RLS, Edge Functions Deno, pg_cron/pgmq para o worker) · Cloudflare Workers com assets (SPA e `track.js`) · vitest + Testing Library + Playwright · CI com typecheck, testes e build.
+Vite + React 19 + TypeScript + shadcn/ui + Tailwind + React Query + react-router + react-hook-form/zod · React Flow (canvas) · Supabase (Auth, Postgres + RLS, Edge Functions Deno, pg_cron/pgmq para o worker) · Cloudflare Workers com assets (SPA e `track.js`) · vitest + Testing Library + Playwright · CI com typecheck, testes e build.
 
 Estrutura: `CLAUDE.md` · `CONTEXTO_ATUAL.md` · `docs/DECISOES.md` · `docs/PENDENTE_BANCO.md` · `src/pages` · `src/components/<area>` · `src/hooks/use-<assunto>.ts` · `src/lib` (regras puras + teste) · `supabase/migrations/AAAAMMDDHHMMSS_<assunto>.sql` · `supabase/functions/<nome>` · `worker/index.ts` · `wrangler.jsonc`.
 
 Toda conta que decide um número (conversão, ritmo de meta, status) é função pura em `src/lib` com teste. O motor SQL (`jornada_calcular`, `jornada_proximos_passos`) tem teste de contrato com os dados do protótipo.
+
+## Comandos
+
+`npm run dev` · `npm run typecheck` · `npm test -- --run` · `npm run test:e2e` · `npm run build` · `npm run lint`. Sem `.env.local` o app roda em modo demo. Como reusar este scaffold em outro app: `docs/MODELO.md` e `scripts/novo-app.sh`.
 
 ## Regras de trabalho
 

@@ -16,3 +16,5 @@ Formato: data · decisão · motivo. Nunca apagar; uma decisão revertida ganha 
 - 2026-10-04 · Contagem por pessoa única; dinheiro em centavos inteiros com moeda; um evento por item; `idExterno` obrigatório para dedupe · Convenções validadas no benchmark Funnelytics.
 - 2026-10-04 · Postgres puro no motor até 10 M eventos/mês por workspace; ClickHouse só se p95 > 2 s · Volume atual cabe.
 - 2026-10-04 · Stack padrão Fábrica de Apps: Vite + React 18 + TS + shadcn/ui + Tailwind + React Query + react-router, React Flow, Supabase, Cloudflare Workers, vitest + Playwright · Padrão do dono; trocar só com motivo aqui.
+- 2026-10-05 · Scaffold com React 19, Tailwind v4 e componentes shadcn/ui escritos no repo (sem CLI) · Versões atuais do Vite; o CLI do shadcn não era alcançável no ambiente, então os componentes vivem em src/components/ui e são editáveis.
+- 2026-10-05 · Este repositório é também o modelo de app da RC Digitais (`docs/MODELO.md`, `scripts/novo-app.sh`) · Um só lugar para evoluir o padrão.
