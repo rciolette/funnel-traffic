@@ -8,7 +8,7 @@ Atualizar ao fim de cada sessão. Quem abre um chat lê isto primeiro, depois `C
 - **Bloco 1 — Banco: feito no repositório.** Migration `supabase/migrations/20261005041500_fundacao.sql` (24 tabelas, RLS em todas, papéis, partição de eventos, auditoria), seed local, testes de RLS em `supabase/testes/`, job `banco` no CI. `npm run test:banco` passa em Postgres 17 local.
 - Não aplicado em nenhum Supabase remoto (projeto ainda não existe).
 - Scaffold do front segue em modo demo.
-- 14/10/2026: instância ROI mapeada pelos MCPs (só leitura) e versão de testes local rodando: `docs/instancias/roi/README.md`, `npm run instancia:local -- roi` (9 workspaces, 51 conectores em sombra, 2 canvases; testes verdes).
+- 14/10/2026: instância ROI mapeada pelos MCPs (só leitura) e versão de testes local rodando: `docs/instancias/roi/README.md`, `npm run instancia:local -- roi` (12 workspaces, 57 conectores em sombra, 3 canvases; respostas R-01 a R-06 aplicadas; banco no schema `funnel_traffic`; testes, typecheck e build verdes).
 - 14/10/2026: roteiro completo (`docs/ROTEIRO.md`), especificação do motor (`docs/MOTOR.md`), white label multi-cliente (`docs/WHITE_LABEL.md`), guia de uso (`docs/USO.md`) e ferramentas (`docs/FERRAMENTAS.md`).
 - 14/10/2026: engenharia reversa parcial do Funnelytics em `docs/benchmark/caso-funnelytics.md` (sem login; seção 5 lista o que muda em `jornada_calcular`, seção 6 o que falta).
 
@@ -22,7 +22,7 @@ Atualizar ao fim de cada sessão. Quem abre um chat lê isto primeiro, depois `C
 - Infra da instância: o pedido de 05/10 manda criar o Supabase na organização ROI e publicar em roiventures.com.br; `docs/DECISOES.md` (04/10) diz infra própria da RC Digitais. Confirmar e registrar a decisão.
 - Advisors de segurança só rodam com o projeto remoto criado.
 - Docker não está instalado: `supabase db reset` local não roda; os testes usam Postgres puro (`npm run test:banco`).
-- Responder as pendências R-01 a R-07 da instância ROI (`docs/instancias/roi/README.md` §5) e decidir sobre o alerta de RLS em `dash.leadscore_faixas` (projeto do Gerador).
+- Conectar o MCP do `roi-apps` (R-07) e dar o "pode" para aplicar a fundação lá; decidir sobre o alerta de RLS em `dash.leadscore_faixas` (projeto do Gerador); `[LN] Recuperação` adiado (R-03).
 - Escolher o motor de mapper: `integracoes-kit` + JSONata (recomendado) ou só JSONata (`docs/FERRAMENTAS.md` §5).
 - Comprar o domínio da plataforma (Hostinger) e apontar para a Cloudflare: requisito do white label.
 - Autorizar os MCPs da RC (n8n RC, GitHub) para a instância compartilhada.

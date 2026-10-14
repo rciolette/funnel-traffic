@@ -2,28 +2,114 @@
   "_sobre": "Configuração da versão de testes local da instância ROI. Lida por scripts/seed-instancia.mjs junto com mapa-n8n.json. Nada aqui tem dado pessoal ou credencial.",
   "slug": "roi",
   "conta": "ROI Ventures (teste local)",
-  "dono": { "id": "44444444-4444-4444-8444-444444444441", "email": "roi-dono@funnel-traffic.test" },
+  "dono": {
+    "id": "44444444-4444-4444-8444-444444444441",
+    "email": "roi-dono@funnel-traffic.test"
+  },
   "conta_id": "44444444-4444-4444-8444-444444444442",
   "workspaces": [
-    { "negocio": "E-cont", "nome": "E-cont", "slug": "roi-econt" },
-    { "negocio": "IniciAmazon / Perpétuo", "nome": "IniciAmazon · Perpétuo", "slug": "roi-iniciamazon" },
-    { "negocio": "Consultoria & Mentoria", "nome": "Consultoria & Mentoria", "slug": "roi-consultoria-mentoria" },
-    { "negocio": "ROI Club", "nome": "ROI Club", "slug": "roi-club" },
-    { "negocio": "Sessão Estratégica", "nome": "Sessão Estratégica", "slug": "roi-sessao-estrategica" },
-    { "negocio": "Lançamentos (L06–L08)", "nome": "Lançamentos", "slug": "roi-lancamentos-teste" },
-    { "negocio": "North", "nome": "North", "slug": "roi-north" },
-    { "negocio": "Importação (Stock)", "nome": "Importação · Stock", "slug": "roi-importacao" },
-    { "negocio": "Loot", "nome": "Loot", "slug": "roi-loot" }
+    {
+      "negocio": "E-cont",
+      "nome": "E-cont",
+      "slug": "roi-econt"
+    },
+    {
+      "negocio": "IniciAmazon / Perpétuo",
+      "nome": "IniciAmazon · Perpétuo",
+      "slug": "roi-iniciamazon"
+    },
+    {
+      "negocio": "Consultoria & Mentoria",
+      "nome": "Consultoria & Mentoria",
+      "slug": "roi-consultoria-mentoria"
+    },
+    {
+      "negocio": "ROI Club",
+      "nome": "ROI Club",
+      "slug": "roi-club"
+    },
+    {
+      "negocio": "Sessão Estratégica",
+      "nome": "Sessão Estratégica",
+      "slug": "roi-sessao-estrategica"
+    },
+    {
+      "negocio": "Lançamentos (L06–L08)",
+      "nome": "Lançamentos",
+      "slug": "roi-lancamentos-teste"
+    },
+    {
+      "negocio": "North",
+      "nome": "North",
+      "slug": "roi-north"
+    },
+    {
+      "negocio": "Importação (Stock)",
+      "nome": "Importação · Stock",
+      "slug": "roi-importacao"
+    },
+    {
+      "negocio": "Loot",
+      "nome": "Loot",
+      "slug": "roi-loot"
+    },
+    {
+      "negocio": "Comercial (Pré Vendas e Closer's)",
+      "nome": "Comercial · Pré Vendas e Closer's",
+      "slug": "roi-comercial",
+      "_nota": "Leads de aquisição/marketing trabalhados pelo comercial para Mentoria, Consultoria, Loot, North, Método ROI e similares (resposta do dono, 14/10)."
+    },
+    {
+      "negocio": "Compras",
+      "nome": "Compras · todas as ofertas",
+      "slug": "roi-compras",
+      "agrega_categorias": [
+        "vendas"
+      ],
+      "_nota": "Visão consolidada de compras de IniciAmazon, Mentoria, Método ROI e afins. Recebe os conectores de vendas de todos os negócios."
+    },
+    {
+      "negocio": "Reembolsos e suporte",
+      "nome": "Reembolsos e suporte",
+      "slug": "roi-reembolsos"
+    }
   ],
-  "negocios_fora": ["Sem negócio identificado", "Interno / transversal", "Transversal (reembolso e suporte)", "Vendas AE (pipeline extinto)"],
+  "negocios_fora": [
+    "Sem negócio identificado",
+    "Interno / transversal",
+    "Vendas AE (pipeline extinto)"
+  ],
   "conectores_extras": [
     {
       "conector": "hubspot",
       "plataforma": "HubSpot (sincronização de negócios do Gerador)",
       "categoria": "crm",
-      "eventos": ["Oportunidade Criada", "Reunião Agendada", "Negócio Mudou de Etapa", "Negócio Ganho", "Negócio Perdido"],
-      "workspaces": "todos",
-      "fonte": "public.gerador_hubspot_negocio_historico e public.gerador_eventos_comerciais (projeto qevnfgopjupsmwvflcza)"
+      "eventos": [
+        "Oportunidade Criada",
+        "Reunião Agendada",
+        "Negócio Mudou de Etapa",
+        "Negócio Ganho",
+        "Negócio Perdido"
+      ],
+      "fonte": "public.gerador_hubspot_negocio_historico e public.gerador_eventos_comerciais (projeto qevnfgopjupsmwvflcza)",
+      "workspaces": {
+        "roi-econt": {
+          "pipelines": [
+            "717654561"
+          ]
+        },
+        "roi-importacao": {
+          "pipelines": [
+            "894137220"
+          ]
+        },
+        "roi-comercial": {
+          "pipelines": [
+            "932401505",
+            "932402477"
+          ]
+        }
+      }
     }
   ],
   "canvases": [
@@ -31,28 +117,239 @@
       "workspace": "roi-econt",
       "nome": "Jornada E-cont (rascunho do mapa)",
       "etapas": [
-        { "chave": "mao", "tipo": "acao", "nome": "Levantou a mão", "filtro": { "evento": "Levantou a Mão" }, "x": 40, "y": 120 },
-        { "chave": "neg", "tipo": "offline", "nome": "Em negociação (HubSpot)", "filtro": { "evento": "Negócio Mudou de Etapa", "atributos": [{ "campo": "etapa", "op": "eq", "valor": "Em Negociação" }] }, "x": 340, "y": 120 },
-        { "chave": "compra", "tipo": "acao", "nome": "Compra aprovada", "filtro": { "evento": "__compra__" }, "x": 640, "y": 120 }
+        {
+          "chave": "mao",
+          "tipo": "acao",
+          "nome": "Levantou a mão",
+          "filtro": {
+            "evento": "Levantou a Mão"
+          },
+          "x": 40,
+          "y": 120
+        },
+        {
+          "chave": "neg",
+          "tipo": "offline",
+          "nome": "Em negociação (HubSpot E-cont)",
+          "filtro": {
+            "evento": "Negócio Mudou de Etapa",
+            "atributos": [
+              {
+                "campo": "etapa",
+                "op": "eq",
+                "valor": "1345942844"
+              }
+            ]
+          },
+          "x": 340,
+          "y": 120
+        },
+        {
+          "chave": "compra",
+          "tipo": "acao",
+          "nome": "Compra aprovada",
+          "filtro": {
+            "evento": "__compra__"
+          },
+          "x": 640,
+          "y": 120
+        }
       ],
       "conexoes": [
-        { "de": "mao", "para": "neg", "tipo": "pular", "janela_dias": 30 },
-        { "de": "neg", "para": "compra", "tipo": "pular", "janela_dias": 30 }
+        {
+          "de": "mao",
+          "para": "neg",
+          "tipo": "pular",
+          "janela_dias": 30
+        },
+        {
+          "de": "neg",
+          "para": "compra",
+          "tipo": "pular",
+          "janela_dias": 30
+        }
       ]
     },
     {
       "workspace": "roi-iniciamazon",
       "nome": "Perpétuo: compra → acesso (rascunho do mapa)",
       "etapas": [
-        { "chave": "pix", "tipo": "acao", "nome": "PIX gerado", "filtro": { "evento": "PIX Gerado" }, "x": 40, "y": 120 },
-        { "chave": "compra", "tipo": "acao", "nome": "Compra aprovada", "filtro": { "evento": "__compra__" }, "x": 340, "y": 120 },
-        { "chave": "acesso", "tipo": "acao", "nome": "Acesso liberado (MemberClass)", "filtro": { "evento": "Acesso Liberado" }, "x": 640, "y": 120 },
-        { "chave": "reembolso", "tipo": "acao", "nome": "Reembolso", "filtro": { "evento": "Reembolso" }, "x": 640, "y": 300 }
+        {
+          "chave": "pix",
+          "tipo": "acao",
+          "nome": "PIX gerado",
+          "filtro": {
+            "evento": "PIX Gerado"
+          },
+          "x": 40,
+          "y": 120
+        },
+        {
+          "chave": "compra",
+          "tipo": "acao",
+          "nome": "Compra aprovada",
+          "filtro": {
+            "evento": "__compra__"
+          },
+          "x": 340,
+          "y": 120
+        },
+        {
+          "chave": "acesso",
+          "tipo": "acao",
+          "nome": "Acesso liberado (MemberClass)",
+          "filtro": {
+            "evento": "Acesso Liberado"
+          },
+          "x": 640,
+          "y": 120
+        },
+        {
+          "chave": "reembolso",
+          "tipo": "acao",
+          "nome": "Reembolso",
+          "filtro": {
+            "evento": "Reembolso"
+          },
+          "x": 640,
+          "y": 300
+        }
       ],
       "conexoes": [
-        { "de": "pix", "para": "compra", "tipo": "direta" },
-        { "de": "compra", "para": "acesso", "tipo": "pular", "janela_dias": 2 },
-        { "de": "compra", "para": "reembolso", "tipo": "pular", "janela_dias": 30 }
+        {
+          "de": "pix",
+          "para": "compra",
+          "tipo": "direta"
+        },
+        {
+          "de": "compra",
+          "para": "acesso",
+          "tipo": "pular",
+          "janela_dias": 2
+        },
+        {
+          "de": "compra",
+          "para": "reembolso",
+          "tipo": "pular",
+          "janela_dias": 30
+        }
+      ]
+    },
+    {
+      "workspace": "roi-comercial",
+      "nome": "Comercial: Pré Vendas → Closer's (rascunho do mapa)",
+      "etapas": [
+        {
+          "chave": "novo",
+          "tipo": "offline",
+          "nome": "Novo lead (Pré Vendas)",
+          "filtro": {
+            "evento": "Negócio Mudou de Etapa",
+            "atributos": [
+              {
+                "campo": "etapa",
+                "op": "eq",
+                "valor": "1432137902"
+              }
+            ]
+          },
+          "x": 40,
+          "y": 120
+        },
+        {
+          "chave": "bastao",
+          "tipo": "offline",
+          "nome": "Passagem de bastão",
+          "filtro": {
+            "evento": "Negócio Mudou de Etapa",
+            "atributos": [
+              {
+                "campo": "etapa",
+                "op": "eq",
+                "valor": "1431586371"
+              }
+            ]
+          },
+          "x": 300,
+          "y": 120
+        },
+        {
+          "chave": "realizada",
+          "tipo": "offline",
+          "nome": "Reunião realizada (Closer's)",
+          "filtro": {
+            "evento": "Negócio Mudou de Etapa",
+            "atributos": [
+              {
+                "campo": "etapa",
+                "op": "eq",
+                "valor": "1431596972"
+              }
+            ]
+          },
+          "x": 560,
+          "y": 120
+        },
+        {
+          "chave": "proposta",
+          "tipo": "offline",
+          "nome": "Proposta enviada",
+          "filtro": {
+            "evento": "Negócio Mudou de Etapa",
+            "atributos": [
+              {
+                "campo": "etapa",
+                "op": "eq",
+                "valor": "1431596973"
+              }
+            ]
+          },
+          "x": 820,
+          "y": 120
+        },
+        {
+          "chave": "ganho",
+          "tipo": "offline",
+          "nome": "Ganho",
+          "filtro": {
+            "evento": "Negócio Mudou de Etapa",
+            "atributos": [
+              {
+                "campo": "etapa",
+                "op": "eq",
+                "valor": "1431596975"
+              }
+            ]
+          },
+          "x": 1080,
+          "y": 120
+        }
+      ],
+      "conexoes": [
+        {
+          "de": "novo",
+          "para": "bastao",
+          "tipo": "pular",
+          "janela_dias": 60
+        },
+        {
+          "de": "bastao",
+          "para": "realizada",
+          "tipo": "pular",
+          "janela_dias": 30
+        },
+        {
+          "de": "realizada",
+          "para": "proposta",
+          "tipo": "pular",
+          "janela_dias": 30
+        },
+        {
+          "de": "proposta",
+          "para": "ganho",
+          "tipo": "pular",
+          "janela_dias": 30
+        }
       ]
     }
   ]

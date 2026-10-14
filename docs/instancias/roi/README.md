@@ -2,7 +2,7 @@
 
 O que a ROI Ventures já tem rodando, traduzido para o Funnel Traffic, e uma versão de testes local montada a partir disso. Levantamento de 14/10/2026, **só leitura** pelos MCPs da ROI. Nada foi escrito em n8n, Supabase ou HubSpot.
 
-Decisão do dono (14/10): versão de testes **local agora**; depois do "pode", schema `funnel_traffic` no Supabase `roi-apps` (`opzuindwpwxevwlhoaaw`).
+Decisões do dono (14/10): versão de testes **local agora**; depois, schema `funnel_traffic` no Supabase `roi-apps` (`opzuindwpwxevwlhoaaw`). A reescrita do banco com esse schema foi aprovada e já está feita e testada no repositório; aplicar no `roi-apps` espera o MCP do projeto e o "pode" final.
 
 ## 1. De onde veio cada dado
 
@@ -52,7 +52,7 @@ Papel de cada fluxo ativo no Funnel Traffic (`mapa-n8n.md` traz a lista inteira)
 | `asaas` | 3 | **não** | Importação (Stock); grava em `public.asaas_events` |
 | `gerador-links` | 3 | **não** | Venda registrada e concluída pelo Gerador |
 | `cakto`, `hubla` | 2 cada | sim | Funil Nath |
-| `manychat` | 2 | **não** | Direct do Instagram |
+| `manychat` | 2 | **não** | Direct do Instagram. **Adiado** por decisão do dono (14/10): não entra na versão de testes |
 | `applyfy`, `clicksign`, `greatpages`, `yayforms`, `unnichat`, `wordpress` | 1 cada | **não** | |
 
 **11 conectores não estão no catálogo** (`docs/conectores/CATALOGO.md`). Eles foram acrescentados como "pedidos pela instância ROI".
@@ -97,9 +97,18 @@ As etapas (por ID) estão em `public.gerador_hubspot_pipelines`. No Funnel Traff
 O que ela tem:
 
 - conta "ROI Ventures (teste local)";
-- **9 workspaces**, um por negócio: E-cont, IniciAmazon · Perpétuo, Consultoria & Mentoria, ROI Club, Sessão Estratégica, Lançamentos, North, Importação · Stock e Loot;
-- **51 conectores em modo sombra** (cada um com a lista dos fluxos n8n que o originaram) e **22 templates em rascunho**;
-- **2 canvases de exemplo**: Jornada E-cont (levantou a mão → em negociação → compra) e Perpétuo (PIX → compra → acesso, e compra → reembolso).
+- **12 workspaces**:
+  - um por negócio: E-cont, IniciAmazon · Perpétuo, Consultoria & Mentoria, ROI Club, Sessão Estratégica, Lançamentos, North, Importação · Stock e Loot;
+  - **Comercial · Pré Vendas e Closer's**: leads de aquisição trabalhados pelo comercial para Mentoria, Consultoria, Loot, North, Método ROI e similares;
+  - **Compras · todas as ofertas**: recebe os conectores de vendas de todos os negócios;
+  - **Reembolsos e suporte**: os fluxos transversais de reembolso;
+- **57 conectores em modo sombra** (cada um com a lista dos fluxos n8n que o originaram) e **22 templates em rascunho**. O HubSpot só entra onde há pipeline: E-cont (717654561), Importação (894137220) e Comercial (932401505 Pré Vendas e 932402477 Closer's), com o filtro de pipeline no conector;
+- **3 canvases de exemplo**, com etapas do HubSpot sempre por ID:
+  - Jornada E-cont: levantou a mão → Em Negociação → compra;
+  - Perpétuo: PIX → compra → acesso, e compra → reembolso;
+  - Comercial: novo lead → passagem de bastão → reunião realizada → proposta → ganho.
+
+Em produção, o workspace Compras recebe uma cópia dos eventos de venda que também vão para o workspace do negócio (o mesmo webhook alimenta dois conectores). Isso dobra a ingestão de vendas, que é pouca (cerca de 800 compras/mês). Se crescer, a saída é uma visão entre workspaces da mesma conta, sem cópia.
 
 **Nenhuma pessoa e nenhum evento:** nada de dado real sai da ROI.
 
@@ -109,7 +118,7 @@ Como rodar (qualquer Postgres 15+ local, sem Docker):
 PGURL=postgres://postgres@127.0.0.1:5432 npm run instancia:local -- roi
 ```
 
-O script recria o banco `funnel_traffic_roi_teste`, aplica as migrations, o seed padrão e o seed da instância (`supabase/instancias/roi/seed.sql`, gerado), e roda `supabase/instancias/roi/teste.sql`. O teste confere a estrutura e o isolamento: o dono da ROI vê só os 9 workspaces dele, e a outra conta não vê nenhum.
+O script recria o banco `funnel_traffic_roi_teste`, aplica as migrations, o seed padrão e o seed da instância (`supabase/instancias/roi/seed.sql`, gerado), e roda `supabase/instancias/roi/teste.sql`. O teste confere a estrutura (ManyChat ausente, HubSpot só com pipeline, Compras agregando todas as vendas) e o isolamento: o dono da ROI vê só os 12 workspaces dele, e a outra conta não vê nenhum. Tudo fica no schema `funnel_traffic`; `public` fica vazio.
 
 Arquivos:
 
@@ -135,17 +144,30 @@ Arquivos:
    ```
 4. Fluxo novo sem classificação: acrescentar uma regra em `regras-mapa.json`, nunca no script.
 
-## 5. Pendências para o Raphael
+## 5. Decisões e pendências
 
-| # | Pendência | Por que importa |
-| --- | --- | --- |
-| R-01 | Confirmar os 9 workspaces. Sessão Estratégica, ROI Club e Lançamentos ficam separados ou dentro de Consultoria & Mentoria? | Define onde cada pessoa e compra aparece |
-| R-02 | Fluxos transversais (12 de reembolso e suporte, ManyChat, `[ASSINY] [ROI Ventures Ltda]`, "Captação-Ralph Leads Live"): a qual workspace vão? Sugestão: pela organização ou projeto Assiny da compra (`gerador_renovacao_pipeline_org`, `gerador_assiny_product_map`) | Sem isso, o reembolso não cai no funil certo |
-| R-03 | O que é `[LN] Recuperação`? | Único fluxo ativo sem classificação |
-| R-04 | Pipelines Pré Vendas e Closer's atendem quais negócios? | Liga o HubSpot ao workspace certo |
-| R-05 | Aceitar CPF como identidade (só hash)? | Mudança na cascata e migration |
-| R-06 | Schema `funnel_traffic` no `roi-apps`: a migration atual cria tudo em `public`; para o `roi-apps` ela precisa ser reescrita com o schema (inclusive `auth.uid()` e as policies) | Pré-requisito do próximo passo |
-| R-07 | Conectar o MCP do `roi-apps` numa sessão aberta em `~/GitHub/roi-apps` | Hoje ele não aparece aqui |
+Respostas do dono em 14/10/2026:
+
+| # | Pergunta | Resposta | Aplicado |
+| --- | --- | --- | --- |
+| R-01 | Workspaces | Cada negócio tem o próprio workspace (ou projeto dentro dele) | 9 workspaces de negócio mantidos |
+| R-02 | Fluxos transversais | ManyChat fica para depois; um workspace de reembolso e um de compras (IniciAmazon, Mentoria, Método ROI e afins) | `roi-reembolsos` e `roi-compras`; ManyChat com papel `adiado` |
+| R-03 | `[LN] Recuperação` | Ver depois | **Adiado** (continua sem classificação) |
+| R-04 | Pré Vendas e Closer's | Atendem leads de aquisição e marketing; o comercial oferece Mentoria, Consultoria, Loot, North, Método ROI ou similar | Workspace `roi-comercial` com os dois pipelines e canvas próprio |
+| R-05 | CPF | Aceito, com e-mail na frente | Cascata: ID externo → e-mail → **documento (CPF)** → telefone → cookie. CPF guardado como HMAC, nunca em claro |
+| R-06 | Reescrita do banco | Aprovada | Tudo no schema `funnel_traffic` (migration, testes, seed, cliente do front, `config.toml`). Testes de banco, typecheck, testes do front e build verdes |
+| R-07 | MCP do `roi-apps` | O dono vai conectar | Aguardando |
+
+### Próximo passo: aplicar no `roi-apps`
+
+Quando o MCP estiver conectado (sessão aberta em `~/GitHub/roi-apps`, conta `raphael@roiventures.com.br`):
+
+1. Listar os schemas e tabelas do projeto e conferir que `funnel_traffic` não existe.
+2. Pedir o "pode" final e aplicar `20261005041500_fundacao.sql` com `apply_migration`. É escrita em produção e não tem preview.
+3. Pôr `funnel_traffic` em "Exposed schemas" da API do projeto (configuração do painel, não da migration).
+4. Rodar os advisors de segurança e performance.
+5. Registrar a migration no ledger da ROI e no `docs/PENDENTE_BANCO.md`.
+6. A estrutura de teste (conta, workspaces, conectores) **não** vai para produção pelo seed: em produção, o dono cria tudo por `workspace_criar()`.
 
 ### Alertas encontrados no caminho (não corrigidos)
 

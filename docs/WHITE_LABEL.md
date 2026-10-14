@@ -23,6 +23,8 @@ O que já existe no banco: `contas` → `workspaces` → `workspace_membros`, RL
 | Exemplo | Instância RC Digitais | Instância ROI Ventures (decisão de 05/10) |
 | Custo de manter | Uma migration e um deploy | Repetir migration e deploy por instância (script) |
 
+Nas duas formas o banco fica no schema `funnel_traffic`, o que permite instalar o produto também num Supabase que já tem outros apps (como o `roi-apps`).
+
 **O código é o mesmo nas duas.** Nenhum nome de cliente entra no código: a marca vem do banco (instância compartilhada) ou de variáveis de ambiente (instância dedicada).
 
 ## 3. O que vira configuração da conta

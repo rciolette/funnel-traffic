@@ -8,33 +8,35 @@ Fluxos: 298 · ativos: 152 · ativos sem classificação: 1
 
 | Conector | Plataforma | No catálogo | Fluxos ativos | Negócios | Eventos propostos |
 | --- | --- | --- | --- | --- | --- |
-| `sellflux` | Sellflux | **não** | 27 | E-cont, ROI Club, Sem negócio identificado, Sessão Estratégica, Vendas AE (pipeline extinto) | Cadência Iniciada, Mensagem Enviada, Mensagem Falhou, Conectado |
-| `assiny` | Assiny | sim | 26 | Consultoria & Mentoria, E-cont, IniciAmazon / Perpétuo, Lançamentos (L06–L08), Loot, North, Sem negócio identificado, Transversal (reembolso e suporte) | Compra Aprovada, PIX Gerado, Carrinho Abandonado, Compra Recusada, Reembolso, Assinatura Cancelada |
-| `typeform` | Typeform | sim | 17 | Consultoria & Mentoria, E-cont, IniciAmazon / Perpétuo, Lançamentos (L06–L08), North, ROI Club, Sessão Estratégica, Transversal (reembolso e suporte) | Levantou a Mão, Formulário Respondido, Aplicação Enviada, Onboarding Respondido, Plano Entregue |
+| `sellflux` | Sellflux | sim | 27 | E-cont, ROI Club, Sem negócio identificado, Sessão Estratégica, Vendas AE (pipeline extinto) | Cadência Iniciada, Mensagem Enviada, Mensagem Falhou, Conectado |
+| `assiny` | Assiny | sim | 26 | Compras, Consultoria & Mentoria, E-cont, IniciAmazon / Perpétuo, Lançamentos (L06–L08), Loot, North, Reembolsos e suporte | Compra Aprovada, PIX Gerado, Carrinho Abandonado, Compra Recusada, Reembolso, Assinatura Cancelada |
+| `typeform` | Typeform | sim | 17 | Consultoria & Mentoria, E-cont, IniciAmazon / Perpétuo, Lançamentos (L06–L08), North, ROI Club, Reembolsos e suporte, Sessão Estratégica | Levantou a Mão, Formulário Respondido, Aplicação Enviada, Onboarding Respondido, Plano Entregue |
 | `memberclass` | MemberClass | sim | 8 | IniciAmazon / Perpétuo, Lançamentos (L06–L08), ROI Club | Acesso Liberado, Acesso Removido |
 | `docusign` | DocuSign | sim | 7 | Consultoria & Mentoria, E-cont, Sem negócio identificado | Contrato Enviado, Contrato Assinado |
-| `n8n` | Suporte / CS | sim | 7 | E-cont, Loot, Transversal (reembolso e suporte) | Atendimento Registrado, Reembolso Solicitado |
+| `n8n` | Suporte / CS | sim | 7 | E-cont, Loot, Reembolsos e suporte | Atendimento Registrado, Reembolso Solicitado |
 | `memberkit` | MemberKit | sim | 6 | Consultoria & Mentoria, Lançamentos (L06–L08) | Acesso Liberado, Acesso Removido |
 | `webhook` | Página de captura | sim | 5 | E-cont, Lançamentos (L06–L08), Sem negócio identificado, Sessão Estratégica | Lead Captado |
 | `zoom` | Zoom | sim | 5 | E-cont, Importação (Stock) | Inscreveu-se na Live, Entrou na Live |
-| `digisac` | Digisac | **não** | 4 | Interno / transversal, North, Sem negócio identificado | Contato Criado no WhatsApp, Mensagem Enviada |
-| `gerador-links` | Gerador de Links | **não** | 3 | Consultoria & Mentoria, Interno / transversal | Venda Registrada, Venda Concluída, Reembolso Solicitado |
-| `asaas` | Asaas | **não** | 3 | Importação (Stock) | Cobrança Criada, Pagamento Confirmado, Pagamento Recebido |
-| `cakto` | Cakto | sim | 2 | IniciAmazon / Perpétuo, Transversal (reembolso e suporte) | Compra Aprovada, Reembolso |
-| `manychat` | ManyChat (Direct) | **não** | 2 | Sem negócio identificado | Conversa Iniciada, Lead Triado |
-| `hubla` | Hubla | sim | 2 | IniciAmazon / Perpétuo, Transversal (reembolso e suporte) | Compra Aprovada, Reembolso |
-| `applyfy` | Applyfy | **não** | 1 | IniciAmazon / Perpétuo | Compra Aprovada, Reembolso |
-| `clicksign` | ClickSign | **não** | 1 | Consultoria & Mentoria | Contrato Enviado, Contrato Assinado |
-| `greatpages` | GreatPages | **não** | 1 | Lançamentos (L06–L08) | Formulário Respondido, Aplicação Enviada |
+| `digisac` | Digisac | sim | 4 | Interno / transversal, North, Sem negócio identificado | Contato Criado no WhatsApp, Mensagem Enviada |
+| `gerador-links` | Gerador de Links | sim | 3 | Consultoria & Mentoria, Interno / transversal | Venda Registrada, Venda Concluída, Reembolso Solicitado |
+| `asaas` | Asaas | sim | 3 | Importação (Stock) | Cobrança Criada, Pagamento Confirmado, Pagamento Recebido |
+| `cakto` | Cakto | sim | 2 | IniciAmazon / Perpétuo, Reembolsos e suporte | Compra Aprovada, Reembolso |
+| `manychat` | ManyChat (Direct) | sim | 2 | Sem negócio identificado | Conversa Iniciada, Lead Triado |
+| `hubla` | Hubla | sim | 2 | IniciAmazon / Perpétuo, Reembolsos e suporte | Compra Aprovada, Reembolso |
+| `applyfy` | Applyfy | sim | 1 | IniciAmazon / Perpétuo | Compra Aprovada, Reembolso |
+| `clicksign` | ClickSign | sim | 1 | Consultoria & Mentoria | Contrato Enviado, Contrato Assinado |
+| `greatpages` | GreatPages | sim | 1 | Lançamentos (L06–L08) | Formulário Respondido, Aplicação Enviada |
 | `sendflow` | SendFlow | sim | 1 | Lançamentos (L06–L08) | Entrou no Grupo, Saiu do Grupo |
-| `yayforms` | YayForms | **não** | 1 | IniciAmazon / Perpétuo | Formulário Respondido |
-| `unnichat` | UnniChat | **não** | 1 | Lançamentos (L06–L08) | Mensagem Enviada, Respondeu |
-| `wordpress` | WordPress | **não** | 1 | ROI Club | Formulário Respondido, Aplicação Enviada |
+| `yayforms` | YayForms | sim | 1 | IniciAmazon / Perpétuo | Formulário Respondido |
+| `unnichat` | UnniChat | sim | 1 | Lançamentos (L06–L08) | Mensagem Enviada, Respondeu |
+| `wordpress` | WordPress | sim | 1 | ROI Club | Formulário Respondido, Aplicação Enviada |
 
 ## Fluxos ativos
 
 | Fluxo | Papel | Conector | Negócio | Atualizado |
 | --- | --- | --- | --- | --- |
+| [DM][MANYCHAT] Atualiza Negócio pós Triagem - Anúncio DM | adiado | `manychat` | Sem negócio identificado | 2026-09-17 |
+| [DM][MANYCHAT] Leads Anúncio DM > Hubspot | adiado | `manychat` | Sem negócio identificado | 2026-09-17 |
 | [CS] Distribuição Departamentos Digisac | cadencia | `digisac` | Sem negócio identificado | 2026-05-14 |
 | [DASH] Sync Digisac → Supabase | cadencia | `digisac` | Interno / transversal | 2026-10-02 |
 | [NORTH] Distribuição Departamentos Digisac | cadencia | `digisac` | North | 2026-03-30 |
@@ -71,8 +73,8 @@ Fluxos: 298 · ativos: 152 · ativos sem classificação: 1
 | [APPLYFY] Compra Aprovada - Funil Nath (Front+OB e UP/DW) | entrada | `applyfy` | IniciAmazon / Perpétuo | 2026-10-14 |
 | [ASSINY] [LOOT] - Assinatura Cancelada e Compra Recusada (Cartão) | entrada | `assiny` | Loot | 2026-09-12 |
 | [ASSINY] [LOOT] - Compra Aprovada | entrada | `assiny` | Loot | 2026-10-08 |
-| [ASSINY] [ROI Ventures Ltda] - Carrinho Abandonado | entrada | `assiny` | IniciAmazon / Perpétuo | 2026-04-25 |
-| [ASSINY] [ROI Ventures Ltda] - Compra Aprovada | entrada | `assiny` | Sem negócio identificado | 2026-07-15 |
+| [ASSINY] [ROI Ventures Ltda] - Carrinho Abandonado | entrada | `assiny` | Compras | 2026-04-25 |
+| [ASSINY] [ROI Ventures Ltda] - Compra Aprovada | entrada | `assiny` | Compras | 2026-07-15 |
 | [ASSINY] Compra Aprovada - Funil Coelho | entrada | `assiny` | IniciAmazon / Perpétuo | 2026-10-08 |
 | [Assiny] Compra Aprovada - Mentoria [L06] - Lançamento e Consultoria Estratégica | entrada | `assiny` | Lançamentos (L06–L08) | 2026-10-08 |
 | [Assiny] Compra Aprovada - Mentoria [L08] - Lançamento e Consultoria Estratégica | entrada | `assiny` | Lançamentos (L06–L08) | 2026-10-08 |
@@ -89,8 +91,6 @@ Fluxos: 298 · ativos: 152 · ativos sem classificação: 1
 | [CAKTO] Compra Aprovada - Funil Nath (Front+OB e UP/DW) | entrada | `cakto` | IniciAmazon / Perpétuo | 2026-10-14 |
 | [Captura] - Plano Personalizado | entrada | `webhook` | Sem negócio identificado | 2026-07-13 |
 | [CS] [TYPEFORM] FORMULÁRIO ONBOARDING / CS - MENTORIA | entrada | `typeform` | Consultoria & Mentoria | 2026-09-30 |
-| [DM][MANYCHAT] Atualiza Negócio pós Triagem - Anúncio DM | entrada | `manychat` | Sem negócio identificado | 2026-09-17 |
-| [DM][MANYCHAT] Leads Anúncio DM > Hubspot | entrada | `manychat` | Sem negócio identificado | 2026-09-17 |
 | [E-CONT] [TYPEFORM] - Levantada de Mão Área de Membros | entrada | `typeform` | E-cont | 2026-09-29 |
 | [E-CONT] [TYPEFORM] - Levantada de Mão Instagram Nath | entrada | `typeform` | E-cont | 2026-09-29 |
 | [E-CONT] [TYPEFORM] - Levantada de Mão Live Econt | entrada | `typeform` | E-cont | 2026-10-12 |
@@ -113,19 +113,19 @@ Fluxos: 298 · ativos: 152 · ativos sem classificação: 1
 | [L08] [TYPEFORM] [TRÁFEGO / CANAL INTERNO / DISPAROS] Pesquisas Lançamento | entrada | `typeform` | Lançamentos (L06–L08) | 2026-09-29 |
 | [Lead Score][YayForms]Formulário Preenchido -> Hubspot | entrada | `yayforms` | IniciAmazon / Perpétuo | 2026-08-31 |
 | [link-generator] -> CONVITE NOVO USUÁRIO | entrada | `gerador-links` | Interno / transversal | 2026-08-24 |
-| [REEMBOLSO] Assiny - Compra Reembolsada | entrada | `assiny` | Transversal (reembolso e suporte) | 2026-10-09 |
-| [REEMBOLSO] Assiny - Reembolso Solicitado | entrada | `assiny` | Transversal (reembolso e suporte) | 2026-10-09 |
-| [REEMBOLSO] Atualiza ticket para "Em Tratamento" | entrada | `n8n` | Transversal (reembolso e suporte) | 2026-03-30 |
-| [REEMBOLSO] Cakto - Solicitado e Realizado (Funil Nath) | entrada | `cakto` | Transversal (reembolso e suporte) | 2026-10-02 |
-| [REEMBOLSO] Hubla - Solicitado e Realizado (Funil Nath) | entrada | `hubla` | Transversal (reembolso e suporte) | 2026-10-02 |
-| [REEMBOLSO] Hubspot - Reembolso Ticket Aberto | entrada | `n8n` | Transversal (reembolso e suporte) | 2026-03-30 |
-| [REEMBOLSO] SLA 48h em Solicitado | entrada | `n8n` | Transversal (reembolso e suporte) | 2026-09-29 |
-| [REEMBOLSO] Typeform → Slack List | entrada | `typeform` | Transversal (reembolso e suporte) | 2026-09-29 |
-| [Reversão] Assiny Reembolso solicitado / Realizado -> Hubspot | entrada | `assiny` | Transversal (reembolso e suporte) | 2026-03-30 |
+| [REEMBOLSO] Assiny - Compra Reembolsada | entrada | `assiny` | Reembolsos e suporte | 2026-10-09 |
+| [REEMBOLSO] Assiny - Reembolso Solicitado | entrada | `assiny` | Reembolsos e suporte | 2026-10-09 |
+| [REEMBOLSO] Atualiza ticket para "Em Tratamento" | entrada | `n8n` | Reembolsos e suporte | 2026-03-30 |
+| [REEMBOLSO] Cakto - Solicitado e Realizado (Funil Nath) | entrada | `cakto` | Reembolsos e suporte | 2026-10-02 |
+| [REEMBOLSO] Hubla - Solicitado e Realizado (Funil Nath) | entrada | `hubla` | Reembolsos e suporte | 2026-10-02 |
+| [REEMBOLSO] Hubspot - Reembolso Ticket Aberto | entrada | `n8n` | Reembolsos e suporte | 2026-03-30 |
+| [REEMBOLSO] SLA 48h em Solicitado | entrada | `n8n` | Reembolsos e suporte | 2026-09-29 |
+| [REEMBOLSO] Typeform → Slack List | entrada | `typeform` | Reembolsos e suporte | 2026-09-29 |
+| [Reversão] Assiny Reembolso solicitado / Realizado -> Hubspot | entrada | `assiny` | Reembolsos e suporte | 2026-03-30 |
 | [Sessão] Captação de Oportunidades | entrada | `webhook` | Sessão Estratégica | 2026-09-16 |
 | [STOCK] Cria oportunidades inscritos na Live de Importação | entrada | `zoom` | Importação (Stock) | 2026-09-24 |
 | [STOCK] Respostas formulário live importação | entrada | `zoom` | Importação (Stock) | 2026-09-24 |
-| [SUPORTE] - BASE REEMBOLSO SOLICITADO | entrada | `n8n` | Transversal (reembolso e suporte) | 2026-10-02 |
+| [SUPORTE] - BASE REEMBOLSO SOLICITADO | entrada | `n8n` | Reembolsos e suporte | 2026-10-02 |
 | [Typeform][IniciAmazon 2.0] Onboarding - Pesquisa Respondida IniciAmazon 2.0 | entrada | `typeform` | IniciAmazon / Perpétuo | 2026-10-13 |
 | [Typeform][ROI Club] - Funil de Aplicação | entrada | `typeform` | ROI Club | 2026-10-10 |
 | [Typeform][ROI Club] - Funil de Aplicação Coelho | entrada | `typeform` | ROI Club | 2026-10-10 |
@@ -165,7 +165,7 @@ Fluxos: 298 · ativos: 152 · ativos sem classificação: 1
 | [Sessão Estratégica] [Entrega] - Plano Personalizado | entrega | `typeform` | Sessão Estratégica | 2026-07-31 |
 | Contract Generator Engine | entrega | `docusign` | Sem negócio identificado | 2026-03-10 |
 | Loot - Verificação de Email | entrega | `n8n` | Loot | 2026-04-14 |
-| Suporte [MENTORIA] Acesso E-mail | entrega | `n8n` | Transversal (reembolso e suporte) | 2026-07-22 |
+| Suporte [MENTORIA] Acesso E-mail | entrega | `n8n` | Reembolsos e suporte | 2026-07-22 |
 | [AUDITORIA] Duplicidade por telefone · somente leitura | infra | — | Interno / transversal | 2026-08-31 |
 | [DM][MANYCHAT] Error Trigger | infra | — | Sem negócio identificado | 2026-09-17 |
 | [ROI] Proxy - API Monitor | infra | — | Sem negócio identificado | 2026-04-09 |
@@ -182,7 +182,7 @@ Fluxos: 298 · ativos: 152 · ativos sem classificação: 1
 | [NOTIF] Notificador Slack ROI | saida | — | Interno / transversal | 2026-09-07 |
 | [Ntfy] -> Organico Nath | saida | — | IniciAmazon / Perpétuo | 2026-08-30 |
 | [ROI][ALERTA] Falha nos fluxos de tag L08 | saida | — | Lançamentos (L06–L08) | 2026-09-24 |
-| [SUPORTE E RETENÇÃO][DASHBOARD V1] | saida | — | Transversal (reembolso e suporte) | 2026-08-12 |
+| [SUPORTE E RETENÇÃO][DASHBOARD V1] | saida | — | Reembolsos e suporte | 2026-08-12 |
 | [TESTE] email notificação - nao identificado hubspot | saida | — | Consultoria & Mentoria | 2026-08-30 |
 | HealthScore HubSpot → Google Sheets | saida | — | Sem negócio identificado | 2026-09-12 |
 | Resumo de Agendamentos SDR (3x ao dia) | saida | — | Sem negócio identificado | 2026-10-02 |

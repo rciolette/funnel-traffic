@@ -18,6 +18,7 @@ Documentos-fonte: PRD Funnel Traffic (Claude Docs) · Benchmark Funnelytics (03/
 - White label multi-cliente (14/10/2026): cada conta tem marca, domínio, e-mail e domínio de pixel próprios, vindos do banco; nenhum nome de cliente no código. Instância compartilhada por padrão, dedicada quando o cliente exigir. Detalhes em `docs/WHITE_LABEL.md`.
 - Multi-tenant e papéis (dono, admin, editor, visualizador, link de leitura) desde a migration 0001, conferidos no banco via RLS.
 - Todo nome de workspace, canvas, conector, etapa e evento é definido pelo usuário. Só nomes reservados entre dois sublinhados (`__compra__`, `__contato__`) são fixos.
+- Banco inteiro no schema `funnel_traffic`, nunca em `public` (14/10/2026): a mesma migration roda em Supabase dedicado ou compartilhado (`roi-apps`, um schema por app).
 - Produto tem infra própria (repo e Supabase novos). Nenhum banco, n8n ou credencial de outra empresa entra no produto; empresas são workspaces clientes.
 - Conector = configuração (mapper JSON), nunca código específico de plataforma. Para plataforma sem template, o caminho é um workflow n8n que envia o evento canônico.
 - Contagem sempre por pessoa única, nunca sessão. Dinheiro em centavos inteiros com moeda; um evento por item de pedido; `idExterno` obrigatório para dedupe.
@@ -40,7 +41,7 @@ Evento canônico:
   "atributos": { "origem": "hotmart", "valorCentavos": 29700, "moeda": "BRL" } }
 ```
 
-Identidade em cascata: idExterno conhecido → e-mail normalizado → telefone E.164 → cookie → pessoa anônima. Fusões em `pessoa_fusoes`, reversíveis, nunca apagam história.
+Identidade em cascata: idExterno conhecido → e-mail normalizado → documento (CPF, só HMAC) → telefone E.164 → cookie → pessoa anônima. Fusões em `pessoa_fusoes`, reversíveis, nunca apagam história.
 
 ## Stack (padrão Fábrica de Apps — trocar só com motivo em docs/DECISOES.md)
 

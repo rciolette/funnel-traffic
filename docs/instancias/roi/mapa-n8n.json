@@ -7,33 +7,35 @@
   "naoClassificadosAtivos": 1
  },
  "porPapelAtivos": {
-  "entrada": 70,
+  "entrada": 68,
   "cadencia": 32,
   "entrega": 29,
   "saida": 13,
   "infra": 7,
+  "adiado": 2,
   "nao_classificado": 1
  },
  "porNegocioAtivos": {
   "E-cont": 34,
-  "IniciAmazon / Perpétuo": 20,
+  "IniciAmazon / Perpétuo": 19,
   "Consultoria & Mentoria": 19,
-  "Sem negócio identificado": 14,
   "Lançamentos (L06–L08)": 13,
-  "Transversal (reembolso e suporte)": 12,
+  "Sem negócio identificado": 13,
+  "Reembolsos e suporte": 12,
   "ROI Club": 9,
   "Interno / transversal": 9,
   "North": 6,
   "Importação (Stock)": 6,
   "Sessão Estratégica": 5,
   "Loot": 4,
+  "Compras": 2,
   "Vendas AE (pipeline extinto)": 1
  },
  "conectores": [
   {
    "conector": "sellflux",
    "plataforma": "Sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 27,
    "negocios": [
     "E-cont",
@@ -55,14 +57,14 @@
    "noCatalogo": true,
    "fluxos": 26,
    "negocios": [
+    "Compras",
     "Consultoria & Mentoria",
     "E-cont",
     "IniciAmazon / Perpétuo",
     "Lançamentos (L06–L08)",
     "Loot",
     "North",
-    "Sem negócio identificado",
-    "Transversal (reembolso e suporte)"
+    "Reembolsos e suporte"
    ],
    "eventos": [
     "Compra Aprovada",
@@ -85,8 +87,8 @@
     "Lançamentos (L06–L08)",
     "North",
     "ROI Club",
-    "Sessão Estratégica",
-    "Transversal (reembolso e suporte)"
+    "Reembolsos e suporte",
+    "Sessão Estratégica"
    ],
    "eventos": [
     "Levantou a Mão",
@@ -134,7 +136,7 @@
    "negocios": [
     "E-cont",
     "Loot",
-    "Transversal (reembolso e suporte)"
+    "Reembolsos e suporte"
    ],
    "eventos": [
     "Atendimento Registrado",
@@ -187,7 +189,7 @@
   {
    "conector": "digisac",
    "plataforma": "Digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 4,
    "negocios": [
     "Interno / transversal",
@@ -202,7 +204,7 @@
   {
    "conector": "gerador-links",
    "plataforma": "Gerador de Links",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 3,
    "negocios": [
     "Consultoria & Mentoria",
@@ -217,7 +219,7 @@
   {
    "conector": "asaas",
    "plataforma": "Asaas",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 3,
    "negocios": [
     "Importação (Stock)"
@@ -235,7 +237,7 @@
    "fluxos": 2,
    "negocios": [
     "IniciAmazon / Perpétuo",
-    "Transversal (reembolso e suporte)"
+    "Reembolsos e suporte"
    ],
    "eventos": [
     "Compra Aprovada",
@@ -245,7 +247,7 @@
   {
    "conector": "manychat",
    "plataforma": "ManyChat (Direct)",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 2,
    "negocios": [
     "Sem negócio identificado"
@@ -262,7 +264,7 @@
    "fluxos": 2,
    "negocios": [
     "IniciAmazon / Perpétuo",
-    "Transversal (reembolso e suporte)"
+    "Reembolsos e suporte"
    ],
    "eventos": [
     "Compra Aprovada",
@@ -272,7 +274,7 @@
   {
    "conector": "applyfy",
    "plataforma": "Applyfy",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 1,
    "negocios": [
     "IniciAmazon / Perpétuo"
@@ -285,7 +287,7 @@
   {
    "conector": "clicksign",
    "plataforma": "ClickSign",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 1,
    "negocios": [
     "Consultoria & Mentoria"
@@ -298,7 +300,7 @@
   {
    "conector": "greatpages",
    "plataforma": "GreatPages",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 1,
    "negocios": [
     "Lançamentos (L06–L08)"
@@ -324,7 +326,7 @@
   {
    "conector": "yayforms",
    "plataforma": "YayForms",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 1,
    "negocios": [
     "IniciAmazon / Perpétuo"
@@ -336,7 +338,7 @@
   {
    "conector": "unnichat",
    "plataforma": "UnniChat",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 1,
    "negocios": [
     "Lançamentos (L06–L08)"
@@ -349,7 +351,7 @@
   {
    "conector": "wordpress",
    "plataforma": "WordPress",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "fluxos": 1,
    "negocios": [
     "ROI Club"
@@ -368,7 +370,7 @@
    "atualizadoEm": "2026-05-22",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -450,7 +452,7 @@
    "atualizadoEm": "2026-10-14",
    "plataforma": "Applyfy",
    "conector": "applyfy",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -580,7 +582,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -603,7 +605,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "IniciAmazon / Perpétuo",
+   "negocio": "Compras",
    "noInventario2909": true,
    "divergenciasAltas": 0,
    "execucoes30d": {
@@ -630,7 +632,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Sem negócio identificado",
+   "negocio": "Compras",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -653,7 +655,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Compras",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -784,7 +786,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -1198,7 +1200,7 @@
    "atualizadoEm": "2026-06-11",
    "plataforma": "ClickSign",
    "conector": "clicksign",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "entrega",
    "papel": "entrega",
    "eventos": [
@@ -1221,7 +1223,7 @@
    "atualizadoEm": "2026-05-28",
    "plataforma": "ClickSign",
    "conector": "clicksign",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "entrega",
    "papel": "entrega",
    "eventos": [
@@ -1306,7 +1308,7 @@
    "atualizadoEm": "2026-05-14",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -1408,7 +1410,7 @@
    "atualizadoEm": "2026-04-30",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -1557,7 +1559,7 @@
    "atualizadoEm": "2026-10-02",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -1580,7 +1582,7 @@
    "atualizadoEm": "2026-08-28",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -1631,9 +1633,9 @@
    "atualizadoEm": "2026-09-17",
    "plataforma": "ManyChat (Direct)",
    "conector": "manychat",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "captura",
-   "papel": "entrada",
+   "papel": "adiado",
    "eventos": [
     "Conversa Iniciada",
     "Lead Triado"
@@ -1666,9 +1668,9 @@
    "atualizadoEm": "2026-09-17",
    "plataforma": "ManyChat (Direct)",
    "conector": "manychat",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "captura",
-   "papel": "entrada",
+   "papel": "adiado",
    "eventos": [
     "Conversa Iniciada",
     "Lead Triado"
@@ -2068,7 +2070,7 @@
    "atualizadoEm": "2026-09-23",
    "plataforma": "Gerador de Links",
    "conector": "gerador-links",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -2088,7 +2090,7 @@
    "atualizadoEm": "2026-09-23",
    "plataforma": "Gerador de Links",
    "conector": "gerador-links",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -2112,7 +2114,7 @@
    "atualizadoEm": "2026-09-15",
    "plataforma": "Gerador de Links",
    "conector": "gerador-links",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -2136,7 +2138,7 @@
    "atualizadoEm": "2026-09-16",
    "plataforma": "Asaas",
    "conector": "asaas",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -2160,7 +2162,7 @@
    "atualizadoEm": "2026-09-16",
    "plataforma": "Asaas",
    "conector": "asaas",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -2184,7 +2186,7 @@
    "atualizadoEm": "2026-08-07",
    "plataforma": "Asaas",
    "conector": "asaas",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -2276,7 +2278,7 @@
    "atualizadoEm": "2026-10-02",
    "plataforma": "GreatPages",
    "conector": "greatpages",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "captura",
    "papel": "entrada",
    "eventos": [
@@ -2399,7 +2401,7 @@
    "categoria": "saida",
    "papel": "saida",
    "eventos": [],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -2604,7 +2606,7 @@
    "atualizadoEm": "2026-09-07",
    "plataforma": "GreatPages",
    "conector": "greatpages",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "captura",
    "papel": "entrada",
    "eventos": [
@@ -2705,7 +2707,7 @@
    "atualizadoEm": "2026-08-31",
    "plataforma": "YayForms",
    "conector": "yayforms",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "captura",
    "papel": "entrada",
    "eventos": [
@@ -2727,7 +2729,7 @@
    "atualizadoEm": "2026-08-24",
    "plataforma": "Gerador de Links",
    "conector": "gerador-links",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -3062,7 +3064,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3161,7 +3163,7 @@
    "atualizadoEm": "2026-03-30",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3312,7 +3314,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3335,7 +3337,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": true,
    "divergenciasAltas": 1,
    "execucoes30d": {
@@ -3357,7 +3359,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3376,7 +3378,7 @@
     "Compra Aprovada",
     "Reembolso"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3395,7 +3397,7 @@
     "Compra Aprovada",
     "Reembolso"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3413,7 +3415,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3433,7 +3435,7 @@
     "Levantou a Mão",
     "Aplicação Enviada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3451,7 +3453,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": true,
    "divergenciasAltas": 0,
    "execucoes30d": {
@@ -3473,7 +3475,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3493,7 +3495,7 @@
     "Levantou a Mão",
     "Aplicação Enviada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3513,7 +3515,7 @@
     "Levantou a Mão",
     "Aplicação Enviada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": true,
    "divergenciasAltas": 0,
    "execucoes30d": {
@@ -3540,7 +3542,7 @@
     "Reembolso",
     "Assinatura Cancelada"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3552,7 +3554,7 @@
    "atualizadoEm": "2026-09-07",
    "plataforma": "Gerador de Links",
    "conector": "gerador-links",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -3572,7 +3574,7 @@
    "atualizadoEm": "2026-08-12",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3591,7 +3593,7 @@
    "atualizadoEm": "2026-09-10",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3610,7 +3612,7 @@
    "atualizadoEm": "2026-09-10",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3629,7 +3631,7 @@
    "atualizadoEm": "2026-08-10",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3729,7 +3731,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -3780,7 +3782,7 @@
    "atualizadoEm": "2026-03-11",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3801,7 +3803,7 @@
    "atualizadoEm": "2026-08-03",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3826,7 +3828,7 @@
    "atualizadoEm": "2026-08-24",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3851,7 +3853,7 @@
    "atualizadoEm": "2026-08-24",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3876,7 +3878,7 @@
    "atualizadoEm": "2026-05-27",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3901,7 +3903,7 @@
    "atualizadoEm": "2026-08-14",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3922,7 +3924,7 @@
    "atualizadoEm": "2026-08-30",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3947,7 +3949,7 @@
    "atualizadoEm": "2026-08-14",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3968,7 +3970,7 @@
    "atualizadoEm": "2026-08-14",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -3989,7 +3991,7 @@
    "atualizadoEm": "2026-08-14",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4010,7 +4012,7 @@
    "atualizadoEm": "2026-09-01",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4035,7 +4037,7 @@
    "atualizadoEm": "2026-08-03",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4060,7 +4062,7 @@
    "atualizadoEm": "2026-08-03",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4085,7 +4087,7 @@
    "atualizadoEm": "2026-07-31",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4110,7 +4112,7 @@
    "atualizadoEm": "2026-08-03",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4135,7 +4137,7 @@
    "atualizadoEm": "2026-06-08",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4160,7 +4162,7 @@
    "atualizadoEm": "2026-06-08",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4185,7 +4187,7 @@
    "atualizadoEm": "2026-07-31",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4210,7 +4212,7 @@
    "atualizadoEm": "2026-08-03",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4235,7 +4237,7 @@
    "atualizadoEm": "2026-06-08",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4260,7 +4262,7 @@
    "atualizadoEm": "2026-06-08",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4285,7 +4287,7 @@
    "atualizadoEm": "2026-06-08",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4310,7 +4312,7 @@
    "atualizadoEm": "2026-06-08",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4335,7 +4337,7 @@
    "atualizadoEm": "2026-07-31",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4360,7 +4362,7 @@
    "atualizadoEm": "2026-08-12",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4385,7 +4387,7 @@
    "atualizadoEm": "2026-08-30",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4410,7 +4412,7 @@
    "atualizadoEm": "2026-08-30",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4431,7 +4433,7 @@
    "atualizadoEm": "2026-08-09",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4452,7 +4454,7 @@
    "atualizadoEm": "2026-04-28",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4596,7 +4598,7 @@
    "atualizadoEm": "2026-10-08",
    "plataforma": "Applyfy",
    "conector": "applyfy",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "vendas",
    "papel": "entrada",
    "eventos": [
@@ -4700,7 +4702,7 @@
    "categoria": "saida",
    "papel": "saida",
    "eventos": [],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": true,
    "divergenciasAltas": 0,
    "execucoes30d": {
@@ -4722,7 +4724,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -4740,7 +4742,7 @@
    "eventos": [
     "Atendimento Registrado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -4758,7 +4760,7 @@
    "eventos": [
     "Atendimento Registrado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -4770,7 +4772,7 @@
    "atualizadoEm": "2026-08-18",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -4779,7 +4781,7 @@
     "Mensagem Falhou",
     "Conectado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -4827,7 +4829,7 @@
    "atualizadoEm": "2026-09-21",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -5077,7 +5079,7 @@
    "atualizadoEm": "2026-09-29",
    "plataforma": "UnniChat",
    "conector": "unnichat",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -5132,7 +5134,7 @@
    "atualizadoEm": "2026-09-16",
    "plataforma": "WordPress",
    "conector": "wordpress",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "captura",
    "papel": "entrada",
    "eventos": [
@@ -5455,7 +5457,7 @@
    "atualizadoEm": "2026-05-13",
    "plataforma": "ClickSign",
    "conector": "clicksign",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "entrega",
    "papel": "entrega",
    "eventos": [
@@ -5564,7 +5566,7 @@
    "atualizadoEm": "2026-08-31",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -5606,7 +5608,7 @@
    "atualizadoEm": "2026-08-04",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -5625,7 +5627,7 @@
    "atualizadoEm": "2026-08-18",
    "plataforma": "Digisac",
    "conector": "digisac",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -6133,7 +6135,7 @@
    "atualizadoEm": "2026-06-01",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -6172,7 +6174,7 @@
    "atualizadoEm": "2026-06-01",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -6193,7 +6195,7 @@
    "atualizadoEm": "2026-06-01",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [
@@ -6220,7 +6222,7 @@
    "eventos": [
     "Reembolso Solicitado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -6238,7 +6240,7 @@
    "eventos": [
     "Atendimento Registrado"
    ],
-   "negocio": "Transversal (reembolso e suporte)",
+   "negocio": "Reembolsos e suporte",
    "noInventario2909": false,
    "divergenciasAltas": null,
    "execucoes30d": null
@@ -6380,7 +6382,7 @@
    "atualizadoEm": "2026-06-07",
    "plataforma": "Sellflux",
    "conector": "sellflux",
-   "noCatalogo": false,
+   "noCatalogo": true,
    "categoria": "engajamento",
    "papel": "cadencia",
    "eventos": [

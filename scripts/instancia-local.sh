@@ -22,6 +22,6 @@ for m in "$RAIZ"/supabase/migrations/*.sql; do "${PSQL[@]}" "$URL" -f "$m"; done
 
 echo "instância $SLUG pronta no banco $BANCO"
 "${PSQL[@]}" "$URL" -c "select w.nome as workspace, count(c.*) as conectores, string_agg(c.slug, ', ' order by c.slug) as quais
-  from public.workspaces w left join public.conectores c on c.workspace_id = w.id
+  from funnel_traffic.workspaces w left join funnel_traffic.conectores c on c.workspace_id = w.id
  where w.slug like '${SLUG}-%' and w.conta_id <> '22222222-2222-4222-8222-222222222222' -- fora a conta do seed padrão
  group by w.nome order by w.nome;"

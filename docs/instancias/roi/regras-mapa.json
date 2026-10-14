@@ -5,7 +5,8 @@
     "entrega": "Libera acesso ou envia algo depois da compra; gera evento de engajamento",
     "cadencia": "Disparo e cadência de mensagens; gera evento de contato",
     "saida": "Lê o CRM ou escreve em planilha, Slack, e-mail; não gera evento de pessoa",
-    "infra": "Alerta, auditoria, teste, utilitário; fica fora do Funnel Traffic"
+    "infra": "Alerta, auditoria, teste, utilitário; fica fora do Funnel Traffic",
+    "adiado": "Fora por decisão do dono (ex.: ManyChat, 14/10/2026); não vira conector agora"
   },
   "plataformas": [
     {
@@ -193,7 +194,7 @@
       "plataforma": "ManyChat (Direct)",
       "conector": "manychat",
       "categoria": "captura",
-      "papel": "entrada",
+      "papel": "adiado",
       "eventos": [
         "Conversa Iniciada",
         "Lead Triado"
@@ -368,8 +369,12 @@
   ],
   "negocios": [
     {
+      "padrao": "roi ventures ltda",
+      "negocio": "Compras"
+    },
+    {
       "padrao": "reembolso|reversão|reversao|suporte",
-      "negocio": "Transversal (reembolso e suporte)"
+      "negocio": "Reembolsos e suporte"
     },
     {
       "padrao": "e-?cont|econt",

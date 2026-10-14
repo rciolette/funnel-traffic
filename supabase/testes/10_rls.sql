@@ -8,61 +8,61 @@ insert into auth.users (id, email) values
   ('aaaaaaaa-0000-4000-8000-00000000000e', 'editor@funnel-traffic.test'),
   ('aaaaaaaa-0000-4000-8000-00000000000f', 'leitor@funnel-traffic.test'),
   ('aaaaaaaa-0000-4000-8000-0000000000ff', 'estranho@funnel-traffic.test');
-insert into public.workspace_membros (workspace_id, user_id, papel) values
+insert into funnel_traffic.workspace_membros (workspace_id, user_id, papel) values
   ('33333333-3333-4333-8333-333333333331', 'aaaaaaaa-0000-4000-8000-00000000000e', 'editor'),
   ('33333333-3333-4333-8333-333333333331', 'aaaaaaaa-0000-4000-8000-00000000000f', 'visualizador');
 
 -- Dados como superusuário (o worker usa service_role)
-insert into public.pessoas (id, workspace_id) values
+insert into funnel_traffic.pessoas (id, workspace_id) values
   ('bbbbbbbb-0000-4000-8000-000000000001', '33333333-3333-4333-8333-333333333331');
-insert into public.conectores (id, workspace_id, nome, slug, tipo) values
+insert into funnel_traffic.conectores (id, workspace_id, nome, slug, tipo) values
   ('cccccccc-0000-4000-8000-000000000001', '33333333-3333-4333-8333-333333333331', 'Teste', 'teste', 'webhook');
 
 -- ---------------------------------------------------------------- dono
 set role authenticated;
 select set_config('request.jwt.claims', '{"sub":"11111111-1111-4111-8111-111111111111","role":"authenticated"}', false);
 do $$ begin
-  assert (select count(*) from public.workspaces) = 2, 'dono vê os 2 workspaces';
-  assert public.papel_no_workspace('33333333-3333-4333-8333-333333333332') = 'dono', 'papel dono';
-  assert (select count(*) from public.pessoas) = 1, 'dono vê pessoas';
-  assert (select count(*) from public.conectores) = 1, 'dono vê conectores';
-  insert into public.canvases (id, workspace_id, nome) values
+  assert (select count(*) from funnel_traffic.workspaces) = 2, 'dono vê os 2 workspaces';
+  assert funnel_traffic.papel_no_workspace('33333333-3333-4333-8333-333333333332') = 'dono', 'papel dono';
+  assert (select count(*) from funnel_traffic.pessoas) = 1, 'dono vê pessoas';
+  assert (select count(*) from funnel_traffic.conectores) = 1, 'dono vê conectores';
+  insert into funnel_traffic.canvases (id, workspace_id, nome) values
     ('dddddddd-0000-4000-8000-000000000001', '33333333-3333-4333-8333-333333333331', 'Lançamento');
   -- nada de histórico apagado: sem policy de delete
-  delete from public.canvases where id = 'dddddddd-0000-4000-8000-000000000001';
-  assert (select count(*) from public.canvases) = 1, 'delete de canvas não apaga (sem policy)';
-  assert (select count(*) from public.auditoria where tabela = 'workspace_membros') >= 2, 'auditoria registra membros';
+  delete from funnel_traffic.canvases where id = 'dddddddd-0000-4000-8000-000000000001';
+  assert (select count(*) from funnel_traffic.canvases) = 1, 'delete de canvas não apaga (sem policy)';
+  assert (select count(*) from funnel_traffic.auditoria where tabela = 'workspace_membros') >= 2, 'auditoria registra membros';
 end $$;
 
 -- ---------------------------------------------------------------- editor
 select set_config('request.jwt.claims', '{"sub":"aaaaaaaa-0000-4000-8000-00000000000e","role":"authenticated"}', false);
 do $$ begin
-  assert (select count(*) from public.workspaces) = 1, 'editor vê só o workspace dele';
-  assert (select count(*) from public.canvases) = 1, 'editor vê canvas';
-  assert (select count(*) from public.conectores) = 1, 'editor vê status de conector';
-  assert (select count(*) from public.pessoas) = 0, 'editor não lê pessoas direto';
-  assert (select count(*) from public.eventos) = 0, 'editor não lê eventos direto';
-  assert (select count(*) from public.auditoria) = 0, 'editor não lê auditoria';
-  insert into public.etapas (workspace_id, canvas_id, tipo, nome)
+  assert (select count(*) from funnel_traffic.workspaces) = 1, 'editor vê só o workspace dele';
+  assert (select count(*) from funnel_traffic.canvases) = 1, 'editor vê canvas';
+  assert (select count(*) from funnel_traffic.conectores) = 1, 'editor vê status de conector';
+  assert (select count(*) from funnel_traffic.pessoas) = 0, 'editor não lê pessoas direto';
+  assert (select count(*) from funnel_traffic.eventos) = 0, 'editor não lê eventos direto';
+  assert (select count(*) from funnel_traffic.auditoria) = 0, 'editor não lê auditoria';
+  insert into funnel_traffic.etapas (workspace_id, canvas_id, tipo, nome)
     values ('33333333-3333-4333-8333-333333333331', 'dddddddd-0000-4000-8000-000000000001', 'acao', 'Compra');
   begin
-    insert into public.conectores (workspace_id, nome, slug, tipo)
+    insert into funnel_traffic.conectores (workspace_id, nome, slug, tipo)
       values ('33333333-3333-4333-8333-333333333331', 'X', 'x', 'webhook');
     raise exception 'FALHOU: editor criou conector';
   exception when insufficient_privilege then null;
   end;
-  update public.workspace_membros set papel = 'dono' where user_id = 'aaaaaaaa-0000-4000-8000-00000000000e';
-  assert public.papel_no_workspace('33333333-3333-4333-8333-333333333331') = 'editor', 'editor não se promove';
+  update funnel_traffic.workspace_membros set papel = 'dono' where user_id = 'aaaaaaaa-0000-4000-8000-00000000000e';
+  assert funnel_traffic.papel_no_workspace('33333333-3333-4333-8333-333333333331') = 'editor', 'editor não se promove';
 end $$;
 
 -- ---------------------------------------------------------------- visualizador
 select set_config('request.jwt.claims', '{"sub":"aaaaaaaa-0000-4000-8000-00000000000f","role":"authenticated"}', false);
 do $$ begin
-  assert (select count(*) from public.canvases) = 1, 'visualizador lê canvas';
-  assert (select count(*) from public.etapas) = 1, 'visualizador lê etapas';
-  assert (select count(*) from public.conectores) = 0, 'visualizador não vê conectores';
+  assert (select count(*) from funnel_traffic.canvases) = 1, 'visualizador lê canvas';
+  assert (select count(*) from funnel_traffic.etapas) = 1, 'visualizador lê etapas';
+  assert (select count(*) from funnel_traffic.conectores) = 0, 'visualizador não vê conectores';
   begin
-    insert into public.canvases (workspace_id, nome) values ('33333333-3333-4333-8333-333333333331', 'X');
+    insert into funnel_traffic.canvases (workspace_id, nome) values ('33333333-3333-4333-8333-333333333331', 'X');
     raise exception 'FALHOU: visualizador criou canvas';
   exception when insufficient_privilege then null;
   end;
@@ -71,23 +71,23 @@ end $$;
 -- ---------------------------------------------------------------- estranho (logado, sem papel)
 select set_config('request.jwt.claims', '{"sub":"aaaaaaaa-0000-4000-8000-0000000000ff","role":"authenticated"}', false);
 do $$ begin
-  assert (select count(*) from public.workspaces) = 0, 'estranho não vê workspace';
-  assert (select count(*) from public.canvases) = 0, 'estranho não vê canvas';
-  assert public.papel_no_workspace('33333333-3333-4333-8333-333333333331') is null, 'estranho sem papel';
+  assert (select count(*) from funnel_traffic.workspaces) = 0, 'estranho não vê workspace';
+  assert (select count(*) from funnel_traffic.canvases) = 0, 'estranho não vê canvas';
+  assert funnel_traffic.papel_no_workspace('33333333-3333-4333-8333-333333333331') is null, 'estranho sem papel';
   begin
-    insert into public.canvases (workspace_id, nome) values ('33333333-3333-4333-8333-333333333331', 'X');
+    insert into funnel_traffic.canvases (workspace_id, nome) values ('33333333-3333-4333-8333-333333333331', 'X');
     raise exception 'FALHOU: estranho criou canvas';
   exception when insufficient_privilege then null;
   end;
   begin
-    insert into public.workspaces (conta_id, nome, slug) values ('22222222-2222-4222-8222-222222222222', 'X', 'xx-invasor');
+    insert into funnel_traffic.workspaces (conta_id, nome, slug) values ('22222222-2222-4222-8222-222222222222', 'X', 'xx-invasor');
     raise exception 'FALHOU: estranho criou workspace na conta do dono';
   exception when insufficient_privilege then null;
   end;
   -- workspace_criar cria conta própria para quem ainda não tem
-  perform public.workspace_criar('Meu teste', 'meu-teste-estranho', 'Conta estranho');
-  assert (select count(*) from public.workspaces) = 1, 'estranho vê só o workspace que criou';
-  assert public.papel_no_workspace((select id from public.workspaces where slug = 'meu-teste-estranho')) = 'dono', 'criador é dono';
+  perform funnel_traffic.workspace_criar('Meu teste', 'meu-teste-estranho', 'Conta estranho');
+  assert (select count(*) from funnel_traffic.workspaces) = 1, 'estranho vê só o workspace que criou';
+  assert funnel_traffic.papel_no_workspace((select id from funnel_traffic.workspaces where slug = 'meu-teste-estranho')) = 'dono', 'criador é dono';
 end $$;
 
 -- ---------------------------------------------------------------- anon
@@ -95,12 +95,12 @@ reset role;
 select set_config('request.jwt.claims', '', false);
 set role anon;
 do $$ begin
-  assert (select count(*) from public.workspaces) = 0, 'anon não vê workspace';
-  assert (select count(*) from public.conector_templates) = 0, 'anon não lê catálogo';
-  insert into public.funnel_traffic_erros_front (app, componente, mensagem) values ('funnel-traffic', 'Login', 'teste');
-  assert (select count(*) from public.funnel_traffic_erros_front) = 0, 'anon não lê erros';
+  assert (select count(*) from funnel_traffic.workspaces) = 0, 'anon não vê workspace';
+  assert (select count(*) from funnel_traffic.conector_templates) = 0, 'anon não lê catálogo';
+  insert into funnel_traffic.funnel_traffic_erros_front (app, componente, mensagem) values ('funnel-traffic', 'Login', 'teste');
+  assert (select count(*) from funnel_traffic.funnel_traffic_erros_front) = 0, 'anon não lê erros';
   begin
-    perform public.papel_no_workspace('33333333-3333-4333-8333-333333333331');
+    perform funnel_traffic.papel_no_workspace('33333333-3333-4333-8333-333333333331');
     raise exception 'FALHOU: anon executou papel_no_workspace';
   exception when insufficient_privilege then null;
   end;
@@ -110,19 +110,19 @@ end $$;
 reset role;
 do $$ begin
   -- partição sob demanda para histórico antigo
-  perform public.eventos_garantir_particao('2019-05-10T12:00:00Z');
-  assert to_regclass('public.eventos_p201905') is not null, 'partição criada sob demanda';
-  insert into public.eventos (workspace_id, pessoa_id, conector_id, evento, id_externo, ocorrido_em)
+  perform funnel_traffic.eventos_garantir_particao('2019-05-10T12:00:00Z');
+  assert to_regclass('funnel_traffic.eventos_p201905') is not null, 'partição criada sob demanda';
+  insert into funnel_traffic.eventos (workspace_id, pessoa_id, conector_id, evento, id_externo, ocorrido_em)
     values ('33333333-3333-4333-8333-333333333331', 'bbbbbbbb-0000-4000-8000-000000000001',
             'cccccccc-0000-4000-8000-000000000001', 'Compra Aprovada', 'X1', '2019-05-10T12:00:00Z');
-  -- RLS ligado em toda tabela do schema public, inclusive partições
+  -- RLS ligado em toda tabela do schema funnel_traffic, inclusive partições
   assert not exists (
     select 1 from pg_class c join pg_namespace n on n.oid = c.relnamespace
-     where n.nspname = 'public' and c.relkind in ('r', 'p') and not c.relrowsecurity
+     where n.nspname = 'funnel_traffic' and c.relkind in ('r', 'p') and not c.relrowsecurity
   ), 'toda tabela com RLS';
   -- dinheiro exige moeda
   begin
-    insert into public.eventos (workspace_id, pessoa_id, conector_id, evento, id_externo, ocorrido_em, valor_centavos)
+    insert into funnel_traffic.eventos (workspace_id, pessoa_id, conector_id, evento, id_externo, ocorrido_em, valor_centavos)
       values ('33333333-3333-4333-8333-333333333331', 'bbbbbbbb-0000-4000-8000-000000000001',
               'cccccccc-0000-4000-8000-000000000001', 'Compra', 'X2', now(), 100);
     raise exception 'FALHOU: valor sem moeda';
@@ -130,7 +130,7 @@ do $$ begin
   end;
   -- etapa não pode apontar canvas de outro workspace
   begin
-    insert into public.etapas (workspace_id, canvas_id, tipo, nome)
+    insert into funnel_traffic.etapas (workspace_id, canvas_id, tipo, nome)
       values ('33333333-3333-4333-8333-333333333332', 'dddddddd-0000-4000-8000-000000000001', 'acao', 'X');
     raise exception 'FALHOU: etapa cruzou workspace';
   exception when raise_exception then
