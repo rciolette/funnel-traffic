@@ -15,6 +15,7 @@ Documentos-fonte: PRD Funnel Traffic (Claude Docs) · Benchmark Funnelytics (03/
 - Nome: Funnel Traffic. Domínio será comprado depois.
 - Versão gratuita de testes, sem cobrança. Nada no código depende de plano.
 - Um único dono cria contas e workspaces, um por projeto. Primeiro workspace: "My Workspace".
+- White label multi-cliente (14/10/2026): cada conta tem marca, domínio, e-mail e domínio de pixel próprios, vindos do banco; nenhum nome de cliente no código. Instância compartilhada por padrão, dedicada quando o cliente exigir. Detalhes em `docs/WHITE_LABEL.md`.
 - Multi-tenant e papéis (dono, admin, editor, visualizador, link de leitura) desde a migration 0001, conferidos no banco via RLS.
 - Todo nome de workspace, canvas, conector, etapa e evento é definido pelo usuário. Só nomes reservados entre dois sublinhados (`__compra__`, `__contato__`) são fixos.
 - Produto tem infra própria (repo e Supabase novos). Nenhum banco, n8n ou credencial de outra empresa entra no produto; empresas são workspaces clientes.
@@ -22,6 +23,10 @@ Documentos-fonte: PRD Funnel Traffic (Claude Docs) · Benchmark Funnelytics (03/
 - Contagem sempre por pessoa única, nunca sessão. Dinheiro em centavos inteiros com moeda; um evento por item de pedido; `idExterno` obrigatório para dedupe.
 - Postgres puro no motor até 10 M eventos/mês por workspace. ClickHouse só com critério numérico (> 2 s em 95 % das consultas).
 - Pixel `track.js` e o catálogo completo de conectores entram já na Fase 1, self-service: o dono conecta cada projeto sozinho pela tela de Integrações (URL + chave → payload de teste → editor de mapper → modo sombra → ativar).
+
+## Mapa dos documentos
+
+`docs/ROTEIRO.md` (o que existe, o que falta, ordem dos blocos) · `docs/MOTOR.md` (regras de contagem e teste de contrato) · `docs/WHITE_LABEL.md` (contas, marca, domínio, superadmin, LGPD) · `docs/USO.md` (passo a passo de uso) · `docs/FERRAMENTAS.md` (skills, MCPs, CLIs, repositórios de referência) · `docs/conectores/CATALOGO.md` · `docs/benchmark-funnelytics.md` e `docs/benchmark/caso-funnelytics.md`.
 
 ## Modelo (seis objetos)
 
