@@ -1,0 +1,59 @@
+{
+  "_sobre": "Configuração da versão de testes local da instância ROI. Lida por scripts/seed-instancia.mjs junto com mapa-n8n.json. Nada aqui tem dado pessoal ou credencial.",
+  "slug": "roi",
+  "conta": "ROI Ventures (teste local)",
+  "dono": { "id": "44444444-4444-4444-8444-444444444441", "email": "roi-dono@funnel-traffic.test" },
+  "conta_id": "44444444-4444-4444-8444-444444444442",
+  "workspaces": [
+    { "negocio": "E-cont", "nome": "E-cont", "slug": "roi-econt" },
+    { "negocio": "IniciAmazon / Perpétuo", "nome": "IniciAmazon · Perpétuo", "slug": "roi-iniciamazon" },
+    { "negocio": "Consultoria & Mentoria", "nome": "Consultoria & Mentoria", "slug": "roi-consultoria-mentoria" },
+    { "negocio": "ROI Club", "nome": "ROI Club", "slug": "roi-club" },
+    { "negocio": "Sessão Estratégica", "nome": "Sessão Estratégica", "slug": "roi-sessao-estrategica" },
+    { "negocio": "Lançamentos (L06–L08)", "nome": "Lançamentos", "slug": "roi-lancamentos-teste" },
+    { "negocio": "North", "nome": "North", "slug": "roi-north" },
+    { "negocio": "Importação (Stock)", "nome": "Importação · Stock", "slug": "roi-importacao" },
+    { "negocio": "Loot", "nome": "Loot", "slug": "roi-loot" }
+  ],
+  "negocios_fora": ["Sem negócio identificado", "Interno / transversal", "Transversal (reembolso e suporte)", "Vendas AE (pipeline extinto)"],
+  "conectores_extras": [
+    {
+      "conector": "hubspot",
+      "plataforma": "HubSpot (sincronização de negócios do Gerador)",
+      "categoria": "crm",
+      "eventos": ["Oportunidade Criada", "Reunião Agendada", "Negócio Mudou de Etapa", "Negócio Ganho", "Negócio Perdido"],
+      "workspaces": "todos",
+      "fonte": "public.gerador_hubspot_negocio_historico e public.gerador_eventos_comerciais (projeto qevnfgopjupsmwvflcza)"
+    }
+  ],
+  "canvases": [
+    {
+      "workspace": "roi-econt",
+      "nome": "Jornada E-cont (rascunho do mapa)",
+      "etapas": [
+        { "chave": "mao", "tipo": "acao", "nome": "Levantou a mão", "filtro": { "evento": "Levantou a Mão" }, "x": 40, "y": 120 },
+        { "chave": "neg", "tipo": "offline", "nome": "Em negociação (HubSpot)", "filtro": { "evento": "Negócio Mudou de Etapa", "atributos": [{ "campo": "etapa", "op": "eq", "valor": "Em Negociação" }] }, "x": 340, "y": 120 },
+        { "chave": "compra", "tipo": "acao", "nome": "Compra aprovada", "filtro": { "evento": "__compra__" }, "x": 640, "y": 120 }
+      ],
+      "conexoes": [
+        { "de": "mao", "para": "neg", "tipo": "pular", "janela_dias": 30 },
+        { "de": "neg", "para": "compra", "tipo": "pular", "janela_dias": 30 }
+      ]
+    },
+    {
+      "workspace": "roi-iniciamazon",
+      "nome": "Perpétuo: compra → acesso (rascunho do mapa)",
+      "etapas": [
+        { "chave": "pix", "tipo": "acao", "nome": "PIX gerado", "filtro": { "evento": "PIX Gerado" }, "x": 40, "y": 120 },
+        { "chave": "compra", "tipo": "acao", "nome": "Compra aprovada", "filtro": { "evento": "__compra__" }, "x": 340, "y": 120 },
+        { "chave": "acesso", "tipo": "acao", "nome": "Acesso liberado (MemberClass)", "filtro": { "evento": "Acesso Liberado" }, "x": 640, "y": 120 },
+        { "chave": "reembolso", "tipo": "acao", "nome": "Reembolso", "filtro": { "evento": "Reembolso" }, "x": 640, "y": 300 }
+      ],
+      "conexoes": [
+        { "de": "pix", "para": "compra", "tipo": "direta" },
+        { "de": "compra", "para": "acesso", "tipo": "pular", "janela_dias": 2 },
+        { "de": "compra", "para": "reembolso", "tipo": "pular", "janela_dias": 30 }
+      ]
+    }
+  ]
+}

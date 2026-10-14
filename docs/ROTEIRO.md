@@ -60,6 +60,7 @@ Cada bloco termina com teste passando no CI e com `CONTEXTO_ATUAL.md` atualizado
 | 6 | Canvas | Nós Fonte/Página/Ação/Offline com editor de regra (frases), conexões direta/pular com janela, números e pílulas de conversão, período, filtros, comparação, modo funil, histórico de versões, exportar PNG | Canvas do protótipo reproduzido com dados reais | 2 |
 | 7 | Etapa, Explorer e Pessoas | Painel da etapa (pessoas, tendência, lista mascarada por papel), Step Explorer (próximos e anteriores), aba Explorer (top fontes, páginas, ações; adicionar ao canvas), linha do tempo da pessoa | Montar um funil de trás para frente pelo Explorer | 2, 6 |
 | 8 | White label e contas | `conta_marcas`, `conta_dominios`, `conta_limites`, superadmin, tema por domínio no Worker, Cloudflare for SaaS, e-mail de Auth com marca (Send Email Hook), pixel no domínio do cliente (`docs/WHITE_LABEL.md`) | Duas contas com marcas diferentes, cada uma no próprio domínio, sem ver os dados da outra | 1b |
+| 8b | Instância ROI | Versão de testes local feita (`docs/instancias/roi`); falta schema `funnel_traffic` no `roi-apps` e carga inicial do histórico do Supabase do Gerador | Pendências R-01 a R-07 respondidas | 2, 3 |
 | 9 | Primeiro projeto real | My Workspace e o lançamento vigente ligados (pixel + vendas + n8n); comparar com Assiny e HubSpot (`conciliacao-comercial-roi`) | Portão da Fase 1: canvas usado por 2 semanas | 4, 5, 6, 7 |
 
 ### Depois do MVP

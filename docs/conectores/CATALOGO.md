@@ -29,6 +29,22 @@ Cada conector é um template: `mapper.json` + `GUIA.md` nesta pasta (`docs/conec
 | HighLevel e HubSpot nativos | — | OAuth | Mesmos eventos sem webhook | 3 |
 | Meta Ads, Google Ads | — | OAuth (custo) | Investimento por campanha | Fora de escopo |
 
+### Pedidos pela instância ROI (mapa de 14/10/2026, `docs/instancias/roi/README.md`)
+
+| Plataforma | Slug | Tipo | Eventos que entram no funil | Fluxos ativos na ROI |
+| --- | --- | --- | --- | --- |
+| Sellflux | `sellflux` | Webhook (tags) + mapper | Cadência Iniciada, Mensagem Enviada, Mensagem Falhou, Conectado | 27 |
+| Digisac | `digisac` | Via n8n | Contato Criado no WhatsApp, Mensagem Enviada | 4 |
+| Asaas | `asaas` | Webhook + mapper | Cobrança Criada, Pagamento Confirmado | 3 |
+| Gerador de Links | `gerador-links` | Via n8n ou leitura do Supabase | Venda Registrada, Venda Concluída, Reembolso Solicitado | 3 |
+| ManyChat | `manychat` | Webhook + mapper | Conversa Iniciada, Lead Triado | 2 |
+| Applyfy | `applyfy` | Webhook + mapper | Compra Aprovada, Reembolso | 1 |
+| ClickSign | `clicksign` | Webhook + mapper | Contrato Enviado, Contrato Assinado | 1 |
+| GreatPages | `greatpages` | Webhook + mapper | Formulário Respondido, Aplicação Enviada | 1 |
+| YayForms | `yayforms` | Webhook + mapper | Formulário Respondido | 1 |
+| UnniChat | `unnichat` | Via n8n | Mensagem Enviada, Respondeu | 1 |
+| WordPress (formulário) | `wordpress` | Webhook do plugin de formulário | Formulário Respondido, Aplicação Enviada | 1 |
+
 Não são conectores: GitHub, Miro. Saídas (não entrada): Slack, e-mail, webhook de saída.
 
 ## Formato do mapper (rascunho, fechar na Fase 0)

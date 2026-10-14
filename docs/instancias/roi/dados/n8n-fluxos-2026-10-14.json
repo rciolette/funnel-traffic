@@ -1,0 +1,3158 @@
+{
+ "fonte": "MCP n8n-RoiVentures, search_workflows, somente leitura",
+ "coletadoEm": "2026-10-14",
+ "total": 298,
+ "fluxos": [
+  {
+   "id": "zLbAhvduwh3xla4g",
+   "nome": "5️⃣:9️⃣9️⃣ [SELLFLUX] [TAGS] - Refazer '5:99Club'",
+   "ativo": true,
+   "atualizadoEm": "2026-05-22",
+   "criadoEm": "2026-04-24",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "qXLLwLX47ViZwJdH",
+   "nome": "[Acesso Grátis - TOCO] - Mentoria [L06] - Lançamento e Consultoria Estratégica",
+   "ativo": false,
+   "atualizadoEm": "2026-06-23",
+   "criadoEm": "2026-06-22",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "00eyQpTRi8gLc8Lb",
+   "nome": "[AE][IS] North | Levantada de Mão",
+   "ativo": true,
+   "atualizadoEm": "2026-04-06",
+   "criadoEm": "2026-03-20",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "r1BcjnKDMZt4jm5ofWcaI",
+   "nome": "[ANTIGO][ASSINY] [LOOT] - Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2026-02-09",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "DWdCeqObDR0e7F8I",
+   "nome": "[APPLYFY] Compra Aprovada - Funil Nath (Front+OB e UP/DW)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2026-10-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "n625qF39Uno34gUT",
+   "nome": "[Arthur Arantes] Assiny → Supabase (vendas)",
+   "ativo": false,
+   "atualizadoEm": "2026-06-19",
+   "criadoEm": "2026-04-30",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "Fcn0jw69yfDDHZ18",
+   "nome": "[ASSINY] [LOOT] - Assinatura Cancelada e Compra Recusada (Cartão)",
+   "ativo": true,
+   "atualizadoEm": "2026-09-12",
+   "criadoEm": "2026-02-26",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "IjGIisdXwDCSZmVR",
+   "nome": "[ASSINY] [LOOT] - Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-02-23",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "wZcsuUL116Jwv9DV",
+   "nome": "[ASSINY] [NANA GALEAZZI] - Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-01-24",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "EKdX9qSuekPRkHhF",
+   "nome": "[ASSINY] [NANA GALEAZZI] - Reembolso",
+   "ativo": false,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2026-01-24",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "d99eqmYW4TAOBFTs",
+   "nome": "[ASSINY] [ROI Ventures Ltda] - Carrinho Abandonado",
+   "ativo": true,
+   "atualizadoEm": "2026-04-25",
+   "criadoEm": "2026-01-24",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "pDXLyM9lrldly6KG",
+   "nome": "[ASSINY] [ROI Ventures Ltda] - Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-15",
+   "criadoEm": "2026-01-24",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "BDb3qclANRwCCmC8",
+   "nome": "[ASSINY] [ROI Ventures Ltda] - Reembolso",
+   "ativo": false,
+   "atualizadoEm": "2026-05-26",
+   "criadoEm": "2026-01-24",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "SsIoM4TuLH23d9G5",
+   "nome": "[ASSINY] Compra Aprovada - Funil Coelho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-08-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "VqPyFhglqpJJtVNO",
+   "nome": "[Assiny] Compra Aprovada - Mentoria [L06] - Lançamento e Consultoria Estratégica",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-05-07",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "3fNUVohNos9MRYfs",
+   "nome": "[Assiny] Compra Aprovada - Mentoria [L08] - Lançamento e Consultoria Estratégica",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-09-15",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "VohlaCBrn3wXvNVC",
+   "nome": "[ASSINY] Compra Aprovada e Recuperação de Carrinho <> Nath e Tomé",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2025-11-10",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "IxOJImHq2h1rRq4Y",
+   "nome": "[ASSINY] Reembolso Solicitado",
+   "ativo": false,
+   "atualizadoEm": "2026-04-04",
+   "criadoEm": "2025-11-10",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "9oR5w4R5YLhzwSLV",
+   "nome": "[ASSINY][AFILIADOS] Compra Aprovada e Recuperação de Carrinho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2026-02-13",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "WPM29ueUswqbIAeZ",
+   "nome": "[Assiny][Consult & Ment] - Agência ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-10-05",
+   "criadoEm": "2026-10-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "0gAvV7SHdC2pFx01",
+   "nome": "[Assiny][Consult & Ment] - Mentoria ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-07-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "6DmZyVbNmNozUOMi",
+   "nome": "[Assiny][Consult & Ment] - Mentoria ROI Pacote",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-07-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "WReWPl2fIKd371wR",
+   "nome": "[Assiny][Consult & Ment] - Método ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-08-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ZvPCWomr2PFRJnDx",
+   "nome": "[Assiny][Consult & Ment] Compra Aprovada - Consultoria Estratégica",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-07-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "T86EmgUAnQoiAAKH",
+   "nome": "[Assiny][NORTH] - NORTH MARKETING",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-07-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "wy3xgvumLhtEwzY0",
+   "nome": "[ASSINY][ORG][NATH] Compra Aprovada e Recuperação de Carrinho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2025-11-10",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "oyfDoTaqsvsMtmqt",
+   "nome": "[ASSINY][VICTORIA PAZINI] Compra Aprovada e Recuperação de Carrinho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2026-10-09",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "3vSeOEuIOGTeykrB",
+   "nome": "[AUDITORIA] Camada 2 — IA via API (preparado, inativo)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "nBq1dYGAzsetgCt6",
+   "nome": "[AUDITORIA] Duplicidade por telefone · somente leitura",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "criadoEm": "2026-08-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "EOwR2q4gg1Ocy8cZ",
+   "nome": "[Backup][Typeform][Leadscore] Onboarding - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-09-17",
+   "criadoEm": "2026-03-25",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "b4qfwFbHAQXb7d6T",
+   "nome": "[CAKTO] Compra Aprovada - Funil Nath",
+   "ativo": false,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2026-10-02",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "hH73XMxgvX2clSLn",
+   "nome": "[CAKTO] Compra Aprovada - Funil Nath (Front+OB e UP/DW)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2025-10-15",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "jTlr1g75B1TSjrDF",
+   "nome": "[Captura] - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-07-13",
+   "criadoEm": "2026-03-14",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "CuX1wQwWE8CnFXkG",
+   "nome": "[COELHO]",
+   "ativo": false,
+   "atualizadoEm": "2026-09-04",
+   "criadoEm": "2026-09-04",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "FQAYLhEVk0iawpls",
+   "nome": "[Conferências] [MemberClass] - Total de acessos e entregas",
+   "ativo": false,
+   "atualizadoEm": "2026-04-23",
+   "criadoEm": "2026-04-23",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "QaV22aHr4Dr61dBf",
+   "nome": "[Criar Oportunidade SDR] <> Retroativos Funil Coelho 04-14/09/26",
+   "ativo": false,
+   "atualizadoEm": "2026-09-14",
+   "criadoEm": "2026-09-11",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "2OXDlzaFjxzwBLhv",
+   "nome": "[CS] [CLICKSIGN]  Mentoria - Gerar Contrato",
+   "ativo": true,
+   "atualizadoEm": "2026-06-11",
+   "criadoEm": "2026-05-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "pJnKDjJn7PNASS08",
+   "nome": "[CS] [CLICKSIGN]  Mentoria - Gerar Contrato Manual",
+   "ativo": false,
+   "atualizadoEm": "2026-05-28",
+   "criadoEm": "2026-05-13",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "Yk8XJRnZu3E4eYZX",
+   "nome": "[CS] [DOCUSIGN <> MemberKit] Liberar Acesso - Contrato Assinado <> MemberKit",
+   "ativo": true,
+   "atualizadoEm": "2026-07-10",
+   "criadoEm": "2026-05-05",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "HSJ6tkjHYhBgMo9e",
+   "nome": "[CS] [TYPEFORM] FORMULÁRIO ONBOARDING | CS - MENTORIA",
+   "ativo": true,
+   "atualizadoEm": "2026-09-30",
+   "criadoEm": "2026-06-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "kp1vVp5jnRyZdDhw",
+   "nome": "[CS] Criar Acesso MemberKit - Mentoria [TIERS]",
+   "ativo": true,
+   "atualizadoEm": "2026-10-07",
+   "criadoEm": "2026-05-04",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "9ZBK3lOdDPex1yK6",
+   "nome": "[CS] Distribuição Departamentos Digisac",
+   "ativo": true,
+   "atualizadoEm": "2026-05-14",
+   "criadoEm": "2025-10-08",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "AwifH900ty0WoyYa",
+   "nome": "[CS] FORMULÁRIO ONBOARDING | CNPJ - MENTORIA",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-04-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "yIp9gO8FJ778IMGd",
+   "nome": "[CS] FORMULÁRIO ONBOARDING | CS - MENTORIA",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-04-22",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "YVawfJRFKAWzpvfF",
+   "nome": "[CS] Mentoria e Consultoria <> Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "criadoEm": "2026-02-25",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "nQadGLFKVSw07TFS",
+   "nome": "[CS] Remover Acesso MemberKit - Mentoria [TIERS]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-05",
+   "criadoEm": "2026-05-18",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "viFqvZhG2vAUvJ8C",
+   "nome": "[CS][DIGISAC]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-30",
+   "criadoEm": "2026-04-17",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "9IZH9V6bpzJW6YiE",
+   "nome": "[D.S] - [ECONT] GERAR TERMO DE AUTORIZAÇÃO",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-07-09",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "N5GKAbQN1kpbfGuo",
+   "nome": "[D.S] - GERAR CONTRATO ASSESSORIA CONTÁBIL [ECONTBH]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-28",
+   "criadoEm": "2026-06-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "eM3YjY8lUB26EmDL",
+   "nome": "[D.S] - GERAR CONTRATO CONSULTORIA - ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-07-08",
+   "criadoEm": "2026-06-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "uFv5sjTGkaCftyk1",
+   "nome": "[D.S] - GERAR CONTRATO MENTORIA - ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "criadoEm": "2026-05-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "OzfpJAie0Skp6Atv",
+   "nome": "[D.S] - GERAR CONTRATO NORTH PREP CENTER",
+   "ativo": false,
+   "atualizadoEm": "2026-07-10",
+   "criadoEm": "2026-06-05",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "KXgpP1U3GeyIJyvS",
+   "nome": "[D.S] - GERAR CONTRATO STOCK IMPORTAÇÃO",
+   "ativo": false,
+   "atualizadoEm": "2026-07-30",
+   "criadoEm": "2026-07-02",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "FFs6OQoBuIHuftgY",
+   "nome": "[DASH] Sync Digisac → Supabase",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-08-19",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "TFi4ZRPlbE5VFxFU",
+   "nome": "[DASH] Sync Digisac → Supabase copy",
+   "ativo": false,
+   "atualizadoEm": "2026-08-28",
+   "criadoEm": "2026-08-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "CgnOR9G41c6nSGis",
+   "nome": "[Data] Forms de solicitação",
+   "ativo": false,
+   "atualizadoEm": "2026-08-14",
+   "criadoEm": "2026-08-14",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "6Lw4Xtz5Nhd0cZJD",
+   "nome": "[disparo] | [ROISales] - Disparo_RecuperacaoCarrinho [Api Meta]",
+   "ativo": false,
+   "atualizadoEm": "2026-05-19",
+   "criadoEm": "2025-11-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "4CJCBuCXAsWJyeZL",
+   "nome": "[DM][MANYCHAT] Atualiza Negócio pós Triagem - Anúncio DM",
+   "ativo": true,
+   "atualizadoEm": "2026-09-17",
+   "criadoEm": "2026-09-17",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "g8k593bQ1hKmvXwh",
+   "nome": "[DM][MANYCHAT] Error Trigger",
+   "ativo": true,
+   "atualizadoEm": "2026-09-17",
+   "criadoEm": "2026-09-17",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "uToxYFmbQgDuSNBc",
+   "nome": "[DM][MANYCHAT] Leads Anúncio DM > Hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-09-17",
+   "criadoEm": "2026-09-15",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "EKgM6PodWylpMcHv",
+   "nome": "[Docusign] - Assinatura de Contrato Confirmada <> Redirecionar",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "criadoEm": "2026-07-10",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "3fy7ZNpT2tH69e3C",
+   "nome": "[Docusign] - Assinatura de Contrato Confirmada <> Redirecionar copy",
+   "ativo": false,
+   "atualizadoEm": "2026-07-10",
+   "criadoEm": "2026-07-10",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "FDtlOVmzajE7WKlQ",
+   "nome": "[E-CONT] [TYPEFORM] - Levantada de Mão Instagram Nath",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-22",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ardntsNvRM6EKJ0p",
+   "nome": "[E-CONT] [TYPEFORM] - Levantada de Mão Live Econt",
+   "ativo": true,
+   "atualizadoEm": "2026-10-12",
+   "criadoEm": "2026-09-22",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "jSB9bB0PjSKRvkxu",
+   "nome": "[E-CONT] [TYPEFORM] - Levantada de Mão Área de Membros",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-22",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "PSbsTsNliadL8OMb",
+   "nome": "[E-Cont] Backfill Inscritos Live 22/09 (temporario)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-09-22",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "zrtbbm6uxQqglMOk",
+   "nome": "[E-Cont] Reprocessa eventos do fluxo Stock (temporario)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-09-22",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "zWSwFTWe5a0pnVMv",
+   "nome": "[E-Cont][ZOOM] Inscritos na Live - Segmentar",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-09-22",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "vMwvjwUeCMxYng2D",
+   "nome": "[econt base ago) - serviços cnpj <> Perdidos Deal",
+   "ativo": false,
+   "atualizadoEm": "2026-08-27",
+   "criadoEm": "2026-08-27",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "S8ARqnguP6VYclA4",
+   "nome": "[ECONT-BH] - [ASSINY] [CNPJ] Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-07-09",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ti6n6YEW7I6q74TS",
+   "nome": "[ECONT-BH] - [ASSINY] Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-06-01",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "1kDK2gVJh1dmS462",
+   "nome": "[ECONT] - Atualizar Contatos Hubspot <> Planilhas Contabilidade",
+   "ativo": false,
+   "atualizadoEm": "2026-06-16",
+   "criadoEm": "2026-06-09",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "KAB0s8UzDVdh5AFq",
+   "nome": "[ECONT] - Atualizar Contatos Hubspot <> Planilhas Contabilidade SUL",
+   "ativo": true,
+   "atualizadoEm": "2026-07-30",
+   "criadoEm": "2026-07-30",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "WF6C2ovEunso7kFo",
+   "nome": "[ECONT] - Criar Contratos Assessoria Contabil",
+   "ativo": false,
+   "atualizadoEm": "2026-06-10",
+   "criadoEm": "2026-03-19",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "1pOznPyQild7PBL2",
+   "nome": "[econt] - Todas as Assinys",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-06-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "Td8uDRI5Bv00n8Dk",
+   "nome": "[EMAIL] [Econt formulário Preenchido]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2025-03-26",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "f5j7SASWibCeTYhp",
+   "nome": "[fup1] | [ROI-SALES] - Disparo_RecuperacaoCarrinho [Api Meta]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-02",
+   "criadoEm": "2026-02-06",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "nrtfXsKWKqOqgnfC",
+   "nome": "[GERADOR <> Assiny] sale.rembolso — Valida etapa HubSpot (síncrono) [C]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-15",
+   "criadoEm": "2026-07-19",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ZqpeOBo6akQQl9vA",
+   "nome": "[GERADOR] sale.concluded — Valida etapa HubSpot (síncrono) [B]",
+   "ativo": false,
+   "atualizadoEm": "2026-09-23",
+   "criadoEm": "2026-07-15",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "HSvwUAQO3gisevoh",
+   "nome": "[GERADOR] sale.created — Valida etapa HubSpot (síncrono) [A]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-23",
+   "criadoEm": "2026-07-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "TJuqpkxWijglh2Nn",
+   "nome": "[GERADOR] Sincroniza agendamentos (60 min)",
+   "ativo": true,
+   "atualizadoEm": "2026-09-15",
+   "criadoEm": "2026-09-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "UQAPNSyWj2GOraJg",
+   "nome": "[GERADOR][Stock-Asaas] sale.concluded — Valida etapa HubSpot (síncrono) [B]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-08-03",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "y6gmmAWN84q07xJW",
+   "nome": "[GERADOR][Stock-Asaas] sale.created — Valida etapa HubSpot (síncrono) [A]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-08-03",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "S1jtMIyQZWihcFGh",
+   "nome": "[GERADOR][Stock-Asaas] Worker da fila HubSpot [C]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-07",
+   "criadoEm": "2026-08-07",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "iXA17YMgh3hiAsjR",
+   "nome": "[GERAL] Aquecimento BMs API Oficial",
+   "ativo": false,
+   "atualizadoEm": "2026-07-15",
+   "criadoEm": "2026-07-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "r5Cqv9mJZi1ZB1MI",
+   "nome": "[GERAL] Aquecimento BMs API Oficial",
+   "ativo": false,
+   "atualizadoEm": "2026-07-14",
+   "criadoEm": "2026-07-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "gB0tNiJB7J9c8TOV",
+   "nome": "[GERAL] Cria Leads do Formulario Native Ads",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-04-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "🐰 Pablo Coelho"
+   ]
+  },
+  {
+   "id": "5O665snRuFgW7atJ",
+   "nome": "[GERAL] Cria Leads do Formulario Native Ads",
+   "ativo": false,
+   "atualizadoEm": "2026-08-17",
+   "criadoEm": "2026-08-17",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐰 Pablo Coelho"
+   ]
+  },
+  {
+   "id": "686MFW8wnTJlYC18",
+   "nome": "[GreatPages][L08] - Funil de Aplicação",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-09-04",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "w938FUK8KfJBjRxJ",
+   "nome": "[HUBLA] Compra Aprovada - Funil Nath (Front+OB e UP/DW)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2026-09-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "Rp9w37hpCy1szTvQ",
+   "nome": "[IA NANÁ Organico] [Criação & Remoção de Aluno MemberKit]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "criadoEm": "2025-09-23",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "YbCn46ocr39gGWMa",
+   "nome": "[IA NANÁ] [Criação & Remoção de Aluno MemberKit]",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2025-07-08",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "taDllvm3susDmVVP",
+   "nome": "[IA TOME] [Criação & Remoção de Aluno MemberKit]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "criadoEm": "2025-07-08",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "tLo37ZGMpRnVXxwD",
+   "nome": "[IA] - Chat Forecast",
+   "ativo": true,
+   "atualizadoEm": "2026-08-11",
+   "criadoEm": "2026-08-09",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "qNrfIzm6pktc3J1d",
+   "nome": "[IA] IMAP - Suporte Email",
+   "ativo": false,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2025-12-04",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "QfAaj6f1oo8LE4lY",
+   "nome": "[IMPORTACAO] CLIENTES <> PRODUTOS COMPRADOS",
+   "ativo": false,
+   "atualizadoEm": "2026-06-30",
+   "criadoEm": "2026-06-30",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "onQco8DyHV4wHzME",
+   "nome": "[IMPORTACAO] Inscritos na Live Mentoria ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-24",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "mGhNpEZOIJlWEPlE",
+   "nome": "[l06] CS - Boas Vindas - Acesso MemberKit - Mentoria",
+   "ativo": true,
+   "atualizadoEm": "2026-06-15",
+   "criadoEm": "2026-05-06",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "EZhMg8vIyQsk4Kfj",
+   "nome": "[l07] CS - Acesso MemberKit - Método ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-08-07",
+   "criadoEm": "2026-08-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "pH43wgM3YPrQwy1H",
+   "nome": "[l07] CS - Acesso MemberKit - Método ROI + Extenção",
+   "ativo": true,
+   "atualizadoEm": "2026-08-07",
+   "criadoEm": "2026-08-07",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "MHiaWi849bEGMwmW",
+   "nome": "[L08] [Captura] - VDV",
+   "ativo": true,
+   "atualizadoEm": "2026-09-30",
+   "criadoEm": "2026-09-21",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "vUIQVjzWkXmONLvx",
+   "nome": "[L08] [SENDFLOW] Entrou no Grupo - Lançamento",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "YCT8pd0aqMytmOQc",
+   "nome": "[L08] [TYPEFORM] [TRÁFEGO | CANAL INTERNO | DISPAROS] Pesquisas Lançamento",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-09",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🐰 Pablo Coelho"
+   ]
+  },
+  {
+   "id": "NikudbZ3SpSi9Ts5",
+   "nome": "[L08] [TYPEFORM][TRÁFEGO] Pesquisas Lançamento",
+   "ativo": false,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-09-10",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "xaYBd2Epq4KrEAda",
+   "nome": "[LAUNCH] [GREATPAGES] - Captação Oportunidades",
+   "ativo": false,
+   "atualizadoEm": "2026-09-07",
+   "criadoEm": "2026-01-12",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "5MgNkOQIa39mBFIP",
+   "nome": "[LAUNCH] Entrou no Grupo",
+   "ativo": false,
+   "atualizadoEm": "2026-04-17",
+   "criadoEm": "2026-04-14",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "do9pfMqBcCMmh4QW",
+   "nome": "[LAUNCH] Mentoria <> Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-02-25",
+   "criadoEm": "2026-01-30",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "BG1bnnF4AZgbiNeY",
+   "nome": "[LAUNCH][CAPTAÇÃO][MEMBERCLASS] → Entregas Launch L06",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-04-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "2GSF8I2Lh9pNEU08",
+   "nome": "[Launch][Pesquisa][Canal Interno] Pesquisa Respondida - Canal Interno",
+   "ativo": false,
+   "atualizadoEm": "2026-04-17",
+   "criadoEm": "2026-04-17",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "J5AJMWOA32SbLsnT",
+   "nome": "[Launch][Pesquisa][Tráfego] Pesquisa Respondida - Tráfego",
+   "ativo": false,
+   "atualizadoEm": "2026-04-17",
+   "criadoEm": "2026-04-17",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "2V3UyX1caG3YHJx3",
+   "nome": "[Lead Score][YayForms]Formulário Preenchido -> Hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "criadoEm": "2025-11-12",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "4sWw9oIx7jQLT2ay",
+   "nome": "[link-generator] -> CONVITE NOVO USUÁRIO",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "criadoEm": "2026-07-17",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "zvrXxufnl6rz8fm2",
+   "nome": "[LN] Recuperação",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-01-29",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "XjjflnFDSCIb3T15",
+   "nome": "[LOOT] - Envio de Email",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-09-30",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "KX9xwaNkXHf0CYc6",
+   "nome": "[LOOT] Automação Clickup",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2026-01-15",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "5wXzjE3wKNNsB8Lh",
+   "nome": "[LOOT] Envio de Notificação de Pix",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-11-16",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "EzkVDfR1C5MXxH1C",
+   "nome": "[LOOT] Envio de notificação mockada",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-11-26",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "eoZOwlBRVQk391i2",
+   "nome": "[Mata] Análise Conversões Comercial",
+   "ativo": false,
+   "atualizadoEm": "2026-08-27",
+   "criadoEm": "2026-08-27",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "Bl7mVQa6rfgzXRAa",
+   "nome": "[MemberClass] Assento Vip — Liberar Entrega",
+   "ativo": true,
+   "atualizadoEm": "2026-09-25",
+   "criadoEm": "2026-04-15",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "39rFRh94FuCmV0Yf",
+   "nome": "[MemberClass] Boas Vindas — Liberar Entrega",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "criadoEm": "2026-04-12",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "WbYHNgGbbMIY2Cg5",
+   "nome": "[MemberClass] Froms Onboarding + IniciAmazon - Liberação de Acesso",
+   "ativo": true,
+   "atualizadoEm": "2026-08-28",
+   "criadoEm": "2026-04-13",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "zwt2l5Hyq5JG53WW",
+   "nome": "[MemberClass] IniciAmazon - Remoção de Acesso",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-04-17",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "y4zJARFijFsECnlU",
+   "nome": "[MemberClass] IniciAmazon 2.0 — Liberar Entrega",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-21",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "VrSEUaLSVU9OZY5q",
+   "nome": "[MemberClass] Liberação de Acesso - [Up/DW]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-04-13",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "cuTcuZDFUWHIlykR",
+   "nome": "[MemberClass] ROI_Club — Liberar Entrega Sistema Código F.B.A",
+   "ativo": true,
+   "atualizadoEm": "2026-10-13",
+   "criadoEm": "2026-08-31",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "6u2vtUj69COjja8N",
+   "nome": "[MemberClass] ROI_Club — Liberar Entrega UP/DW Loja Pronta",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "criadoEm": "2026-08-31",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "RnN4JllOA2HzPlFz",
+   "nome": "[MEMBERKIT] Liberação & Remoção de Acesso",
+   "ativo": false,
+   "atualizadoEm": "2026-03-23",
+   "criadoEm": "2025-10-28",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "0hzwYdYsdybbMmlh",
+   "nome": "[new][ROISales] - DASH [Reembolso]",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-05-03",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "BEptSRpBFw8Ogkcw",
+   "nome": "[new][ROISales][DASH][EVENTOS] - Carrinho Abandonado",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-05-03",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "2gn1B3LfIn1kBAlS",
+   "nome": "[new][ROISales][DASH][EVENTOS] - Compra Aprovada Todos",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-05-03",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "Eywn00tyMX92ACHa",
+   "nome": "[new]ROISales - [INLEAD] - Leads Checkout (sem evento)",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-05-03",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "Ni7lG75DxjFm0PBv",
+   "nome": "[North] - Criação de Fatura",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-12-18",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "6lZbODzpdExU1Edb",
+   "nome": "[North] - Webhook Invoice",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-12-16",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "nLUaTLoMyOudjIEk",
+   "nome": "[NORTH] Distribuição Departamentos Digisac",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2025-12-18",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "MCrFkvHuvAqMTahv",
+   "nome": "[NOTIF] Notificador Slack ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-09-07",
+   "criadoEm": "2026-09-07",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "ot372zLrPpGvIsT6",
+   "nome": "[Ntfy] -> Organico Nath",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2025-11-04",
+   "legivelNoMcp": true,
+   "tags": [
+    "👴Arthur M"
+   ]
+  },
+  {
+   "id": "TnMaq6tqYOCsfIE3",
+   "nome": "[off] [Assiny] Compra Aprovada - Mentoria",
+   "ativo": false,
+   "atualizadoEm": "2026-05-07",
+   "criadoEm": "2026-01-23",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "raNrZb2YIxFGcyx4",
+   "nome": "[Onboarding] - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-07-28",
+   "criadoEm": "2026-03-11",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "tpfDaZuS81ihuLOR",
+   "nome": "[Personalizado][Tome][Leadscore] Onboarding Tome - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-04-07",
+   "criadoEm": "2026-04-07",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "g4G2lh7QdKJWcCLn",
+   "nome": "[recuperação] | [ROISales] RecuperacaoCarrinho_AgenteOrquestrador",
+   "ativo": false,
+   "atualizadoEm": "2026-05-26",
+   "criadoEm": "2026-05-05",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "OMMUW76oBBGWrrxL",
+   "nome": "[REEMBOLSO] Assiny - Compra Reembolsada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-09",
+   "criadoEm": "2026-03-03",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "C6teqTHR0r73bO4L",
+   "nome": "[REEMBOLSO] Assiny - Reembolso Solicitado",
+   "ativo": true,
+   "atualizadoEm": "2026-10-09",
+   "criadoEm": "2026-02-19",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "fRiKBxXN4amsaEcP",
+   "nome": "[REEMBOLSO] Atualiza ticket para \"Em Tratamento\"",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2026-03-09",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "olMZUWz1iSdWtq2q",
+   "nome": "[REEMBOLSO] Cakto - Solicitado e Realizado (Funil Nath)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-10-02",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "r9EB6f2rWlyXXIuG",
+   "nome": "[REEMBOLSO] Hubla - Solicitado e Realizado (Funil Nath)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-10-02",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "juCjhOL96C3jBMm3",
+   "nome": "[REEMBOLSO] Hubspot - Reembolso Ticket Aberto",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2026-03-04",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "TzavbDXiD6nm0tvC",
+   "nome": "[REEMBOLSO] Setup formulário Typeform",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "FI7FW27elEQ3AUhE",
+   "nome": "[REEMBOLSO] SLA 48h em Solicitado",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "xpMsxK4hwAPzSHzS",
+   "nome": "[REEMBOLSO] Teste conexão Slack List",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "4xpo5LCxn5WHaob8",
+   "nome": "[REEMBOLSO] Teste conexão Typeform",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "c3lKYfoDQ3LCBbJA",
+   "nome": "[REEMBOLSO] Typeform → Slack List",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "4tRhbwJIDjYianU5",
+   "nome": "[Reversão] Assiny Reembolso solicitado / Realizado -> Hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "criadoEm": "2025-04-07",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "KiaJ7uR9tjqJX9r1",
+   "nome": "[REVOPS] Conciliação Semanal — Gerador × OROS",
+   "ativo": false,
+   "atualizadoEm": "2026-09-07",
+   "criadoEm": "2026-08-08",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "V0YXUS7DLFt1ecb1",
+   "nome": "[ROI] Digisac - Enviar Template",
+   "ativo": false,
+   "atualizadoEm": "2026-08-12",
+   "criadoEm": "2026-08-10",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "8Eucx6s3IPjzY5tI",
+   "nome": "[ROI] Digisac - Save to Sheets",
+   "ativo": false,
+   "atualizadoEm": "2026-09-10",
+   "criadoEm": "2026-09-10",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "CRGF5rQGhcnu8nWl",
+   "nome": "[ROI] Digisac - Structure Mapper",
+   "ativo": false,
+   "atualizadoEm": "2026-09-10",
+   "criadoEm": "2026-09-10",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "RXNXNgwt2rUnvxIM",
+   "nome": "[ROI] Digisac Gateway",
+   "ativo": true,
+   "atualizadoEm": "2026-08-10",
+   "criadoEm": "2026-08-04",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "wWdQckyw1H3kMGZo",
+   "nome": "[ROI] Proxy - API Monitor",
+   "ativo": true,
+   "atualizadoEm": "2026-04-09",
+   "criadoEm": "2026-04-09",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "xJB4zY2g7hj5vH7u",
+   "nome": "[ROI][ALERTA] Falha nos fluxos de tag L08",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-09-24",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "YwXfgLBi5Y0CzIaJ",
+   "nome": "[ROI][L08] ONE-OFF Corrigir tags SendFlow (24/09)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-25",
+   "criadoEm": "2026-09-24",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "RC4ze4v4PT9NB7J1",
+   "nome": "[ROISales] - [DISPARO] [INLEAD] - Leads Checkout (sem compra)",
+   "ativo": false,
+   "atualizadoEm": "2026-02-21",
+   "criadoEm": "2026-02-21",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "PF4Qxs8a5zgjoHHj",
+   "nome": "[ROISales] - DASH [Reembolso]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-12",
+   "criadoEm": "2026-03-05",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "dJnj6Fv0DwCxvEwR",
+   "nome": "[ROISales][DASH][EVENTOS] - Carrinho Abandonado",
+   "ativo": false,
+   "atualizadoEm": "2026-05-31",
+   "criadoEm": "2025-12-15",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ubk8RSlQjzUGJMSw",
+   "nome": "[ROISales][DASH][EVENTOS] - Compra Aprovada Todos",
+   "ativo": false,
+   "atualizadoEm": "2026-07-25",
+   "criadoEm": "2026-04-12",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "CM3PbdqfInmQpHV1",
+   "nome": "[Sellflux <> HubSpot] Manejo de Tags",
+   "ativo": false,
+   "atualizadoEm": "2026-03-11",
+   "criadoEm": "2025-10-12",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "2NFvICSi4hDSCBfY",
+   "nome": "[SELLFLUX] > [ROI CLUB DB]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "criadoEm": "2026-07-31",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "6CjsHINyuWmcI9ze",
+   "nome": "[SELLFLUX] [TAGS] - ae-conectado",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "criadoEm": "2026-06-25",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "kfmjsuGvnuKw41PI",
+   "nome": "[SELLFLUX] [TAGS] - cadencia-iniciada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "jh6ZE3JPDXuVn49s",
+   "nome": "[SELLFLUX] [TAGS] - cadencia-iniciada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-05-27",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "W9bUNhf8JZIEX5LY",
+   "nome": "[SELLFLUX] [TAGS] - econt-cadencia-iniciada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "criadoEm": "2026-07-22",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "FHvgNJGjFZqYvyTD",
+   "nome": "[SELLFLUX] [TAGS] - econt-conectado",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-07-23",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "PyTrhrrRmBlpT7lh",
+   "nome": "[SELLFLUX] [TAGS] - econt-primeira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "criadoEm": "2026-08-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "0tr1Qg2tFjxk5V5i",
+   "nome": "[SELLFLUX] [TAGS] - econt-segunda-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "criadoEm": "2026-08-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "fDmWVgbl7Qqx26mJ",
+   "nome": "[SELLFLUX] [TAGS] - econt-terceira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "criadoEm": "2026-08-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "5P2N7Dv0flYqjlqS",
+   "nome": "[SELLFLUX] [TAGS] - inside-conectado",
+   "ativo": true,
+   "atualizadoEm": "2026-09-01",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "NZtxKklm6cXwX83I",
+   "nome": "[SELLFLUX] [TAGS] - primeira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "iYkJpSRMbr72tezQ",
+   "nome": "[SELLFLUX] [TAGS] - primeira-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "BeIj5njWe0R5Bcyj",
+   "nome": "[SELLFLUX] [TAGS] - quarta-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ENUIRFngFu3aZ2qx",
+   "nome": "[SELLFLUX] [TAGS] - quarta-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "MG9Bfj3cltQKapTk",
+   "nome": "[SELLFLUX] [TAGS] - quinta-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "4BQW2EXYlrrmINnf",
+   "nome": "[SELLFLUX] [TAGS] - quinta-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "sH2SJrsVX4D4jcUk",
+   "nome": "[SELLFLUX] [TAGS] - segunda-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "lCu79ETXHUvLLCP7",
+   "nome": "[SELLFLUX] [TAGS] - segunda-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "wpasZZAPrC3j1Hpl",
+   "nome": "[SELLFLUX] [TAGS] - setima-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "7GGi9oUDLoU63flk",
+   "nome": "[SELLFLUX] [TAGS] - setima-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "CiTtbk1VLSU1U8B3",
+   "nome": "[SELLFLUX] [TAGS] - sexta-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "7iFeP80MdZ0U7HiA",
+   "nome": "[SELLFLUX] [TAGS] - sexta-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "timXMbLkCgSA50tC",
+   "nome": "[SELLFLUX] [TAGS] - terceira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "LsF3SOLHGZ2eypL8",
+   "nome": "[SELLFLUX] [TAGS] - terceira-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-12",
+   "criadoEm": "2026-05-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "tVkAnSYlIiUeFxQr",
+   "nome": "[SELLFLUX] [TAGS] [SESSAO ESTRATEGICA] - cadencia-iniciada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-06-18",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "j3U56Ium0BAONKOY",
+   "nome": "[Sellflux] Lead Perdido",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2025-05-21",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "9XUe8sd7xl1h4RQt",
+   "nome": "[Sellflux] Mensagens Conectadas",
+   "ativo": false,
+   "atualizadoEm": "2026-08-09",
+   "criadoEm": "2025-05-21",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "EJbCEMIP1AzNEUaC",
+   "nome": "[Sellflux] Mensagens Enviadas",
+   "ativo": false,
+   "atualizadoEm": "2026-04-28",
+   "criadoEm": "2025-10-07",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "8n6phqGQBxLONIE9",
+   "nome": "[SendBox] [D.S] - GERAR CONTRATO CONSULTORIA - ROI",
+   "ativo": false,
+   "atualizadoEm": "2026-06-22",
+   "criadoEm": "2026-06-22",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "nzuUNUX6T6cXXAQ1",
+   "nome": "[Sendbox][D.S] - GERAR CONTRATO ASSESSORIA CONTÁBIL [ECONTBH]",
+   "ativo": true,
+   "atualizadoEm": "2026-07-25",
+   "criadoEm": "2026-06-10",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "UeBEst1xm6DPLCZx",
+   "nome": "[Sessão Estratégica] [Captura] - Plano Personalizado",
+   "ativo": false,
+   "atualizadoEm": "2026-07-29",
+   "criadoEm": "2026-07-28",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "i33Pog89xYO2VhmM",
+   "nome": "[Sessão Estratégica] [Entrega] - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "criadoEm": "2026-07-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "uwusoByXHvostOuF",
+   "nome": "[Sessão Estratégica] Reprocess FS Funnel",
+   "ativo": false,
+   "atualizadoEm": "2026-08-12",
+   "criadoEm": "2026-08-10",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "gtotJfdEAfVYccB2",
+   "nome": "[Sessão] Captação de Oportunidades",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2025-09-12",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ECfwiAVWGF2G0WzO",
+   "nome": "[SETUP] ApplyFy - Opcoes de propriedade no HubSpot",
+   "ativo": false,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-10-08",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "o38sErXSUcsfc28u",
+   "nome": "[STOCK] Cria oportunidades inscritos na Live de Importação",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-08-18",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "AbLjjO7QOYSG6H0x",
+   "nome": "[STOCK] Respostas formulário live importação",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-05-25",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "0nIm1jpScA2sZq6d",
+   "nome": "[STOCK][ZOOM] Inscritos na Live - Segmentar",
+   "ativo": false,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-09-24",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "3LUv66tztpu7fDNN",
+   "nome": "[subflow] - Contatos telefone hubpot",
+   "ativo": false,
+   "atualizadoEm": "2026-08-28",
+   "criadoEm": "2026-08-28",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "8QGnYe4L3yKwfJs2",
+   "nome": "[SUPORTE E RETENÇÃO][DASHBOARD V1]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-12",
+   "criadoEm": "2026-04-20",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "Wz2KvSu98dtl23N5",
+   "nome": "[SUPORTE] - BASE REEMBOLSO SOLICITADO",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-01-21",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "SuKMhFZvEbp3oPxX",
+   "nome": "[SUPORTE] [FCR][TPE]",
+   "ativo": false,
+   "atualizadoEm": "2026-07-12",
+   "criadoEm": "2026-07-12",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "r94oGWgCn5a7HMLG",
+   "nome": "[Suporte] [Perpétuo] Enviando Acesso por E-mail",
+   "ativo": false,
+   "atualizadoEm": "2026-03-17",
+   "criadoEm": "2025-05-12",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "XeQXAaDiftWjq1vo",
+   "nome": "[SUPORTE][FCR][TPE] SellFlux",
+   "ativo": false,
+   "atualizadoEm": "2026-08-18",
+   "criadoEm": "2026-07-14",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "wJxvvVTSEOBP9Fzf",
+   "nome": "[TESTE TEMPLATES] [ROI-SALES] - Disparo [Api Meta]",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-01-30",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "uJHAzdJJMMroKzoa",
+   "nome": "[TESTE] email notificação - nao identificado hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-05-26",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "tx3PPC0gTmoBd6H6",
+   "nome": "[TESTE] Entrega IniciAmazon 2.0 - Digisac",
+   "ativo": false,
+   "atualizadoEm": "2026-09-21",
+   "criadoEm": "2026-09-21",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "m9aPeN752pEXY6n4",
+   "nome": "[TESTE] MemberClass Boas Vindas — disparo manual por expert",
+   "ativo": false,
+   "atualizadoEm": "2026-10-08",
+   "criadoEm": "2026-10-08",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "k6lYSUA4qJCVpwfa",
+   "nome": "[Thales] - Integração para dash Leads qualificados",
+   "ativo": false,
+   "atualizadoEm": "2026-06-19",
+   "criadoEm": "2026-06-19",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "HcZXGdxc6E0Ppds3",
+   "nome": "[Typeform][IniciAmazon 2.0] Onboarding - Pesquisa Respondida IniciAmazon 2.0",
+   "ativo": true,
+   "atualizadoEm": "2026-10-13",
+   "criadoEm": "2026-09-21",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "wFnSuQq1PnY5YOd1",
+   "nome": "[Typeform][Nath][Leadscore] Onboarding Nath - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-03-05",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "lpWkYtTl9Ad6CmAA",
+   "nome": "[Typeform][ROI Club] - Funil de Aplicação",
+   "ativo": true,
+   "atualizadoEm": "2026-10-10",
+   "criadoEm": "2026-07-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "JfsnRagGQ6VwTeKR",
+   "nome": "[Typeform][ROI Club] - Funil de Aplicação Coelho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-10",
+   "criadoEm": "2026-08-12",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "5zeLdcD0l9CcWCrD",
+   "nome": "[Typeform][Sessão Estratégica][Captação]  - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-07-28",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "cbcpPM2beDOb67pe",
+   "nome": "[Typeform][Tomé][Leadscore] Onboarding Tomé - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-03-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "j1PEpOM3oEIXVmLI",
+   "nome": "[Typeform][Unificado][Leadscore] Onboarding - Pesquisa Respondida",
+   "ativo": true,
+   "atualizadoEm": "2026-10-13",
+   "criadoEm": "2026-04-16",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "nirePrF67y4yoKWH",
+   "nome": "[UTIL] Reprocessar Execucoes com Erro - Typeform ROI Club",
+   "ativo": false,
+   "atualizadoEm": "2026-09-28",
+   "criadoEm": "2026-09-28",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "t2TxMPaPm5h5gJT2",
+   "nome": "[Util] Sanitizar Email (corrige domínio)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-03",
+   "criadoEm": "2026-09-03",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "TRyMyebGNA7SOcC2",
+   "nome": "[UTIL][L08] UnniChat - Auditoria, Reprocesso e Limpeza",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "criadoEm": "2026-09-28",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "wzY1kqaMVQRRAjYt",
+   "nome": "[V.2][ROI-SALES] - Disparo_RecuperacaoCarrinho",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-02-05",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "xYI5BIHnUHNNFIYL",
+   "nome": "[V.2][ROI-SALES] RecuperacaoCarrinho_AgenteOrquestrador",
+   "ativo": false,
+   "atualizadoEm": "2026-05-04",
+   "criadoEm": "2026-01-29",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "uktgtx1e7l6gd7yx",
+   "nome": "[WordPress][ROI Club] - Funil de Aplicação",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-08-03",
+   "legivelNoMcp": true,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "7nYfjClxutR3lJE8",
+   "nome": "[ZOOM] Roteador de Lives (Importacao x E-cont)",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "criadoEm": "2026-09-24",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "tEXb7VSJHhuyRBrp",
+   "nome": "Acesso MemberKit - atualizar expire_date",
+   "ativo": false,
+   "atualizadoEm": "2026-08-09",
+   "criadoEm": "2026-01-29",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "Fr2NrDAheeNEEVHC",
+   "nome": "Acesso MemberKit - Mentoria",
+   "ativo": false,
+   "atualizadoEm": "2026-05-07",
+   "criadoEm": "2026-01-23",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "R4bkSFkCoWRxBd6Q",
+   "nome": "Agente n8n Sentinel - Workflow Error Notifications",
+   "ativo": false,
+   "atualizadoEm": "2026-09-15",
+   "criadoEm": "2026-03-07",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "tp5YLMf9NYGY1vPQ",
+   "nome": "AJUSTE DE CONTATOS HUBSPOT - LANÇAMENTO",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-01-15",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "QeGU64nBOCg3aKuK",
+   "nome": "API GRÁTIS CONSULTA DADOS CNPJ <> RECEITA FEDERAL",
+   "ativo": false,
+   "atualizadoEm": "2026-06-24",
+   "criadoEm": "2026-06-23",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "J3f6K3DuXAtgQEMc",
+   "nome": "Atualizar Planilha Engajamento 27-05-26",
+   "ativo": false,
+   "atualizadoEm": "2026-05-27",
+   "criadoEm": "2026-05-27",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "sMzlHNBUPEg2dOjj",
+   "nome": "Atualizar Planilha Toco - Lojas <> Origem Hubspot",
+   "ativo": false,
+   "atualizadoEm": "2026-05-18",
+   "criadoEm": "2026-05-18",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "LWTOxBPRxaNTy6M9",
+   "nome": "Atualizar Produtos e Cards clientes Loja Pronta",
+   "ativo": false,
+   "atualizadoEm": "2026-07-20",
+   "criadoEm": "2026-07-20",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "6vpLMw219tiRULK9",
+   "nome": "Auditoria L06 - Assiny <> MemberKit <> Hubspot",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-05-08",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "hgmqZ3KVc8yl2YWb",
+   "nome": "Backup [Sessão Estratégica] [Entrega] - Plano Personalizado",
+   "ativo": false,
+   "atualizadoEm": "2026-07-30",
+   "criadoEm": "2026-07-30",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "zsZ4UuuZuOqIzD7R",
+   "nome": "Captação Sessão Estratégica - SE-F01E01V00TYPEFORM",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "criadoEm": "2026-05-26",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ELAOqbxAVSExH5dA",
+   "nome": "Captação Sessão Estratégica - SE-F01E01V00TYPEFORM",
+   "ativo": false,
+   "atualizadoEm": "2026-05-26",
+   "criadoEm": "2026-05-26",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "8SuAmoK3DCB02f4K",
+   "nome": "Captação-Ralph Leads Live 18/05/26",
+   "ativo": true,
+   "atualizadoEm": "2026-05-18",
+   "criadoEm": "2026-05-18",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "mLYUFQPX3WdSYXNp",
+   "nome": "Carrinho Abandonado Assiny Perpétuo [297]",
+   "ativo": true,
+   "atualizadoEm": "2026-10-07",
+   "criadoEm": "2026-10-07",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "gtoMVA8bozzzCMcz",
+   "nome": "Casos Erros N8N - SWITCH",
+   "ativo": false,
+   "atualizadoEm": "2026-04-10",
+   "criadoEm": "2025-04-18",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "O8GeA9DjfbQbzCIQ",
+   "nome": "Clicksign - Análise DDD Inválido (Dry Run)",
+   "ativo": false,
+   "atualizadoEm": "2026-05-13",
+   "criadoEm": "2026-05-13",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "IBXTLvbn8kGDVrNI",
+   "nome": "Conferencia Leads Forms Onboarding Typeform <> Hubspot",
+   "ativo": false,
+   "atualizadoEm": "2026-08-10",
+   "criadoEm": "2026-06-17",
+   "legivelNoMcp": true,
+   "tags": [
+    "CONFERENCIA",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "NXfgyj2pLIbWzzn7",
+   "nome": "CONFERENCIA PDI",
+   "ativo": false,
+   "atualizadoEm": "2026-06-03",
+   "criadoEm": "2026-06-02",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "2Y0TD2TbAqr5DzL8",
+   "nome": "Contract Generator Engine",
+   "ativo": true,
+   "atualizadoEm": "2026-03-10",
+   "criadoEm": "2026-03-10",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "jseXYGErntY5XZIu",
+   "nome": "controle huggy",
+   "ativo": false,
+   "atualizadoEm": "2026-06-25",
+   "criadoEm": "2026-06-11",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "kojFrbBPuePYsQMN",
+   "nome": "Copiar forms Typeform Pongeluppi <> ROI Ventures",
+   "ativo": false,
+   "atualizadoEm": "2026-05-04",
+   "criadoEm": "2026-05-04",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "blxazIlZ0ZIDl7bX",
+   "nome": "Criar Acesso Giovanna - Digisac",
+   "ativo": false,
+   "atualizadoEm": "2026-08-31",
+   "criadoEm": "2026-08-31",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "KJCAvPPa7ZAC0neU",
+   "nome": "Criar Contatos Hubspot (Base Assiny nao encontrada Hub)",
+   "ativo": false,
+   "atualizadoEm": "2026-07-08",
+   "criadoEm": "2026-06-22",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ADTYrDyEvejPQhSV",
+   "nome": "Digisac - Aplicar Tags Consultoria",
+   "ativo": false,
+   "atualizadoEm": "2026-08-04",
+   "criadoEm": "2026-08-04",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "QhgsnF6XqbNP8XyV",
+   "nome": "Digisac - Exportar Conversas por Cliente",
+   "ativo": false,
+   "atualizadoEm": "2026-08-18",
+   "criadoEm": "2026-06-09",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "CF30LqPyRV95XZ1e",
+   "nome": "DIGISAC <> ASSINY - CRIAÇÃO DE CONTATOS",
+   "ativo": true,
+   "atualizadoEm": "2026-09-12",
+   "criadoEm": "2026-08-10",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "ul35AJwad3chtw3L",
+   "nome": "Envia Leads de pesquisa pro Pixel",
+   "ativo": false,
+   "atualizadoEm": "2026-03-11",
+   "criadoEm": "2026-03-11",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "ZqZmOPw33qXCCOnc",
+   "nome": "FCR Digsac v2",
+   "ativo": false,
+   "atualizadoEm": "2026-08-27",
+   "criadoEm": "2026-06-07",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "Q1OuaYZEC2YzSHvD",
+   "nome": "FCR Digsac — Reprocessar Execuções v2",
+   "ativo": false,
+   "atualizadoEm": "2026-05-08",
+   "criadoEm": "2026-05-08",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "47R8uUbeRrkOthYv",
+   "nome": "FCR Digsac — Tempo Real v9",
+   "ativo": false,
+   "atualizadoEm": "2026-06-09",
+   "criadoEm": "2026-04-30",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "uEUQ38l6hinTduYN",
+   "nome": "FLUXO DE CONFERENCIA TYPEFORM <> HUBSPOT",
+   "ativo": false,
+   "atualizadoEm": "2026-07-22",
+   "criadoEm": "2026-04-09",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "KWnlnJNzTVy7Qq5D",
+   "nome": "HealthScore HubSpot → Google Sheets",
+   "ativo": true,
+   "atualizadoEm": "2026-09-12",
+   "criadoEm": "2026-06-22",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐰 Pablo Coelho"
+   ]
+  },
+  {
+   "id": "4PF4O4WVm3uK22YS",
+   "nome": "L08_SET26 - HubSpot + Google Sheets",
+   "ativo": false,
+   "atualizadoEm": "2026-09-04",
+   "criadoEm": "2026-09-04",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "JRhB9plabVVJ3JfC",
+   "nome": "LeadScore - Lista de Fornecedores - Samuel e Ana",
+   "ativo": false,
+   "atualizadoEm": "2026-03-19",
+   "criadoEm": "2026-03-18",
+   "legivelNoMcp": false,
+   "tags": [
+    "🧙🏽‍♂️ Samuel - ROI"
+   ]
+  },
+  {
+   "id": "Ibb3ddQ6C2ednrx1",
+   "nome": "Loot - Email Lotes",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-11-24",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "mIsqPTpbNPSRttKf",
+   "nome": "Loot - Verificação de Email",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "criadoEm": "2025-11-20",
+   "legivelNoMcp": false,
+   "tags": [
+    "🐺 MANOLO ADSC"
+   ]
+  },
+  {
+   "id": "mq2MFIX3lFSmnKbz",
+   "nome": "My workflow 18",
+   "ativo": false,
+   "atualizadoEm": "2026-04-04",
+   "criadoEm": "2026-04-04",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "bYKaxFi2RvIEThY3",
+   "nome": "My workflow 22",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "criadoEm": "2026-04-20",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "b2WpXF6UnIwryX7e",
+   "nome": "My workflow 24",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-06-18",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "sMsVwNG6DgKwTUH3",
+   "nome": "My workflow 25",
+   "ativo": false,
+   "atualizadoEm": "2026-06-26",
+   "criadoEm": "2026-06-26",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "GqH6eDn7USMqCVMc",
+   "nome": "My workflow 29",
+   "ativo": false,
+   "atualizadoEm": "2026-08-17",
+   "criadoEm": "2026-08-17",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "yLR25c8YbN2ZROSu",
+   "nome": "My workflow 33",
+   "ativo": false,
+   "atualizadoEm": "2026-10-13",
+   "criadoEm": "2026-10-13",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "AeESDDvRhIHJKhpU",
+   "nome": "Odds Copa 2026 - resultados e odds por time",
+   "ativo": false,
+   "atualizadoEm": "2026-06-29",
+   "criadoEm": "2026-06-29",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "PR7fehkwNB5SUfQf",
+   "nome": "REFAZER EXECUÇÕES N8N",
+   "ativo": false,
+   "atualizadoEm": "2026-04-30",
+   "criadoEm": "2026-01-15",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "HnbfDVcTBfOu2J6P",
+   "nome": "Referência Geral - [HubSpot] Leadscore → Entregas MemberClass",
+   "ativo": false,
+   "atualizadoEm": "2026-06-11",
+   "criadoEm": "2026-04-13",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "ZWW83CdIqSQ2nCZI",
+   "nome": "Reprocessar Execuçoes com erro Hubspot Healthscore Sheets",
+   "ativo": false,
+   "atualizadoEm": "2026-09-14",
+   "criadoEm": "2026-09-12",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "EeOrm5Yun09R313a",
+   "nome": "Resumo de Agendamentos SDR (3x ao dia)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "criadoEm": "2026-10-02",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "xLXN8nOsNTw0ewS2",
+   "nome": "Resumo de Vendas — Receita (7h e 13h)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-06",
+   "criadoEm": "2026-10-06",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "4PVNxvv2T7zNZOTC",
+   "nome": "Retroativos 14-15/04[LAUNCH][MEMBERCLASS] → Entregas Launch L06",
+   "ativo": false,
+   "atualizadoEm": "2026-06-08",
+   "criadoEm": "2026-04-15",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "yKH6R7Ue7KViNbK_sc4fG",
+   "nome": "ROI CLUB - WEBHOOK TEST",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2026-02-11",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "bsnQWQm3Rv83abOU",
+   "nome": "ROISales - [INLEAD] - Leads Checkout (sem evento)",
+   "ativo": false,
+   "atualizadoEm": "2026-04-12",
+   "criadoEm": "2026-02-21",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "rEUgkl4bxxaJPZ6G",
+   "nome": "ROISales - Agente Geral",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-02-28",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "nYNkNL0AuVqhpxmV",
+   "nome": "ROISales Base Nova",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2026-05-03",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "O9puCsT4s4cAaLf1",
+   "nome": "ROISales v2 | Sub-Workflow TOMÉ",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "criadoEm": "2025-11-22",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "qd9ux8IDPM9dS3ST",
+   "nome": "SELLFLUX  - Relatório diário",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "criadoEm": "2026-06-01",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "WlrwpTNTc5bOWSXC",
+   "nome": "SELLFLUX - Captação dos dados para os relatórios",
+   "ativo": false,
+   "atualizadoEm": "2026-06-02",
+   "criadoEm": "2026-05-26",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "WNKPIK8jysllFoxj",
+   "nome": "SELLFLUX - Relatório semanal",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "criadoEm": "2026-05-26",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "ptfUzG6b8fdHmWiQ",
+   "nome": "SELLFLUX - Relátorio mensal",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "criadoEm": "2026-05-26",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥶 Artur Oliveira"
+   ]
+  },
+  {
+   "id": "6C0az3Dqpic5EggL",
+   "nome": "solicitacao de reembolso NORTH",
+   "ativo": false,
+   "atualizadoEm": "2026-07-09",
+   "criadoEm": "2026-07-09",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "C5YiuWZKJ6HVFGMU",
+   "nome": "Suporte [MENTORIA] Acesso E-mail",
+   "ativo": true,
+   "atualizadoEm": "2026-07-22",
+   "criadoEm": "2026-01-23",
+   "legivelNoMcp": false,
+   "tags": []
+  },
+  {
+   "id": "xf5CzHWwfcnHdVYj",
+   "nome": "teste memberclass",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "criadoEm": "2026-04-20",
+   "legivelNoMcp": false,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "YJPKHBx6Wu7Lq8h9",
+   "nome": "teste onecode",
+   "ativo": true,
+   "atualizadoEm": "2026-09-04",
+   "criadoEm": "2026-09-03",
+   "legivelNoMcp": true,
+   "tags": [
+    "KLEYTON"
+   ]
+  },
+  {
+   "id": "5uMlF8gt4ryMK8y3",
+   "nome": "todos-eventos-assiny",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "criadoEm": "2025-06-03",
+   "legivelNoMcp": true,
+   "tags": []
+  },
+  {
+   "id": "GumCkzf2cPd58IMS",
+   "nome": "vou mudar o nome - TO ESPERANDO",
+   "ativo": true,
+   "atualizadoEm": "2026-08-04",
+   "criadoEm": "2026-07-31",
+   "legivelNoMcp": false,
+   "tags": [
+    "🥷🏼 MATA"
+   ]
+  },
+  {
+   "id": "4jzvwV2CxDywWtxE",
+   "nome": "🌅 [SENTINELA] Rollup Diário",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-06-11",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🦸‍♀️ Claudet"
+   ]
+  },
+  {
+   "id": "sdoe4FPljcVfEl9Z",
+   "nome": "📊 [SENTINELA] Painel Operacional",
+   "ativo": false,
+   "atualizadoEm": "2026-06-12",
+   "criadoEm": "2026-06-11",
+   "legivelNoMcp": false,
+   "tags": [
+    "🦸‍♀️ Claudet",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "zPHunauhvj6at4vB",
+   "nome": "🚨 [SELLFLUX] [TAGS] - Error Trigger",
+   "ativo": true,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-04-24",
+   "legivelNoMcp": true,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "3TZ6n8KqdnHwgobH",
+   "nome": "🥇 [SELLFLUX] [TAGS] - Refazer Prioridades",
+   "ativo": true,
+   "atualizadoEm": "2026-06-07",
+   "criadoEm": "2026-04-24",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "YjnjVAaofzCsodwZ",
+   "nome": "🧠 [SENTINELA] ACIstente v2 — Classificador de Erros",
+   "ativo": true,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-06-11",
+   "legivelNoMcp": true,
+   "tags": [
+    "🦸‍♀️ Claudet",
+    "🤖 CIOLETTE"
+   ]
+  },
+  {
+   "id": "H0hN2rFeWNF1g2vO",
+   "nome": "🧠 [SENTINELA] ACIstente — Classificador de Erros",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "criadoEm": "2026-06-07",
+   "legivelNoMcp": false,
+   "tags": [
+    "🤖 CIOLETTE",
+    "🦸‍♀️ Claudet"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,423 @@
+{
+  "_sobre": "Regras para classificar os fluxos n8n da instância ROI em conectores e eventos do Funnel Traffic. A primeira regra que casar com o nome vence. Nomes de evento são propostas: o dono do workspace pode trocar. Lido por scripts/mapa-instancia.py.",
+  "papeis": {
+    "entrada": "Gera evento de pessoa que entra no canvas",
+    "entrega": "Libera acesso ou envia algo depois da compra; gera evento de engajamento",
+    "cadencia": "Disparo e cadência de mensagens; gera evento de contato",
+    "saida": "Lê o CRM ou escreve em planilha, Slack, e-mail; não gera evento de pessoa",
+    "infra": "Alerta, auditoria, teste, utilitário; fica fora do Funnel Traffic"
+  },
+  "plataformas": [
+    {
+      "padrao": "error trigger|sentinela|proxy|classificador de erros",
+      "plataforma": "Monitoramento de erros",
+      "conector": null,
+      "categoria": "infra",
+      "papel": "infra",
+      "eventos": []
+    },
+    {
+      "padrao": "clickup",
+      "plataforma": "ClickUp",
+      "conector": null,
+      "categoria": "saida",
+      "papel": "saida",
+      "eventos": []
+    },
+    {
+      "padrao": "fatura|invoice",
+      "plataforma": "Faturamento (North)",
+      "conector": null,
+      "categoria": "saida",
+      "papel": "saida",
+      "eventos": []
+    },
+    {
+      "padrao": "contract generator",
+      "plataforma": "Gerador de contratos",
+      "conector": "docusign",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Contrato Enviado"
+      ]
+    },
+    {
+      "padrao": "levantada de m",
+      "plataforma": "Typeform",
+      "conector": "typeform",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Levantou a Mão"
+      ]
+    },
+    {
+      "padrao": "\\bAPPLYFY\\b",
+      "plataforma": "Applyfy",
+      "conector": "applyfy",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Compra Aprovada",
+        "Reembolso"
+      ]
+    },
+    {
+      "padrao": "\\bHUBLA\\b",
+      "plataforma": "Hubla",
+      "conector": "hubla",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Compra Aprovada",
+        "Reembolso"
+      ]
+    },
+    {
+      "padrao": "\\bCAKTO\\b",
+      "plataforma": "Cakto",
+      "conector": "cakto",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Compra Aprovada",
+        "Reembolso"
+      ]
+    },
+    {
+      "padrao": "asaas",
+      "plataforma": "Asaas",
+      "conector": "asaas",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Cobrança Criada",
+        "Pagamento Confirmado",
+        "Pagamento Recebido"
+      ]
+    },
+    {
+      "padrao": "assiny|carrinho abandonado|econt\\] - todas",
+      "plataforma": "Assiny",
+      "conector": "assiny",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Compra Aprovada",
+        "PIX Gerado",
+        "Carrinho Abandonado",
+        "Compra Recusada",
+        "Reembolso",
+        "Assinatura Cancelada"
+      ]
+    },
+    {
+      "padrao": "\\bGERADOR\\b|link-generator",
+      "plataforma": "Gerador de Links",
+      "conector": "gerador-links",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Venda Registrada",
+        "Venda Concluída",
+        "Reembolso Solicitado"
+      ]
+    },
+    {
+      "padrao": "yayforms",
+      "plataforma": "YayForms",
+      "conector": "yayforms",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Formulário Respondido"
+      ]
+    },
+    {
+      "padrao": "typeform",
+      "plataforma": "Typeform",
+      "conector": "typeform",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Formulário Respondido",
+        "Levantou a Mão",
+        "Aplicação Enviada"
+      ]
+    },
+    {
+      "padrao": "greatpages",
+      "plataforma": "GreatPages",
+      "conector": "greatpages",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Formulário Respondido",
+        "Aplicação Enviada"
+      ]
+    },
+    {
+      "padrao": "wordpress",
+      "plataforma": "WordPress",
+      "conector": "wordpress",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Formulário Respondido",
+        "Aplicação Enviada"
+      ]
+    },
+    {
+      "padrao": "native ads",
+      "plataforma": "Native Ads (formulário)",
+      "conector": "webhook",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Lead Captado"
+      ]
+    },
+    {
+      "padrao": "\\[captura\\]|captação|captacao",
+      "plataforma": "Página de captura",
+      "conector": "webhook",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Lead Captado"
+      ]
+    },
+    {
+      "padrao": "manychat|\\[DM\\]",
+      "plataforma": "ManyChat (Direct)",
+      "conector": "manychat",
+      "categoria": "captura",
+      "papel": "entrada",
+      "eventos": [
+        "Conversa Iniciada",
+        "Lead Triado"
+      ]
+    },
+    {
+      "padrao": "sendflow",
+      "plataforma": "SendFlow",
+      "conector": "sendflow",
+      "categoria": "engajamento",
+      "papel": "entrada",
+      "eventos": [
+        "Entrou no Grupo",
+        "Saiu do Grupo"
+      ]
+    },
+    {
+      "padrao": "unnichat",
+      "plataforma": "UnniChat",
+      "conector": "unnichat",
+      "categoria": "engajamento",
+      "papel": "cadencia",
+      "eventos": [
+        "Mensagem Enviada",
+        "Respondeu"
+      ]
+    },
+    {
+      "padrao": "sellflux",
+      "plataforma": "Sellflux",
+      "conector": "sellflux",
+      "categoria": "engajamento",
+      "papel": "cadencia",
+      "eventos": [
+        "Cadência Iniciada",
+        "Mensagem Enviada",
+        "Mensagem Falhou",
+        "Conectado"
+      ]
+    },
+    {
+      "padrao": "digisac",
+      "plataforma": "Digisac",
+      "conector": "digisac",
+      "categoria": "engajamento",
+      "papel": "cadencia",
+      "eventos": [
+        "Contato Criado no WhatsApp",
+        "Mensagem Enviada"
+      ]
+    },
+    {
+      "padrao": "zoom|live",
+      "plataforma": "Zoom",
+      "conector": "zoom",
+      "categoria": "reuniao",
+      "papel": "entrada",
+      "eventos": [
+        "Inscreveu-se na Live",
+        "Entrou na Live"
+      ]
+    },
+    {
+      "padrao": "memberclass",
+      "plataforma": "MemberClass",
+      "conector": "memberclass",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Acesso Liberado",
+        "Acesso Removido"
+      ]
+    },
+    {
+      "padrao": "memberkit",
+      "plataforma": "MemberKit",
+      "conector": "memberkit",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Acesso Liberado",
+        "Acesso Removido"
+      ]
+    },
+    {
+      "padrao": "clicksign",
+      "plataforma": "ClickSign",
+      "conector": "clicksign",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Contrato Enviado",
+        "Contrato Assinado"
+      ]
+    },
+    {
+      "padrao": "docusign|\\[D\\.S\\]|contrato",
+      "plataforma": "DocuSign",
+      "conector": "docusign",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Contrato Enviado",
+        "Contrato Assinado"
+      ]
+    },
+    {
+      "padrao": "onboarding|plano personalizado",
+      "plataforma": "Typeform",
+      "conector": "typeform",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Onboarding Respondido",
+        "Plano Entregue"
+      ]
+    },
+    {
+      "padrao": "\\[sessão\\]|sessão estratégica|sessao estrategica",
+      "plataforma": "Sessão Estratégica",
+      "conector": "hubspot",
+      "categoria": "crm",
+      "papel": "entrada",
+      "eventos": [
+        "Oportunidade Criada"
+      ]
+    },
+    {
+      "padrao": "reembolso",
+      "plataforma": "Suporte de reembolso",
+      "conector": "n8n",
+      "categoria": "vendas",
+      "papel": "entrada",
+      "eventos": [
+        "Reembolso Solicitado"
+      ]
+    },
+    {
+      "padrao": "resumo|notif|ntfy|alerta|error trigger|slack",
+      "plataforma": "Notificação",
+      "conector": null,
+      "categoria": "saida",
+      "papel": "saida",
+      "eventos": []
+    },
+    {
+      "padrao": "sheets|planilha|healthscore|dashboard|\\[DASH\\]|\\[IA\\]",
+      "plataforma": "Relatório / sincronização",
+      "conector": null,
+      "categoria": "saida",
+      "papel": "saida",
+      "eventos": []
+    },
+    {
+      "padrao": "auditoria|\\[UTIL\\]|teste|test\\b|vou mudar|my workflow|copy",
+      "plataforma": "Utilitário / teste",
+      "conector": null,
+      "categoria": "infra",
+      "papel": "infra",
+      "eventos": []
+    },
+    {
+      "padrao": "suporte|\\[CS\\]|email|e-mail",
+      "plataforma": "Suporte / CS",
+      "conector": "n8n",
+      "categoria": "entrega",
+      "papel": "entrega",
+      "eventos": [
+        "Atendimento Registrado"
+      ]
+    }
+  ],
+  "negocios": [
+    {
+      "padrao": "reembolso|reversão|reversao|suporte",
+      "negocio": "Transversal (reembolso e suporte)"
+    },
+    {
+      "padrao": "e-?cont|econt",
+      "negocio": "E-cont"
+    },
+    {
+      "padrao": "\\bloot\\b",
+      "negocio": "Loot"
+    },
+    {
+      "padrao": "\\bnorth\\b",
+      "negocio": "North"
+    },
+    {
+      "padrao": "stock|importa",
+      "negocio": "Importação (Stock)"
+    },
+    {
+      "padrao": "iniciamazon|nath|tomé|tome\\b|victoria pazini|afiliados|perpétuo|perpetuo|\\[297\\]",
+      "negocio": "IniciAmazon / Perpétuo"
+    },
+    {
+      "padrao": "roi.?club|5:99",
+      "negocio": "ROI Club"
+    },
+    {
+      "padrao": "\\[L0?\\d+\\]|\\bL0\\d\\b|lançamento|lancamento",
+      "negocio": "Lançamentos (L06–L08)"
+    },
+    {
+      "padrao": "sessão estratégica|sessao estrategica|\\[sessão\\]",
+      "negocio": "Sessão Estratégica"
+    },
+    {
+      "padrao": "consult|mentoria|método roi|metodo roi|agência roi|agencia roi",
+      "negocio": "Consultoria & Mentoria"
+    },
+    {
+      "padrao": "interno|infraestrutura|transversal|revops|placar|dashboard",
+      "negocio": "Interno / transversal"
+    },
+    {
+      "padrao": "cadência inside|cadencia inside",
+      "negocio": "Cadência Inside / E-cont"
+    },
+    {
+      "padrao": "vendas ae",
+      "negocio": "Vendas AE (pipeline extinto)"
+    }
+  ]
+}

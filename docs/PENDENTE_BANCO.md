@@ -20,6 +20,8 @@ Seed local (`supabase/seed.sql`): dono de teste, "My Workspace" e "ROI Ventures 
 - Ingestão: `evento_registrar` (dedupe + identidade), retenção de 30 dias do bruto, cron do worker (pg_cron + pg_net).
 - `conector_templates` com o catálogo da Fase 1.
 - Motor (detalhe): `config_eventos_ruido`, `jornada_cache` (`docs/MOTOR.md`).
+- Identidade: tipo `documento` (CPF, só hash) em `identidades.tipo`, se o dono aprovar (pendência R-05 da instância ROI).
+- Instância ROI no `roi-apps`: reescrever a fundação com schema `funnel_traffic` (pendência R-06). Versão de testes local: `npm run instancia:local -- roi`.
 - White label: `conta_marcas`, `conta_dominios`, `conta_limites`, `plataforma_admins`, `acessos_suporte`, `contas.dpa_aceito_em`, `contas.suspensa_em`; funções `marca_por_dominio`, `eh_superadmin`, `conta_criar` (`docs/WHITE_LABEL.md` §8).
 
 ## Dados de teste

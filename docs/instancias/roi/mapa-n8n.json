@@ -1,0 +1,6434 @@
+{
+ "geradoEm": "2026-10-14",
+ "fonte": "MCP n8n-RoiVentures, search_workflows, somente leitura",
+ "totais": {
+  "fluxos": 298,
+  "ativos": 152,
+  "naoClassificadosAtivos": 1
+ },
+ "porPapelAtivos": {
+  "entrada": 70,
+  "cadencia": 32,
+  "entrega": 29,
+  "saida": 13,
+  "infra": 7,
+  "nao_classificado": 1
+ },
+ "porNegocioAtivos": {
+  "E-cont": 34,
+  "IniciAmazon / Perpétuo": 20,
+  "Consultoria & Mentoria": 19,
+  "Sem negócio identificado": 14,
+  "Lançamentos (L06–L08)": 13,
+  "Transversal (reembolso e suporte)": 12,
+  "ROI Club": 9,
+  "Interno / transversal": 9,
+  "North": 6,
+  "Importação (Stock)": 6,
+  "Sessão Estratégica": 5,
+  "Loot": 4,
+  "Vendas AE (pipeline extinto)": 1
+ },
+ "conectores": [
+  {
+   "conector": "sellflux",
+   "plataforma": "Sellflux",
+   "noCatalogo": false,
+   "fluxos": 27,
+   "negocios": [
+    "E-cont",
+    "ROI Club",
+    "Sem negócio identificado",
+    "Sessão Estratégica",
+    "Vendas AE (pipeline extinto)"
+   ],
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ]
+  },
+  {
+   "conector": "assiny",
+   "plataforma": "Assiny",
+   "noCatalogo": true,
+   "fluxos": 26,
+   "negocios": [
+    "Consultoria & Mentoria",
+    "E-cont",
+    "IniciAmazon / Perpétuo",
+    "Lançamentos (L06–L08)",
+    "Loot",
+    "North",
+    "Sem negócio identificado",
+    "Transversal (reembolso e suporte)"
+   ],
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ]
+  },
+  {
+   "conector": "typeform",
+   "plataforma": "Typeform",
+   "noCatalogo": true,
+   "fluxos": 17,
+   "negocios": [
+    "Consultoria & Mentoria",
+    "E-cont",
+    "IniciAmazon / Perpétuo",
+    "Lançamentos (L06–L08)",
+    "North",
+    "ROI Club",
+    "Sessão Estratégica",
+    "Transversal (reembolso e suporte)"
+   ],
+   "eventos": [
+    "Levantou a Mão",
+    "Formulário Respondido",
+    "Aplicação Enviada",
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ]
+  },
+  {
+   "conector": "memberclass",
+   "plataforma": "MemberClass",
+   "noCatalogo": true,
+   "fluxos": 8,
+   "negocios": [
+    "IniciAmazon / Perpétuo",
+    "Lançamentos (L06–L08)",
+    "ROI Club"
+   ],
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ]
+  },
+  {
+   "conector": "docusign",
+   "plataforma": "DocuSign",
+   "noCatalogo": true,
+   "fluxos": 7,
+   "negocios": [
+    "Consultoria & Mentoria",
+    "E-cont",
+    "Sem negócio identificado"
+   ],
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ]
+  },
+  {
+   "conector": "n8n",
+   "plataforma": "Suporte / CS",
+   "noCatalogo": true,
+   "fluxos": 7,
+   "negocios": [
+    "E-cont",
+    "Loot",
+    "Transversal (reembolso e suporte)"
+   ],
+   "eventos": [
+    "Atendimento Registrado",
+    "Reembolso Solicitado"
+   ]
+  },
+  {
+   "conector": "memberkit",
+   "plataforma": "MemberKit",
+   "noCatalogo": true,
+   "fluxos": 6,
+   "negocios": [
+    "Consultoria & Mentoria",
+    "Lançamentos (L06–L08)"
+   ],
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ]
+  },
+  {
+   "conector": "webhook",
+   "plataforma": "Página de captura",
+   "noCatalogo": true,
+   "fluxos": 5,
+   "negocios": [
+    "E-cont",
+    "Lançamentos (L06–L08)",
+    "Sem negócio identificado",
+    "Sessão Estratégica"
+   ],
+   "eventos": [
+    "Lead Captado"
+   ]
+  },
+  {
+   "conector": "zoom",
+   "plataforma": "Zoom",
+   "noCatalogo": true,
+   "fluxos": 5,
+   "negocios": [
+    "E-cont",
+    "Importação (Stock)"
+   ],
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ]
+  },
+  {
+   "conector": "digisac",
+   "plataforma": "Digisac",
+   "noCatalogo": false,
+   "fluxos": 4,
+   "negocios": [
+    "Interno / transversal",
+    "North",
+    "Sem negócio identificado"
+   ],
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ]
+  },
+  {
+   "conector": "gerador-links",
+   "plataforma": "Gerador de Links",
+   "noCatalogo": false,
+   "fluxos": 3,
+   "negocios": [
+    "Consultoria & Mentoria",
+    "Interno / transversal"
+   ],
+   "eventos": [
+    "Venda Registrada",
+    "Venda Concluída",
+    "Reembolso Solicitado"
+   ]
+  },
+  {
+   "conector": "asaas",
+   "plataforma": "Asaas",
+   "noCatalogo": false,
+   "fluxos": 3,
+   "negocios": [
+    "Importação (Stock)"
+   ],
+   "eventos": [
+    "Cobrança Criada",
+    "Pagamento Confirmado",
+    "Pagamento Recebido"
+   ]
+  },
+  {
+   "conector": "cakto",
+   "plataforma": "Cakto",
+   "noCatalogo": true,
+   "fluxos": 2,
+   "negocios": [
+    "IniciAmazon / Perpétuo",
+    "Transversal (reembolso e suporte)"
+   ],
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ]
+  },
+  {
+   "conector": "manychat",
+   "plataforma": "ManyChat (Direct)",
+   "noCatalogo": false,
+   "fluxos": 2,
+   "negocios": [
+    "Sem negócio identificado"
+   ],
+   "eventos": [
+    "Conversa Iniciada",
+    "Lead Triado"
+   ]
+  },
+  {
+   "conector": "hubla",
+   "plataforma": "Hubla",
+   "noCatalogo": true,
+   "fluxos": 2,
+   "negocios": [
+    "IniciAmazon / Perpétuo",
+    "Transversal (reembolso e suporte)"
+   ],
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ]
+  },
+  {
+   "conector": "applyfy",
+   "plataforma": "Applyfy",
+   "noCatalogo": false,
+   "fluxos": 1,
+   "negocios": [
+    "IniciAmazon / Perpétuo"
+   ],
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ]
+  },
+  {
+   "conector": "clicksign",
+   "plataforma": "ClickSign",
+   "noCatalogo": false,
+   "fluxos": 1,
+   "negocios": [
+    "Consultoria & Mentoria"
+   ],
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ]
+  },
+  {
+   "conector": "greatpages",
+   "plataforma": "GreatPages",
+   "noCatalogo": false,
+   "fluxos": 1,
+   "negocios": [
+    "Lançamentos (L06–L08)"
+   ],
+   "eventos": [
+    "Formulário Respondido",
+    "Aplicação Enviada"
+   ]
+  },
+  {
+   "conector": "sendflow",
+   "plataforma": "SendFlow",
+   "noCatalogo": true,
+   "fluxos": 1,
+   "negocios": [
+    "Lançamentos (L06–L08)"
+   ],
+   "eventos": [
+    "Entrou no Grupo",
+    "Saiu do Grupo"
+   ]
+  },
+  {
+   "conector": "yayforms",
+   "plataforma": "YayForms",
+   "noCatalogo": false,
+   "fluxos": 1,
+   "negocios": [
+    "IniciAmazon / Perpétuo"
+   ],
+   "eventos": [
+    "Formulário Respondido"
+   ]
+  },
+  {
+   "conector": "unnichat",
+   "plataforma": "UnniChat",
+   "noCatalogo": false,
+   "fluxos": 1,
+   "negocios": [
+    "Lançamentos (L06–L08)"
+   ],
+   "eventos": [
+    "Mensagem Enviada",
+    "Respondeu"
+   ]
+  },
+  {
+   "conector": "wordpress",
+   "plataforma": "WordPress",
+   "noCatalogo": false,
+   "fluxos": 1,
+   "negocios": [
+    "ROI Club"
+   ],
+   "eventos": [
+    "Formulário Respondido",
+    "Aplicação Enviada"
+   ]
+  }
+ ],
+ "fluxos": [
+  {
+   "id": "zLbAhvduwh3xla4g",
+   "nome": "5️⃣:9️⃣9️⃣ [SELLFLUX] [TAGS] - Refazer '5:99Club'",
+   "ativo": true,
+   "atualizadoEm": "2026-05-22",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 31,
+    "erro": 0,
+    "ultima": "2026-09-29T20:10:52Z"
+   }
+  },
+  {
+   "id": "qXLLwLX47ViZwJdH",
+   "nome": "[Acesso Grátis - TOCO] - Mentoria [L06] - Lançamento e Consultoria Estratégica",
+   "ativo": false,
+   "atualizadoEm": "2026-06-23",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "00eyQpTRi8gLc8Lb",
+   "nome": "[AE][IS] North | Levantada de Mão",
+   "ativo": true,
+   "atualizadoEm": "2026-04-06",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Levantou a Mão"
+   ],
+   "negocio": "North",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "r1BcjnKDMZt4jm5ofWcaI",
+   "nome": "[ANTIGO][ASSINY] [LOOT] - Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "DWdCeqObDR0e7F8I",
+   "nome": "[APPLYFY] Compra Aprovada - Funil Nath (Front+OB e UP/DW)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Applyfy",
+   "conector": "applyfy",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "n625qF39Uno34gUT",
+   "nome": "[Arthur Arantes] Assiny → Supabase (vendas)",
+   "ativo": false,
+   "atualizadoEm": "2026-06-19",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Fcn0jw69yfDDHZ18",
+   "nome": "[ASSINY] [LOOT] - Assinatura Cancelada e Compra Recusada (Cartão)",
+   "ativo": true,
+   "atualizadoEm": "2026-09-12",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Loot",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 192,
+    "erro": 43,
+    "ultima": "2026-09-29T18:32:11.172Z"
+   }
+  },
+  {
+   "id": "IjGIisdXwDCSZmVR",
+   "nome": "[ASSINY] [LOOT] - Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Loot",
+   "noInventario2909": true,
+   "divergenciasAltas": 3,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 2,
+    "ultima": "2026-09-29T19:08:33.065Z"
+   }
+  },
+  {
+   "id": "wZcsuUL116Jwv9DV",
+   "nome": "[ASSINY] [NANA GALEAZZI] - Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "EKdX9qSuekPRkHhF",
+   "nome": "[ASSINY] [NANA GALEAZZI] - Reembolso",
+   "ativo": false,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "d99eqmYW4TAOBFTs",
+   "nome": "[ASSINY] [ROI Ventures Ltda] - Carrinho Abandonado",
+   "ativo": true,
+   "atualizadoEm": "2026-04-25",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 1,
+    "ultima": "2026-09-29T19:52:47.266Z"
+   }
+  },
+  {
+   "id": "pDXLyM9lrldly6KG",
+   "nome": "[ASSINY] [ROI Ventures Ltda] - Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-15",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "BDb3qclANRwCCmC8",
+   "nome": "[ASSINY] [ROI Ventures Ltda] - Reembolso",
+   "ativo": false,
+   "atualizadoEm": "2026-05-26",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "SsIoM4TuLH23d9G5",
+   "nome": "[ASSINY] Compra Aprovada - Funil Coelho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 133,
+    "erro": 7,
+    "ultima": "2026-09-28T21:58:58.484Z"
+   }
+  },
+  {
+   "id": "VqPyFhglqpJJtVNO",
+   "nome": "[Assiny] Compra Aprovada - Mentoria [L06] - Lançamento e Consultoria Estratégica",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 99,
+    "erro": 1,
+    "ultima": "2026-09-29T19:08:36.183Z"
+   }
+  },
+  {
+   "id": "3fNUVohNos9MRYfs",
+   "nome": "[Assiny] Compra Aprovada - Mentoria [L08] - Lançamento e Consultoria Estratégica",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 2,
+    "erro": 2,
+    "ultima": "2026-09-15T17:58:02.144Z"
+   }
+  },
+  {
+   "id": "VohlaCBrn3wXvNVC",
+   "nome": "[ASSINY] Compra Aprovada e Recuperação de Carrinho <> Nath e Tomé",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 2,
+    "ultima": "2026-09-29T19:33:30.636Z"
+   }
+  },
+  {
+   "id": "IxOJImHq2h1rRq4Y",
+   "nome": "[ASSINY] Reembolso Solicitado",
+   "ativo": false,
+   "atualizadoEm": "2026-04-04",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "9oR5w4R5YLhzwSLV",
+   "nome": "[ASSINY][AFILIADOS] Compra Aprovada e Recuperação de Carrinho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": 3,
+    "erro": 0,
+    "ultima": "2026-08-30T01:57:38.366Z"
+   }
+  },
+  {
+   "id": "WPM29ueUswqbIAeZ",
+   "nome": "[Assiny][Consult & Ment] - Agência ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-10-05",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "0gAvV7SHdC2pFx01",
+   "nome": "[Assiny][Consult & Ment] - Mentoria ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 67,
+    "erro": 10,
+    "ultima": "2026-09-29T19:24:58.929Z"
+   }
+  },
+  {
+   "id": "6DmZyVbNmNozUOMi",
+   "nome": "[Assiny][Consult & Ment] - Mentoria ROI Pacote",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 22,
+    "erro": 0,
+    "ultima": "2026-09-29T20:08:18.708Z"
+   }
+  },
+  {
+   "id": "WReWPl2fIKd371wR",
+   "nome": "[Assiny][Consult & Ment] - Método ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 2,
+    "erro": 0,
+    "ultima": "2026-09-29T09:59:48.344Z"
+   }
+  },
+  {
+   "id": "ZvPCWomr2PFRJnDx",
+   "nome": "[Assiny][Consult & Ment] Compra Aprovada - Consultoria Estratégica",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 13,
+    "erro": 0,
+    "ultima": "2026-09-29T16:57:01.871Z"
+   }
+  },
+  {
+   "id": "T86EmgUAnQoiAAKH",
+   "nome": "[Assiny][NORTH] - NORTH MARKETING",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "North",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 56,
+    "erro": 2,
+    "ultima": "2026-09-29T15:57:01.421Z"
+   }
+  },
+  {
+   "id": "wy3xgvumLhtEwzY0",
+   "nome": "[ASSINY][ORG][NATH] Compra Aprovada e Recuperação de Carrinho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 3,
+    "ultima": "2026-09-29T13:52:00.176Z"
+   }
+  },
+  {
+   "id": "oyfDoTaqsvsMtmqt",
+   "nome": "[ASSINY][VICTORIA PAZINI] Compra Aprovada e Recuperação de Carrinho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "3vSeOEuIOGTeykrB",
+   "nome": "[AUDITORIA] Camada 2 — IA via API (preparado, inativo)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "nBq1dYGAzsetgCt6",
+   "nome": "[AUDITORIA] Duplicidade por telefone · somente leitura",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": "~120 (maioria 'integrated', ~30 manuais em 30-31/08)",
+    "erro": 3,
+    "ultima": "2026-09-29T14:45:02Z"
+   }
+  },
+  {
+   "id": "EOwR2q4gg1Ocy8cZ",
+   "nome": "[Backup][Typeform][Leadscore] Onboarding - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-09-17",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "b4qfwFbHAQXb7d6T",
+   "nome": "[CAKTO] Compra Aprovada - Funil Nath",
+   "ativo": false,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Cakto",
+   "conector": "cakto",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "hH73XMxgvX2clSLn",
+   "nome": "[CAKTO] Compra Aprovada - Funil Nath (Front+OB e UP/DW)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Cakto",
+   "conector": "cakto",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "jTlr1g75B1TSjrDF",
+   "nome": "[Captura] - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-07-13",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "CuX1wQwWE8CnFXkG",
+   "nome": "[COELHO]",
+   "ativo": false,
+   "atualizadoEm": "2026-09-04",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "FQAYLhEVk0iawpls",
+   "nome": "[Conferências] [MemberClass] - Total de acessos e entregas",
+   "ativo": false,
+   "atualizadoEm": "2026-04-23",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "QaV22aHr4Dr61dBf",
+   "nome": "[Criar Oportunidade SDR] <> Retroativos Funil Coelho 04-14/09/26",
+   "ativo": false,
+   "atualizadoEm": "2026-09-14",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "2OXDlzaFjxzwBLhv",
+   "nome": "[CS] [CLICKSIGN]  Mentoria - Gerar Contrato",
+   "ativo": true,
+   "atualizadoEm": "2026-06-11",
+   "plataforma": "ClickSign",
+   "conector": "clicksign",
+   "noCatalogo": false,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "pJnKDjJn7PNASS08",
+   "nome": "[CS] [CLICKSIGN]  Mentoria - Gerar Contrato Manual",
+   "ativo": false,
+   "atualizadoEm": "2026-05-28",
+   "plataforma": "ClickSign",
+   "conector": "clicksign",
+   "noCatalogo": false,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Yk8XJRnZu3E4eYZX",
+   "nome": "[CS] [DOCUSIGN <> MemberKit] Liberar Acesso - Contrato Assinado <> MemberKit",
+   "ativo": true,
+   "atualizadoEm": "2026-07-10",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 60,
+    "erro": 0,
+    "ultima": "2026-09-28T21:40:16Z"
+   }
+  },
+  {
+   "id": "HSJ6tkjHYhBgMo9e",
+   "nome": "[CS] [TYPEFORM] FORMULÁRIO ONBOARDING | CS - MENTORIA",
+   "ativo": true,
+   "atualizadoEm": "2026-09-30",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 103,
+    "erro": 1,
+    "ultima": "2026-09-29T16:17:49Z"
+   }
+  },
+  {
+   "id": "kp1vVp5jnRyZdDhw",
+   "nome": "[CS] Criar Acesso MemberKit - Mentoria [TIERS]",
+   "ativo": true,
+   "atualizadoEm": "2026-10-07",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "9ZBK3lOdDPex1yK6",
+   "nome": "[CS] Distribuição Departamentos Digisac",
+   "ativo": true,
+   "atualizadoEm": "2026-05-14",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "AwifH900ty0WoyYa",
+   "nome": "[CS] FORMULÁRIO ONBOARDING | CNPJ - MENTORIA",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 3,
+    "erro": 1,
+    "ultima": "2026-09-03T21:18:42Z (manuais)"
+   }
+  },
+  {
+   "id": "yIp9gO8FJ778IMGd",
+   "nome": "[CS] FORMULÁRIO ONBOARDING | CS - MENTORIA",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "YVawfJRFKAWzpvfF",
+   "nome": "[CS] Mentoria e Consultoria <> Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "nQadGLFKVSw07TFS",
+   "nome": "[CS] Remover Acesso MemberKit - Mentoria [TIERS]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-05",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "viFqvZhG2vAUvJ8C",
+   "nome": "[CS][DIGISAC]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-30",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "9IZH9V6bpzJW6YiE",
+   "nome": "[D.S] - [ECONT] GERAR TERMO DE AUTORIZAÇÃO",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 91,
+    "erro": 16,
+    "ultima": "2026-09-29T20:33:19.036Z"
+   }
+  },
+  {
+   "id": "N5GKAbQN1kpbfGuo",
+   "nome": "[D.S] - GERAR CONTRATO ASSESSORIA CONTÁBIL [ECONTBH]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-28",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 1,
+    "erro": 0,
+    "ultima": "2026-09-16T22:33:21Z"
+   }
+  },
+  {
+   "id": "eM3YjY8lUB26EmDL",
+   "nome": "[D.S] - GERAR CONTRATO CONSULTORIA - ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-07-08",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 13,
+    "erro": 0,
+    "ultima": "2026-09-27T20:57:32Z"
+   }
+  },
+  {
+   "id": "uFv5sjTGkaCftyk1",
+   "nome": "[D.S] - GERAR CONTRATO MENTORIA - ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 76,
+    "erro": 0,
+    "ultima": "2026-09-29T16:09:48Z"
+   }
+  },
+  {
+   "id": "OzfpJAie0Skp6Atv",
+   "nome": "[D.S] - GERAR CONTRATO NORTH PREP CENTER",
+   "ativo": false,
+   "atualizadoEm": "2026-07-10",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "North",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "KXgpP1U3GeyIJyvS",
+   "nome": "[D.S] - GERAR CONTRATO STOCK IMPORTAÇÃO",
+   "ativo": false,
+   "atualizadoEm": "2026-07-30",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "FFs6OQoBuIHuftgY",
+   "nome": "[DASH] Sync Digisac → Supabase",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": ">=200 (concentrados em 09-10/09)",
+    "ultima": "2026-09-29T20:38:33Z"
+   }
+  },
+  {
+   "id": "TFi4ZRPlbE5VFxFU",
+   "nome": "[DASH] Sync Digisac → Supabase copy",
+   "ativo": false,
+   "atualizadoEm": "2026-08-28",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "CgnOR9G41c6nSGis",
+   "nome": "[Data] Forms de solicitação",
+   "ativo": false,
+   "atualizadoEm": "2026-08-14",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "6Lw4Xtz5Nhd0cZJD",
+   "nome": "[disparo] | [ROISales] - Disparo_RecuperacaoCarrinho [Api Meta]",
+   "ativo": false,
+   "atualizadoEm": "2026-05-19",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "4CJCBuCXAsWJyeZL",
+   "nome": "[DM][MANYCHAT] Atualiza Negócio pós Triagem - Anúncio DM",
+   "ativo": true,
+   "atualizadoEm": "2026-09-17",
+   "plataforma": "ManyChat (Direct)",
+   "conector": "manychat",
+   "noCatalogo": false,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Conversa Iniciada",
+    "Lead Triado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "g8k593bQ1hKmvXwh",
+   "nome": "[DM][MANYCHAT] Error Trigger",
+   "ativo": true,
+   "atualizadoEm": "2026-09-17",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "uToxYFmbQgDuSNBc",
+   "nome": "[DM][MANYCHAT] Leads Anúncio DM > Hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-09-17",
+   "plataforma": "ManyChat (Direct)",
+   "conector": "manychat",
+   "noCatalogo": false,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Conversa Iniciada",
+    "Lead Triado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "EKgM6PodWylpMcHv",
+   "nome": "[Docusign] - Assinatura de Contrato Confirmada <> Redirecionar",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T16:25:24Z"
+   }
+  },
+  {
+   "id": "3fy7ZNpT2tH69e3C",
+   "nome": "[Docusign] - Assinatura de Contrato Confirmada <> Redirecionar copy",
+   "ativo": false,
+   "atualizadoEm": "2026-07-10",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "FDtlOVmzajE7WKlQ",
+   "nome": "[E-CONT] [TYPEFORM] - Levantada de Mão Instagram Nath",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Levantou a Mão"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 6,
+    "erro": 3,
+    "ultima": "2026-09-29T18:57:54Z"
+   }
+  },
+  {
+   "id": "ardntsNvRM6EKJ0p",
+   "nome": "[E-CONT] [TYPEFORM] - Levantada de Mão Live Econt",
+   "ativo": true,
+   "atualizadoEm": "2026-10-12",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Levantou a Mão"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 100,
+    "erro": 21,
+    "ultima": "2026-09-29T19:50:28Z"
+   }
+  },
+  {
+   "id": "jSB9bB0PjSKRvkxu",
+   "nome": "[E-CONT] [TYPEFORM] - Levantada de Mão Área de Membros",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Levantou a Mão"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 33,
+    "erro": 12,
+    "ultima": "2026-09-29T19:50:28Z"
+   }
+  },
+  {
+   "id": "PSbsTsNliadL8OMb",
+   "nome": "[E-Cont] Backfill Inscritos Live 22/09 (temporario)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "zrtbbm6uxQqglMOk",
+   "nome": "[E-Cont] Reprocessa eventos do fluxo Stock (temporario)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "zWSwFTWe5a0pnVMv",
+   "nome": "[E-Cont][ZOOM] Inscritos na Live - Segmentar",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 6,
+    "ultima": "2026-09-26T23:11:52Z"
+   }
+  },
+  {
+   "id": "vMwvjwUeCMxYng2D",
+   "nome": "[econt base ago) - serviços cnpj <> Perdidos Deal",
+   "ativo": false,
+   "atualizadoEm": "2026-08-27",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "S8ARqnguP6VYclA4",
+   "nome": "[ECONT-BH] - [ASSINY] [CNPJ] Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 4,
+   "execucoes30d": {
+    "total": 34,
+    "erro": 0,
+    "ultima": "2026-09-29T20:26:16.219Z"
+   }
+  },
+  {
+   "id": "ti6n6YEW7I6q74TS",
+   "nome": "[ECONT-BH] - [ASSINY] Compra Aprovada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T20:35:23.136Z"
+   }
+  },
+  {
+   "id": "1kDK2gVJh1dmS462",
+   "nome": "[ECONT] - Atualizar Contatos Hubspot <> Planilhas Contabilidade",
+   "ativo": false,
+   "atualizadoEm": "2026-06-16",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "KAB0s8UzDVdh5AFq",
+   "nome": "[ECONT] - Atualizar Contatos Hubspot <> Planilhas Contabilidade SUL",
+   "ativo": true,
+   "atualizadoEm": "2026-07-30",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "WF6C2ovEunso7kFo",
+   "nome": "[ECONT] - Criar Contratos Assessoria Contabil",
+   "ativo": false,
+   "atualizadoEm": "2026-06-10",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "1pOznPyQild7PBL2",
+   "nome": "[econt] - Todas as Assinys",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T20:35:18.991Z"
+   }
+  },
+  {
+   "id": "Td8uDRI5Bv00n8Dk",
+   "nome": "[EMAIL] [Econt formulário Preenchido]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "f5j7SASWibCeTYhp",
+   "nome": "[fup1] | [ROI-SALES] - Disparo_RecuperacaoCarrinho [Api Meta]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-02",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "nrtfXsKWKqOqgnfC",
+   "nome": "[GERADOR <> Assiny] sale.rembolso — Valida etapa HubSpot (síncrono) [C]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-15",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 49,
+    "erro": 17,
+    "ultima": "2026-09-28T15:17:12.972Z"
+   }
+  },
+  {
+   "id": "ZqpeOBo6akQQl9vA",
+   "nome": "[GERADOR] sale.concluded — Valida etapa HubSpot (síncrono) [B]",
+   "ativo": false,
+   "atualizadoEm": "2026-09-23",
+   "plataforma": "Gerador de Links",
+   "conector": "gerador-links",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Venda Registrada",
+    "Venda Concluída",
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "HSvwUAQO3gisevoh",
+   "nome": "[GERADOR] sale.created — Valida etapa HubSpot (síncrono) [A]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-23",
+   "plataforma": "Gerador de Links",
+   "conector": "gerador-links",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Venda Registrada",
+    "Venda Concluída",
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T20:09:59.330Z"
+   }
+  },
+  {
+   "id": "TJuqpkxWijglh2Nn",
+   "nome": "[GERADOR] Sincroniza agendamentos (60 min)",
+   "ativo": true,
+   "atualizadoEm": "2026-09-15",
+   "plataforma": "Gerador de Links",
+   "conector": "gerador-links",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Venda Registrada",
+    "Venda Concluída",
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200 (1 por hora desde 06/09)",
+    "erro": ">=200 (quase todos mode=retry em 14/09 entre 08:16 e 09:06; depois 1 em 17/09)",
+    "ultima": "2026-09-29T20:00:05Z (success)"
+   }
+  },
+  {
+   "id": "UQAPNSyWj2GOraJg",
+   "nome": "[GERADOR][Stock-Asaas] sale.concluded — Valida etapa HubSpot (síncrono) [B]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "Asaas",
+   "conector": "asaas",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Cobrança Criada",
+    "Pagamento Confirmado",
+    "Pagamento Recebido"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 122,
+    "erro": 0,
+    "ultima": "2026-09-29T19:25:47.477Z"
+   }
+  },
+  {
+   "id": "y6gmmAWN84q07xJW",
+   "nome": "[GERADOR][Stock-Asaas] sale.created — Valida etapa HubSpot (síncrono) [A]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "Asaas",
+   "conector": "asaas",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Cobrança Criada",
+    "Pagamento Confirmado",
+    "Pagamento Recebido"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 138,
+    "erro": 0,
+    "ultima": "2026-09-29T15:58:13.565Z"
+   }
+  },
+  {
+   "id": "S1jtMIyQZWihcFGh",
+   "nome": "[GERADOR][Stock-Asaas] Worker da fila HubSpot [C]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-07",
+   "plataforma": "Asaas",
+   "conector": "asaas",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Cobrança Criada",
+    "Pagamento Confirmado",
+    "Pagamento Recebido"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "iXA17YMgh3hiAsjR",
+   "nome": "[GERAL] Aquecimento BMs API Oficial",
+   "ativo": false,
+   "atualizadoEm": "2026-07-15",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "r5Cqv9mJZi1ZB1MI",
+   "nome": "[GERAL] Aquecimento BMs API Oficial",
+   "ativo": false,
+   "atualizadoEm": "2026-07-14",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "gB0tNiJB7J9c8TOV",
+   "nome": "[GERAL] Cria Leads do Formulario Native Ads",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Native Ads (formulário)",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "5O665snRuFgW7atJ",
+   "nome": "[GERAL] Cria Leads do Formulario Native Ads",
+   "ativo": false,
+   "atualizadoEm": "2026-08-17",
+   "plataforma": "Native Ads (formulário)",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "686MFW8wnTJlYC18",
+   "nome": "[GreatPages][L08] - Funil de Aplicação",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "GreatPages",
+   "conector": "greatpages",
+   "noCatalogo": false,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 147,
+    "ultima": "2026-09-29T20:11:25Z"
+   }
+  },
+  {
+   "id": "w938FUK8KfJBjRxJ",
+   "nome": "[HUBLA] Compra Aprovada - Funil Nath (Front+OB e UP/DW)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "Hubla",
+   "conector": "hubla",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Rp9w37hpCy1szTvQ",
+   "nome": "[IA NANÁ Organico] [Criação & Remoção de Aluno MemberKit]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "YbCn46ocr39gGWMa",
+   "nome": "[IA NANÁ] [Criação & Remoção de Aluno MemberKit]",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "taDllvm3susDmVVP",
+   "nome": "[IA TOME] [Criação & Remoção de Aluno MemberKit]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "tLo37ZGMpRnVXxwD",
+   "nome": "[IA] - Chat Forecast",
+   "ativo": true,
+   "atualizadoEm": "2026-08-11",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": "2026-08-11T14:34:59.781Z"
+   }
+  },
+  {
+   "id": "qNrfIzm6pktc3J1d",
+   "nome": "[IA] IMAP - Suporte Email",
+   "ativo": false,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "QfAaj6f1oo8LE4lY",
+   "nome": "[IMPORTACAO] CLIENTES <> PRODUTOS COMPRADOS",
+   "ativo": false,
+   "atualizadoEm": "2026-06-30",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "onQco8DyHV4wHzME",
+   "nome": "[IMPORTACAO] Inscritos na Live Mentoria ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 108,
+    "erro": 8,
+    "ultima": "2026-09-24T23:30:48Z"
+   }
+  },
+  {
+   "id": "mGhNpEZOIJlWEPlE",
+   "nome": "[l06] CS - Boas Vindas - Acesso MemberKit - Mentoria",
+   "ativo": true,
+   "atualizadoEm": "2026-06-15",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "EZhMg8vIyQsk4Kfj",
+   "nome": "[l07] CS - Acesso MemberKit - Método ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-08-07",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 2,
+    "erro": 0,
+    "ultima": "2026-09-29T09:59:51Z"
+   }
+  },
+  {
+   "id": "pH43wgM3YPrQwy1H",
+   "nome": "[l07] CS - Acesso MemberKit - Método ROI + Extenção",
+   "ativo": true,
+   "atualizadoEm": "2026-08-07",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "MHiaWi849bEGMwmW",
+   "nome": "[L08] [Captura] - VDV",
+   "ativo": true,
+   "atualizadoEm": "2026-09-30",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 12,
+    "erro": 4,
+    "ultima": "2026-09-29T14:49:47Z"
+   }
+  },
+  {
+   "id": "vUIQVjzWkXmONLvx",
+   "nome": "[L08] [SENDFLOW] Entrou no Grupo - Lançamento",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "SendFlow",
+   "conector": "sendflow",
+   "noCatalogo": true,
+   "categoria": "engajamento",
+   "papel": "entrada",
+   "eventos": [
+    "Entrou no Grupo",
+    "Saiu do Grupo"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 88,
+    "ultima": "2026-09-29T20:34:55Z"
+   }
+  },
+  {
+   "id": "YCT8pd0aqMytmOQc",
+   "nome": "[L08] [TYPEFORM] [TRÁFEGO | CANAL INTERNO | DISPAROS] Pesquisas Lançamento",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 32,
+    "ultima": "2026-09-29T17:42:59Z"
+   }
+  },
+  {
+   "id": "NikudbZ3SpSi9Ts5",
+   "nome": "[L08] [TYPEFORM][TRÁFEGO] Pesquisas Lançamento",
+   "ativo": false,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "xaYBd2Epq4KrEAda",
+   "nome": "[LAUNCH] [GREATPAGES] - Captação Oportunidades",
+   "ativo": false,
+   "atualizadoEm": "2026-09-07",
+   "plataforma": "GreatPages",
+   "conector": "greatpages",
+   "noCatalogo": false,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "5MgNkOQIa39mBFIP",
+   "nome": "[LAUNCH] Entrou no Grupo",
+   "ativo": false,
+   "atualizadoEm": "2026-04-17",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "do9pfMqBcCMmh4QW",
+   "nome": "[LAUNCH] Mentoria <> Compra Aprovada",
+   "ativo": false,
+   "atualizadoEm": "2026-02-25",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "BG1bnnF4AZgbiNeY",
+   "nome": "[LAUNCH][CAPTAÇÃO][MEMBERCLASS] → Entregas Launch L06",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "2GSF8I2Lh9pNEU08",
+   "nome": "[Launch][Pesquisa][Canal Interno] Pesquisa Respondida - Canal Interno",
+   "ativo": false,
+   "atualizadoEm": "2026-04-17",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Interno / transversal",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "J5AJMWOA32SbLsnT",
+   "nome": "[Launch][Pesquisa][Tráfego] Pesquisa Respondida - Tráfego",
+   "ativo": false,
+   "atualizadoEm": "2026-04-17",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "2V3UyX1caG3YHJx3",
+   "nome": "[Lead Score][YayForms]Formulário Preenchido -> Hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "plataforma": "YayForms",
+   "conector": "yayforms",
+   "noCatalogo": false,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 5,
+    "erro": 0,
+    "ultima": "2026-08-30T02:24:56Z (manuais)"
+   }
+  },
+  {
+   "id": "4sWw9oIx7jQLT2ay",
+   "nome": "[link-generator] -> CONVITE NOVO USUÁRIO",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "plataforma": "Gerador de Links",
+   "conector": "gerador-links",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Venda Registrada",
+    "Venda Concluída",
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 7,
+    "erro": 0,
+    "ultima": "2026-09-23T20:48:16Z"
+   }
+  },
+  {
+   "id": "zvrXxufnl6rz8fm2",
+   "nome": "[LN] Recuperação",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": 117,
+    "erro": 2,
+    "ultima": "2026-09-29T19:08:37Z"
+   }
+  },
+  {
+   "id": "XjjflnFDSCIb3T15",
+   "nome": "[LOOT] - Envio de Email",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "KX9xwaNkXHf0CYc6",
+   "nome": "[LOOT] Automação Clickup",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "ClickUp",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "5wXzjE3wKNNsB8Lh",
+   "nome": "[LOOT] Envio de Notificação de Pix",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "EzkVDfR1C5MXxH1C",
+   "nome": "[LOOT] Envio de notificação mockada",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "eoZOwlBRVQk391i2",
+   "nome": "[Mata] Análise Conversões Comercial",
+   "ativo": false,
+   "atualizadoEm": "2026-08-27",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Bl7mVQa6rfgzXRAa",
+   "nome": "[MemberClass] Assento Vip — Liberar Entrega",
+   "ativo": true,
+   "atualizadoEm": "2026-09-25",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "39rFRh94FuCmV0Yf",
+   "nome": "[MemberClass] Boas Vindas — Liberar Entrega",
+   "ativo": true,
+   "atualizadoEm": "2026-10-14",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T19:33:39Z"
+   }
+  },
+  {
+   "id": "WbYHNgGbbMIY2Cg5",
+   "nome": "[MemberClass] Froms Onboarding + IniciAmazon - Liberação de Acesso",
+   "ativo": true,
+   "atualizadoEm": "2026-08-28",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200 (>=200 só em 28-29/09)",
+    "erro": 1,
+    "ultima": "2026-09-29T20:29:55Z"
+   }
+  },
+  {
+   "id": "zwt2l5Hyq5JG53WW",
+   "nome": "[MemberClass] IniciAmazon - Remoção de Acesso",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T16:11:09Z"
+   }
+  },
+  {
+   "id": "y4zJARFijFsECnlU",
+   "nome": "[MemberClass] IniciAmazon 2.0 — Liberar Entrega",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200 (desde 23/09)",
+    "erro": 4,
+    "ultima": "2026-09-29T20:32:28Z"
+   }
+  },
+  {
+   "id": "VrSEUaLSVU9OZY5q",
+   "nome": "[MemberClass] Liberação de Acesso - [Up/DW]",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": "~188",
+    "erro": 1,
+    "ultima": "2026-09-29T16:07:55Z"
+   }
+  },
+  {
+   "id": "cuTcuZDFUWHIlykR",
+   "nome": "[MemberClass] ROI_Club — Liberar Entrega Sistema Código F.B.A",
+   "ativo": true,
+   "atualizadoEm": "2026-10-13",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 110,
+    "erro": 0,
+    "ultima": "2026-09-28T21:59:01Z"
+   }
+  },
+  {
+   "id": "6u2vtUj69COjja8N",
+   "nome": "[MemberClass] ROI_Club — Liberar Entrega UP/DW Loja Pronta",
+   "ativo": true,
+   "atualizadoEm": "2026-08-31",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 36,
+    "erro": 0,
+    "ultima": "2026-09-27T18:17:18Z"
+   }
+  },
+  {
+   "id": "RnN4JllOA2HzPlFz",
+   "nome": "[MEMBERKIT] Liberação & Remoção de Acesso",
+   "ativo": false,
+   "atualizadoEm": "2026-03-23",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "0hzwYdYsdybbMmlh",
+   "nome": "[new][ROISales] - DASH [Reembolso]",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "BEptSRpBFw8Ogkcw",
+   "nome": "[new][ROISales][DASH][EVENTOS] - Carrinho Abandonado",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "2gn1B3LfIn1kBAlS",
+   "nome": "[new][ROISales][DASH][EVENTOS] - Compra Aprovada Todos",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Eywn00tyMX92ACHa",
+   "nome": "[new]ROISales - [INLEAD] - Leads Checkout (sem evento)",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Ni7lG75DxjFm0PBv",
+   "nome": "[North] - Criação de Fatura",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Faturamento (North)",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "North",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "6lZbODzpdExU1Edb",
+   "nome": "[North] - Webhook Invoice",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Faturamento (North)",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "North",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "nLUaTLoMyOudjIEk",
+   "nome": "[NORTH] Distribuição Departamentos Digisac",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "North",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "MCrFkvHuvAqMTahv",
+   "nome": "[NOTIF] Notificador Slack ROI",
+   "ativo": true,
+   "atualizadoEm": "2026-09-07",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 1,
+    "erro": 0,
+    "ultima": "2026-09-07T19:52:46.268Z"
+   }
+  },
+  {
+   "id": "ot372zLrPpGvIsT6",
+   "nome": "[Ntfy] -> Organico Nath",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-29T13:52:01.084Z"
+   }
+  },
+  {
+   "id": "TnMaq6tqYOCsfIE3",
+   "nome": "[off] [Assiny] Compra Aprovada - Mentoria",
+   "ativo": false,
+   "atualizadoEm": "2026-05-07",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "raNrZb2YIxFGcyx4",
+   "nome": "[Onboarding] - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-07-28",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 6,
+    "erro": 5,
+    "ultima": "2026-09-29T13:41:23Z"
+   }
+  },
+  {
+   "id": "tpfDaZuS81ihuLOR",
+   "nome": "[Personalizado][Tome][Leadscore] Onboarding Tome - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-04-07",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "g4G2lh7QdKJWcCLn",
+   "nome": "[recuperação] | [ROISales] RecuperacaoCarrinho_AgenteOrquestrador",
+   "ativo": false,
+   "atualizadoEm": "2026-05-26",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "OMMUW76oBBGWrrxL",
+   "nome": "[REEMBOLSO] Assiny - Compra Reembolsada",
+   "ativo": true,
+   "atualizadoEm": "2026-10-09",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "C6teqTHR0r73bO4L",
+   "nome": "[REEMBOLSO] Assiny - Reembolso Solicitado",
+   "ativo": true,
+   "atualizadoEm": "2026-10-09",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 174,
+    "erro": 1,
+    "ultima": "2026-09-29T14:41:02.839Z"
+   }
+  },
+  {
+   "id": "fRiKBxXN4amsaEcP",
+   "nome": "[REEMBOLSO] Atualiza ticket para \"Em Tratamento\"",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "olMZUWz1iSdWtq2q",
+   "nome": "[REEMBOLSO] Cakto - Solicitado e Realizado (Funil Nath)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "Cakto",
+   "conector": "cakto",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "r9EB6f2rWlyXXIuG",
+   "nome": "[REEMBOLSO] Hubla - Solicitado e Realizado (Funil Nath)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "Hubla",
+   "conector": "hubla",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "juCjhOL96C3jBMm3",
+   "nome": "[REEMBOLSO] Hubspot - Reembolso Ticket Aberto",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "TzavbDXiD6nm0tvC",
+   "nome": "[REEMBOLSO] Setup formulário Typeform",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "FI7FW27elEQ3AUhE",
+   "nome": "[REEMBOLSO] SLA 48h em Solicitado",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 4,
+    "erro": 0,
+    "ultima": "2026-09-29T20:05:07.076Z"
+   }
+  },
+  {
+   "id": "xpMsxK4hwAPzSHzS",
+   "nome": "[REEMBOLSO] Teste conexão Slack List",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "4xpo5LCxn5WHaob8",
+   "nome": "[REEMBOLSO] Teste conexão Typeform",
+   "ativo": false,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "c3lKYfoDQ3LCBbJA",
+   "nome": "[REEMBOLSO] Typeform → Slack List",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 6,
+    "erro": 0,
+    "ultima": "2026-09-29T18:28:10.490Z"
+   }
+  },
+  {
+   "id": "4tRhbwJIDjYianU5",
+   "nome": "[Reversão] Assiny Reembolso solicitado / Realizado -> Hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-03-30",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "KiaJ7uR9tjqJX9r1",
+   "nome": "[REVOPS] Conciliação Semanal — Gerador × OROS",
+   "ativo": false,
+   "atualizadoEm": "2026-09-07",
+   "plataforma": "Gerador de Links",
+   "conector": "gerador-links",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Venda Registrada",
+    "Venda Concluída",
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Interno / transversal",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "V0YXUS7DLFt1ecb1",
+   "nome": "[ROI] Digisac - Enviar Template",
+   "ativo": false,
+   "atualizadoEm": "2026-08-12",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "8Eucx6s3IPjzY5tI",
+   "nome": "[ROI] Digisac - Save to Sheets",
+   "ativo": false,
+   "atualizadoEm": "2026-09-10",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "CRGF5rQGhcnu8nWl",
+   "nome": "[ROI] Digisac - Structure Mapper",
+   "ativo": false,
+   "atualizadoEm": "2026-09-10",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "RXNXNgwt2rUnvxIM",
+   "nome": "[ROI] Digisac Gateway",
+   "ativo": true,
+   "atualizadoEm": "2026-08-10",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": "baixo (não contado)",
+    "erro": 7,
+    "ultima": "2026-09-22T13:55:48Z"
+   }
+  },
+  {
+   "id": "wWdQckyw1H3kMGZo",
+   "nome": "[ROI] Proxy - API Monitor",
+   "ativo": true,
+   "atualizadoEm": "2026-04-09",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "xJB4zY2g7hj5vH7u",
+   "nome": "[ROI][ALERTA] Falha nos fluxos de tag L08",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 25,
+    "erro": 0,
+    "ultima": "2026-09-29T13:41:32Z"
+   }
+  },
+  {
+   "id": "YwXfgLBi5Y0CzIaJ",
+   "nome": "[ROI][L08] ONE-OFF Corrigir tags SendFlow (24/09)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-25",
+   "plataforma": "SendFlow",
+   "conector": "sendflow",
+   "noCatalogo": true,
+   "categoria": "engajamento",
+   "papel": "entrada",
+   "eventos": [
+    "Entrou no Grupo",
+    "Saiu do Grupo"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "RC4ze4v4PT9NB7J1",
+   "nome": "[ROISales] - [DISPARO] [INLEAD] - Leads Checkout (sem compra)",
+   "ativo": false,
+   "atualizadoEm": "2026-02-21",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "PF4Qxs8a5zgjoHHj",
+   "nome": "[ROISales] - DASH [Reembolso]",
+   "ativo": false,
+   "atualizadoEm": "2026-04-12",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "dJnj6Fv0DwCxvEwR",
+   "nome": "[ROISales][DASH][EVENTOS] - Carrinho Abandonado",
+   "ativo": false,
+   "atualizadoEm": "2026-05-31",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "ubk8RSlQjzUGJMSw",
+   "nome": "[ROISales][DASH][EVENTOS] - Compra Aprovada Todos",
+   "ativo": false,
+   "atualizadoEm": "2026-07-25",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "CM3PbdqfInmQpHV1",
+   "nome": "[Sellflux <> HubSpot] Manejo de Tags",
+   "ativo": false,
+   "atualizadoEm": "2026-03-11",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "2NFvICSi4hDSCBfY",
+   "nome": "[SELLFLUX] > [ROI CLUB DB]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200 (estimado; várias por hora)",
+    "erro": 1,
+    "ultima": "2026-09-29T20:27:15Z"
+   }
+  },
+  {
+   "id": "6CjsHINyuWmcI9ze",
+   "nome": "[SELLFLUX] [TAGS] - ae-conectado",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Vendas AE (pipeline extinto)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": "2026-08-25T13:30:11Z"
+   }
+  },
+  {
+   "id": "kfmjsuGvnuKw41PI",
+   "nome": "[SELLFLUX] [TAGS] - cadencia-iniciada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-24",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": "não contado (rate limit); 0 erros",
+    "erro": 0,
+    "ultima": "2026-09-04T21:28:32Z"
+   }
+  },
+  {
+   "id": "jh6ZE3JPDXuVn49s",
+   "nome": "[SELLFLUX] [TAGS] - cadencia-iniciada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-05-27",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "W9bUNhf8JZIEX5LY",
+   "nome": "[SELLFLUX] [TAGS] - econt-cadencia-iniciada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "FHvgNJGjFZqYvyTD",
+   "nome": "[SELLFLUX] [TAGS] - econt-conectado",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 108,
+    "erro": 26,
+    "ultima": "2026-09-04T21:04:49Z"
+   }
+  },
+  {
+   "id": "PyTrhrrRmBlpT7lh",
+   "nome": "[SELLFLUX] [TAGS] - econt-primeira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "0tr1Qg2tFjxk5V5i",
+   "nome": "[SELLFLUX] [TAGS] - econt-segunda-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "fDmWVgbl7Qqx26mJ",
+   "nome": "[SELLFLUX] [TAGS] - econt-terceira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-14",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "5P2N7Dv0flYqjlqS",
+   "nome": "[SELLFLUX] [TAGS] - inside-conectado",
+   "ativo": true,
+   "atualizadoEm": "2026-09-01",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 21,
+    "ultima": "2026-09-04T20:38:05Z"
+   }
+  },
+  {
+   "id": "NZtxKklm6cXwX83I",
+   "nome": "[SELLFLUX] [TAGS] - primeira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 0,
+    "ultima": "2026-09-04T21:29:03Z"
+   }
+  },
+  {
+   "id": "iYkJpSRMbr72tezQ",
+   "nome": "[SELLFLUX] [TAGS] - primeira-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 2,
+    "erro": 0,
+    "ultima": "2026-09-04T13:10:29Z"
+   }
+  },
+  {
+   "id": "BeIj5njWe0R5Bcyj",
+   "nome": "[SELLFLUX] [TAGS] - quarta-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 113,
+    "erro": 0,
+    "ultima": "2026-09-04T18:55:44Z"
+   }
+  },
+  {
+   "id": "ENUIRFngFu3aZ2qx",
+   "nome": "[SELLFLUX] [TAGS] - quarta-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": "2026-08-29T17:41:52Z"
+   }
+  },
+  {
+   "id": "MG9Bfj3cltQKapTk",
+   "nome": "[SELLFLUX] [TAGS] - quinta-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "4BQW2EXYlrrmINnf",
+   "nome": "[SELLFLUX] [TAGS] - quinta-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "sH2SJrsVX4D4jcUk",
+   "nome": "[SELLFLUX] [TAGS] - segunda-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 136,
+    "erro": 1,
+    "ultima": "2026-09-04T19:09:21Z"
+   }
+  },
+  {
+   "id": "lCu79ETXHUvLLCP7",
+   "nome": "[SELLFLUX] [TAGS] - segunda-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-03",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 3,
+    "erro": 0,
+    "ultima": "2026-09-03T18:07:26Z"
+   }
+  },
+  {
+   "id": "wpasZZAPrC3j1Hpl",
+   "nome": "[SELLFLUX] [TAGS] - setima-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "7GGi9oUDLoU63flk",
+   "nome": "[SELLFLUX] [TAGS] - setima-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "CiTtbk1VLSU1U8B3",
+   "nome": "[SELLFLUX] [TAGS] - sexta-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "7iFeP80MdZ0U7HiA",
+   "nome": "[SELLFLUX] [TAGS] - sexta-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "timXMbLkCgSA50tC",
+   "nome": "[SELLFLUX] [TAGS] - terceira-enviada",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 113,
+    "erro": 0,
+    "ultima": "2026-09-04T14:49:16Z"
+   }
+  },
+  {
+   "id": "LsF3SOLHGZ2eypL8",
+   "nome": "[SELLFLUX] [TAGS] - terceira-enviada-falha",
+   "ativo": true,
+   "atualizadoEm": "2026-08-12",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": "2026-08-03"
+   }
+  },
+  {
+   "id": "tVkAnSYlIiUeFxQr",
+   "nome": "[SELLFLUX] [TAGS] [SESSAO ESTRATEGICA] - cadencia-iniciada",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "j3U56Ium0BAONKOY",
+   "nome": "[Sellflux] Lead Perdido",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "9XUe8sd7xl1h4RQt",
+   "nome": "[Sellflux] Mensagens Conectadas",
+   "ativo": false,
+   "atualizadoEm": "2026-08-09",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "EJbCEMIP1AzNEUaC",
+   "nome": "[Sellflux] Mensagens Enviadas",
+   "ativo": false,
+   "atualizadoEm": "2026-04-28",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "8n6phqGQBxLONIE9",
+   "nome": "[SendBox] [D.S] - GERAR CONTRATO CONSULTORIA - ROI",
+   "ativo": false,
+   "atualizadoEm": "2026-06-22",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "nzuUNUX6T6cXXAQ1",
+   "nome": "[Sendbox][D.S] - GERAR CONTRATO ASSESSORIA CONTÁBIL [ECONTBH]",
+   "ativo": true,
+   "atualizadoEm": "2026-07-25",
+   "plataforma": "DocuSign",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "UeBEst1xm6DPLCZx",
+   "nome": "[Sessão Estratégica] [Captura] - Plano Personalizado",
+   "ativo": false,
+   "atualizadoEm": "2026-07-29",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "i33Pog89xYO2VhmM",
+   "nome": "[Sessão Estratégica] [Entrega] - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-07-31",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 1,
+    "erro": 0,
+    "ultima": "2026-09-03T19:18:04Z"
+   }
+  },
+  {
+   "id": "uwusoByXHvostOuF",
+   "nome": "[Sessão Estratégica] Reprocess FS Funnel",
+   "ativo": false,
+   "atualizadoEm": "2026-08-12",
+   "plataforma": "Sessão Estratégica",
+   "conector": "hubspot",
+   "noCatalogo": true,
+   "categoria": "crm",
+   "papel": "entrada",
+   "eventos": [
+    "Oportunidade Criada"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "gtotJfdEAfVYccB2",
+   "nome": "[Sessão] Captação de Oportunidades",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 100,
+    "erro": 18,
+    "ultima": "2026-09-29T10:47:11Z"
+   }
+  },
+  {
+   "id": "ECfwiAVWGF2G0WzO",
+   "nome": "[SETUP] ApplyFy - Opcoes de propriedade no HubSpot",
+   "ativo": false,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "Applyfy",
+   "conector": "applyfy",
+   "noCatalogo": false,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "Reembolso"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "o38sErXSUcsfc28u",
+   "nome": "[STOCK] Cria oportunidades inscritos na Live de Importação",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": ">=9",
+    "ultima": "2026-09-24T23:31:04Z"
+   }
+  },
+  {
+   "id": "AbLjjO7QOYSG6H0x",
+   "nome": "[STOCK] Respostas formulário live importação",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 30,
+    "erro": 2,
+    "ultima": "2026-09-24T23:54:40Z"
+   }
+  },
+  {
+   "id": "0nIm1jpScA2sZq6d",
+   "nome": "[STOCK][ZOOM] Inscritos na Live - Segmentar",
+   "ativo": false,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "Importação (Stock)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "3LUv66tztpu7fDNN",
+   "nome": "[subflow] - Contatos telefone hubpot",
+   "ativo": false,
+   "atualizadoEm": "2026-08-28",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "8QGnYe4L3yKwfJs2",
+   "nome": "[SUPORTE E RETENÇÃO][DASHBOARD V1]",
+   "ativo": true,
+   "atualizadoEm": "2026-08-12",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200 (200 só entre 22/09 e 29/09)",
+    "erro": 4,
+    "ultima": "2026-09-29T20:08:13.215Z"
+   }
+  },
+  {
+   "id": "Wz2KvSu98dtl23N5",
+   "nome": "[SUPORTE] - BASE REEMBOLSO SOLICITADO",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "SuKMhFZvEbp3oPxX",
+   "nome": "[SUPORTE] [FCR][TPE]",
+   "ativo": false,
+   "atualizadoEm": "2026-07-12",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "r94oGWgCn5a7HMLG",
+   "nome": "[Suporte] [Perpétuo] Enviando Acesso por E-mail",
+   "ativo": false,
+   "atualizadoEm": "2026-03-17",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "XeQXAaDiftWjq1vo",
+   "nome": "[SUPORTE][FCR][TPE] SellFlux",
+   "ativo": false,
+   "atualizadoEm": "2026-08-18",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "wJxvvVTSEOBP9Fzf",
+   "nome": "[TESTE TEMPLATES] [ROI-SALES] - Disparo [Api Meta]",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "uJHAzdJJMMroKzoa",
+   "nome": "[TESTE] email notificação - nao identificado hubspot",
+   "ativo": true,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 5,
+    "erro": 0,
+    "ultima": "2026-09-28T20:38:51Z"
+   }
+  },
+  {
+   "id": "tx3PPC0gTmoBd6H6",
+   "nome": "[TESTE] Entrega IniciAmazon 2.0 - Digisac",
+   "ativo": false,
+   "atualizadoEm": "2026-09-21",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "m9aPeN752pEXY6n4",
+   "nome": "[TESTE] MemberClass Boas Vindas — disparo manual por expert",
+   "ativo": false,
+   "atualizadoEm": "2026-10-08",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "k6lYSUA4qJCVpwfa",
+   "nome": "[Thales] - Integração para dash Leads qualificados",
+   "ativo": false,
+   "atualizadoEm": "2026-06-19",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "HcZXGdxc6E0Ppds3",
+   "nome": "[Typeform][IniciAmazon 2.0] Onboarding - Pesquisa Respondida IniciAmazon 2.0",
+   "ativo": true,
+   "atualizadoEm": "2026-10-13",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": ">=200 (estimado: 60 em ~28h)",
+    "erro": 13,
+    "ultima": "2026-09-29T20:19:48Z"
+   }
+  },
+  {
+   "id": "wFnSuQq1PnY5YOd1",
+   "nome": "[Typeform][Nath][Leadscore] Onboarding Nath - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "lpWkYtTl9Ad6CmAA",
+   "nome": "[Typeform][ROI Club] - Funil de Aplicação",
+   "ativo": true,
+   "atualizadoEm": "2026-10-10",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 67,
+    "ultima": "2026-09-29T18:22:46Z"
+   }
+  },
+  {
+   "id": "JfsnRagGQ6VwTeKR",
+   "nome": "[Typeform][ROI Club] - Funil de Aplicação Coelho",
+   "ativo": true,
+   "atualizadoEm": "2026-10-10",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 192,
+    "erro": 5,
+    "ultima": "2026-09-15T19:48:17Z (manual); último webhook 2026-09-04T20:58Z"
+   }
+  },
+  {
+   "id": "5zeLdcD0l9CcWCrD",
+   "nome": "[Typeform][Sessão Estratégica][Captação]  - Plano Personalizado",
+   "ativo": true,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 4,
+    "erro": 1,
+    "ultima": "2026-09-03T19:39:14Z (todas manuais)"
+   }
+  },
+  {
+   "id": "cbcpPM2beDOb67pe",
+   "nome": "[Typeform][Tomé][Leadscore] Onboarding Tomé - Pesquisa Respondida",
+   "ativo": false,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "j1PEpOM3oEIXVmLI",
+   "nome": "[Typeform][Unificado][Leadscore] Onboarding - Pesquisa Respondida",
+   "ativo": true,
+   "atualizadoEm": "2026-10-13",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": true,
+   "divergenciasAltas": 3,
+   "execucoes30d": {
+    "total": ">=200 (200 em ~23h)",
+    "erro": 21,
+    "ultima": "2026-09-29T20:26:50Z"
+   }
+  },
+  {
+   "id": "nirePrF67y4yoKWH",
+   "nome": "[UTIL] Reprocessar Execucoes com Erro - Typeform ROI Club",
+   "ativo": false,
+   "atualizadoEm": "2026-09-28",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "t2TxMPaPm5h5gJT2",
+   "nome": "[Util] Sanitizar Email (corrige domínio)",
+   "ativo": false,
+   "atualizadoEm": "2026-09-03",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "TRyMyebGNA7SOcC2",
+   "nome": "[UTIL][L08] UnniChat - Auditoria, Reprocesso e Limpeza",
+   "ativo": true,
+   "atualizadoEm": "2026-09-29",
+   "plataforma": "UnniChat",
+   "conector": "unnichat",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Mensagem Enviada",
+    "Respondeu"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 12,
+    "erro": 0,
+    "ultima": "2026-09-29T14:46:46Z"
+   }
+  },
+  {
+   "id": "wzY1kqaMVQRRAjYt",
+   "nome": "[V.2][ROI-SALES] - Disparo_RecuperacaoCarrinho",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "xYI5BIHnUHNNFIYL",
+   "nome": "[V.2][ROI-SALES] RecuperacaoCarrinho_AgenteOrquestrador",
+   "ativo": false,
+   "atualizadoEm": "2026-05-04",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "uktgtx1e7l6gd7yx",
+   "nome": "[WordPress][ROI Club] - Funil de Aplicação",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "WordPress",
+   "conector": "wordpress",
+   "noCatalogo": false,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Aplicação Enviada"
+   ],
+   "negocio": "ROI Club",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 33,
+    "erro": 2,
+    "ultima": "2026-09-08T23:51:38Z"
+   }
+  },
+  {
+   "id": "7nYfjClxutR3lJE8",
+   "nome": "[ZOOM] Roteador de Lives (Importacao x E-cont)",
+   "ativo": true,
+   "atualizadoEm": "2026-09-24",
+   "plataforma": "Zoom",
+   "conector": "zoom",
+   "noCatalogo": true,
+   "categoria": "reuniao",
+   "papel": "entrada",
+   "eventos": [
+    "Inscreveu-se na Live",
+    "Entrou na Live"
+   ],
+   "negocio": "E-cont",
+   "noInventario2909": true,
+   "divergenciasAltas": 2,
+   "execucoes30d": {
+    "total": ">=200",
+    "erro": 79,
+    "ultima": "2026-09-29T13:11:38Z"
+   }
+  },
+  {
+   "id": "tEXb7VSJHhuyRBrp",
+   "nome": "Acesso MemberKit - atualizar expire_date",
+   "ativo": false,
+   "atualizadoEm": "2026-08-09",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Fr2NrDAheeNEEVHC",
+   "nome": "Acesso MemberKit - Mentoria",
+   "ativo": false,
+   "atualizadoEm": "2026-05-07",
+   "plataforma": "MemberKit",
+   "conector": "memberkit",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "R4bkSFkCoWRxBd6Q",
+   "nome": "Agente n8n Sentinel - Workflow Error Notifications",
+   "ativo": false,
+   "atualizadoEm": "2026-09-15",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "tp5YLMf9NYGY1vPQ",
+   "nome": "AJUSTE DE CONTATOS HUBSPOT - LANÇAMENTO",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "QeGU64nBOCg3aKuK",
+   "nome": "API GRÁTIS CONSULTA DADOS CNPJ <> RECEITA FEDERAL",
+   "ativo": false,
+   "atualizadoEm": "2026-06-24",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "J3f6K3DuXAtgQEMc",
+   "nome": "Atualizar Planilha Engajamento 27-05-26",
+   "ativo": false,
+   "atualizadoEm": "2026-05-27",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "sMzlHNBUPEg2dOjj",
+   "nome": "Atualizar Planilha Toco - Lojas <> Origem Hubspot",
+   "ativo": false,
+   "atualizadoEm": "2026-05-18",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "LWTOxBPRxaNTy6M9",
+   "nome": "Atualizar Produtos e Cards clientes Loja Pronta",
+   "ativo": false,
+   "atualizadoEm": "2026-07-20",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "6vpLMw219tiRULK9",
+   "nome": "Auditoria L06 - Assiny <> MemberKit <> Hubspot",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "hgmqZ3KVc8yl2YWb",
+   "nome": "Backup [Sessão Estratégica] [Entrega] - Plano Personalizado",
+   "ativo": false,
+   "atualizadoEm": "2026-07-30",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Onboarding Respondido",
+    "Plano Entregue"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "zsZ4UuuZuOqIzD7R",
+   "nome": "Captação Sessão Estratégica - SE-F01E01V00TYPEFORM",
+   "ativo": true,
+   "atualizadoEm": "2026-09-16",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": true,
+   "divergenciasAltas": 0,
+   "execucoes30d": {
+    "total": 9,
+    "erro": 1,
+    "ultima": "2026-09-10T13:51:52Z"
+   }
+  },
+  {
+   "id": "ELAOqbxAVSExH5dA",
+   "nome": "Captação Sessão Estratégica - SE-F01E01V00TYPEFORM",
+   "ativo": false,
+   "atualizadoEm": "2026-05-26",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sessão Estratégica",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "8SuAmoK3DCB02f4K",
+   "nome": "Captação-Ralph Leads Live 18/05/26",
+   "ativo": true,
+   "atualizadoEm": "2026-05-18",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "mLYUFQPX3WdSYXNp",
+   "nome": "Carrinho Abandonado Assiny Perpétuo [297]",
+   "ativo": true,
+   "atualizadoEm": "2026-10-07",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "gtoMVA8bozzzCMcz",
+   "nome": "Casos Erros N8N - SWITCH",
+   "ativo": false,
+   "atualizadoEm": "2026-04-10",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "O8GeA9DjfbQbzCIQ",
+   "nome": "Clicksign - Análise DDD Inválido (Dry Run)",
+   "ativo": false,
+   "atualizadoEm": "2026-05-13",
+   "plataforma": "ClickSign",
+   "conector": "clicksign",
+   "noCatalogo": false,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado",
+    "Contrato Assinado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "IBXTLvbn8kGDVrNI",
+   "nome": "Conferencia Leads Forms Onboarding Typeform <> Hubspot",
+   "ativo": false,
+   "atualizadoEm": "2026-08-10",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "NXfgyj2pLIbWzzn7",
+   "nome": "CONFERENCIA PDI",
+   "ativo": false,
+   "atualizadoEm": "2026-06-03",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "2Y0TD2TbAqr5DzL8",
+   "nome": "Contract Generator Engine",
+   "ativo": true,
+   "atualizadoEm": "2026-03-10",
+   "plataforma": "Gerador de contratos",
+   "conector": "docusign",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Contrato Enviado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "jseXYGErntY5XZIu",
+   "nome": "controle huggy",
+   "ativo": false,
+   "atualizadoEm": "2026-06-25",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "kojFrbBPuePYsQMN",
+   "nome": "Copiar forms Typeform Pongeluppi <> ROI Ventures",
+   "ativo": false,
+   "atualizadoEm": "2026-05-04",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "blxazIlZ0ZIDl7bX",
+   "nome": "Criar Acesso Giovanna - Digisac",
+   "ativo": false,
+   "atualizadoEm": "2026-08-31",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "KJCAvPPa7ZAC0neU",
+   "nome": "Criar Contatos Hubspot (Base Assiny nao encontrada Hub)",
+   "ativo": false,
+   "atualizadoEm": "2026-07-08",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "ADTYrDyEvejPQhSV",
+   "nome": "Digisac - Aplicar Tags Consultoria",
+   "ativo": false,
+   "atualizadoEm": "2026-08-04",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "QhgsnF6XqbNP8XyV",
+   "nome": "Digisac - Exportar Conversas por Cliente",
+   "ativo": false,
+   "atualizadoEm": "2026-08-18",
+   "plataforma": "Digisac",
+   "conector": "digisac",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Contato Criado no WhatsApp",
+    "Mensagem Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "CF30LqPyRV95XZ1e",
+   "nome": "DIGISAC <> ASSINY - CRIAÇÃO DE CONTATOS",
+   "ativo": true,
+   "atualizadoEm": "2026-09-12",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Consultoria & Mentoria",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 78,
+    "erro": 16,
+    "ultima": "2026-09-29T20:08:22.422Z"
+   }
+  },
+  {
+   "id": "ul35AJwad3chtw3L",
+   "nome": "Envia Leads de pesquisa pro Pixel",
+   "ativo": false,
+   "atualizadoEm": "2026-03-11",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "ZqZmOPw33qXCCOnc",
+   "nome": "FCR Digsac v2",
+   "ativo": false,
+   "atualizadoEm": "2026-08-27",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Q1OuaYZEC2YzSHvD",
+   "nome": "FCR Digsac — Reprocessar Execuções v2",
+   "ativo": false,
+   "atualizadoEm": "2026-05-08",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "47R8uUbeRrkOthYv",
+   "nome": "FCR Digsac — Tempo Real v9",
+   "ativo": false,
+   "atualizadoEm": "2026-06-09",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "uEUQ38l6hinTduYN",
+   "nome": "FLUXO DE CONFERENCIA TYPEFORM <> HUBSPOT",
+   "ativo": false,
+   "atualizadoEm": "2026-07-22",
+   "plataforma": "Typeform",
+   "conector": "typeform",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Formulário Respondido",
+    "Levantou a Mão",
+    "Aplicação Enviada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "KWnlnJNzTVy7Qq5D",
+   "nome": "HealthScore HubSpot → Google Sheets",
+   "ativo": true,
+   "atualizadoEm": "2026-09-12",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "4PF4O4WVm3uK22YS",
+   "nome": "L08_SET26 - HubSpot + Google Sheets",
+   "ativo": false,
+   "atualizadoEm": "2026-09-04",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "JRhB9plabVVJ3JfC",
+   "nome": "LeadScore - Lista de Fornecedores - Samuel e Ana",
+   "ativo": false,
+   "atualizadoEm": "2026-03-19",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "Ibb3ddQ6C2ednrx1",
+   "nome": "Loot - Email Lotes",
+   "ativo": false,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "mIsqPTpbNPSRttKf",
+   "nome": "Loot - Verificação de Email",
+   "ativo": true,
+   "atualizadoEm": "2026-04-14",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Loot",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "mq2MFIX3lFSmnKbz",
+   "nome": "My workflow 18",
+   "ativo": false,
+   "atualizadoEm": "2026-04-04",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "bYKaxFi2RvIEThY3",
+   "nome": "My workflow 22",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "b2WpXF6UnIwryX7e",
+   "nome": "My workflow 24",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "sMsVwNG6DgKwTUH3",
+   "nome": "My workflow 25",
+   "ativo": false,
+   "atualizadoEm": "2026-06-26",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "GqH6eDn7USMqCVMc",
+   "nome": "My workflow 29",
+   "ativo": false,
+   "atualizadoEm": "2026-08-17",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "yLR25c8YbN2ZROSu",
+   "nome": "My workflow 33",
+   "ativo": false,
+   "atualizadoEm": "2026-10-13",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "AeESDDvRhIHJKhpU",
+   "nome": "Odds Copa 2026 - resultados e odds por time",
+   "ativo": false,
+   "atualizadoEm": "2026-06-29",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "PR7fehkwNB5SUfQf",
+   "nome": "REFAZER EXECUÇÕES N8N",
+   "ativo": false,
+   "atualizadoEm": "2026-04-30",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "HnbfDVcTBfOu2J6P",
+   "nome": "Referência Geral - [HubSpot] Leadscore → Entregas MemberClass",
+   "ativo": false,
+   "atualizadoEm": "2026-06-11",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "ZWW83CdIqSQ2nCZI",
+   "nome": "Reprocessar Execuçoes com erro Hubspot Healthscore Sheets",
+   "ativo": false,
+   "atualizadoEm": "2026-09-14",
+   "plataforma": "Relatório / sincronização",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "EeOrm5Yun09R313a",
+   "nome": "Resumo de Agendamentos SDR (3x ao dia)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-02",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "xLXN8nOsNTw0ewS2",
+   "nome": "Resumo de Vendas — Receita (7h e 13h)",
+   "ativo": true,
+   "atualizadoEm": "2026-10-06",
+   "plataforma": "Notificação",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "saida",
+   "papel": "saida",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "4PVNxvv2T7zNZOTC",
+   "nome": "Retroativos 14-15/04[LAUNCH][MEMBERCLASS] → Entregas Launch L06",
+   "ativo": false,
+   "atualizadoEm": "2026-06-08",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Lançamentos (L06–L08)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "yKH6R7Ue7KViNbK_sc4fG",
+   "nome": "ROI CLUB - WEBHOOK TEST",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "ROI Club",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "bsnQWQm3Rv83abOU",
+   "nome": "ROISales - [INLEAD] - Leads Checkout (sem evento)",
+   "ativo": false,
+   "atualizadoEm": "2026-04-12",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "rEUgkl4bxxaJPZ6G",
+   "nome": "ROISales - Agente Geral",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "nYNkNL0AuVqhpxmV",
+   "nome": "ROISales Base Nova",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "O9puCsT4s4cAaLf1",
+   "nome": "ROISales v2 | Sub-Workflow TOMÉ",
+   "ativo": false,
+   "atualizadoEm": "2026-05-03",
+   "plataforma": "Não classificado",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "nao_classificado",
+   "papel": "nao_classificado",
+   "eventos": [],
+   "negocio": "IniciAmazon / Perpétuo",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "qd9ux8IDPM9dS3ST",
+   "nome": "SELLFLUX  - Relatório diário",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "WlrwpTNTc5bOWSXC",
+   "nome": "SELLFLUX - Captação dos dados para os relatórios",
+   "ativo": false,
+   "atualizadoEm": "2026-06-02",
+   "plataforma": "Página de captura",
+   "conector": "webhook",
+   "noCatalogo": true,
+   "categoria": "captura",
+   "papel": "entrada",
+   "eventos": [
+    "Lead Captado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "WNKPIK8jysllFoxj",
+   "nome": "SELLFLUX - Relatório semanal",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "ptfUzG6b8fdHmWiQ",
+   "nome": "SELLFLUX - Relátorio mensal",
+   "ativo": false,
+   "atualizadoEm": "2026-06-01",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "6C0az3Dqpic5EggL",
+   "nome": "solicitacao de reembolso NORTH",
+   "ativo": false,
+   "atualizadoEm": "2026-07-09",
+   "plataforma": "Suporte de reembolso",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Reembolso Solicitado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "C5YiuWZKJ6HVFGMU",
+   "nome": "Suporte [MENTORIA] Acesso E-mail",
+   "ativo": true,
+   "atualizadoEm": "2026-07-22",
+   "plataforma": "Suporte / CS",
+   "conector": "n8n",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Atendimento Registrado"
+   ],
+   "negocio": "Transversal (reembolso e suporte)",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "xf5CzHWwfcnHdVYj",
+   "nome": "teste memberclass",
+   "ativo": false,
+   "atualizadoEm": "2026-04-20",
+   "plataforma": "MemberClass",
+   "conector": "memberclass",
+   "noCatalogo": true,
+   "categoria": "entrega",
+   "papel": "entrega",
+   "eventos": [
+    "Acesso Liberado",
+    "Acesso Removido"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "YJPKHBx6Wu7Lq8h9",
+   "nome": "teste onecode",
+   "ativo": true,
+   "atualizadoEm": "2026-09-04",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "North",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 68,
+    "erro": 0,
+    "ultima": "2026-09-04T17:19:53Z (manual)"
+   }
+  },
+  {
+   "id": "5uMlF8gt4ryMK8y3",
+   "nome": "todos-eventos-assiny",
+   "ativo": false,
+   "atualizadoEm": "2026-08-30",
+   "plataforma": "Assiny",
+   "conector": "assiny",
+   "noCatalogo": true,
+   "categoria": "vendas",
+   "papel": "entrada",
+   "eventos": [
+    "Compra Aprovada",
+    "PIX Gerado",
+    "Carrinho Abandonado",
+    "Compra Recusada",
+    "Reembolso",
+    "Assinatura Cancelada"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "GumCkzf2cPd58IMS",
+   "nome": "vou mudar o nome - TO ESPERANDO",
+   "ativo": true,
+   "atualizadoEm": "2026-08-04",
+   "plataforma": "Utilitário / teste",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "4jzvwV2CxDywWtxE",
+   "nome": "🌅 [SENTINELA] Rollup Diário",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "sdoe4FPljcVfEl9Z",
+   "nome": "📊 [SENTINELA] Painel Operacional",
+   "ativo": false,
+   "atualizadoEm": "2026-06-12",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "zPHunauhvj6at4vB",
+   "nome": "🚨 [SELLFLUX] [TAGS] - Error Trigger",
+   "ativo": true,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 50,
+    "erro": 50,
+    "ultima": "2026-09-04T13:23:04Z"
+   }
+  },
+  {
+   "id": "3TZ6n8KqdnHwgobH",
+   "nome": "🥇 [SELLFLUX] [TAGS] - Refazer Prioridades",
+   "ativo": true,
+   "atualizadoEm": "2026-06-07",
+   "plataforma": "Sellflux",
+   "conector": "sellflux",
+   "noCatalogo": false,
+   "categoria": "engajamento",
+   "papel": "cadencia",
+   "eventos": [
+    "Cadência Iniciada",
+    "Mensagem Enviada",
+    "Mensagem Falhou",
+    "Conectado"
+   ],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  },
+  {
+   "id": "YjnjVAaofzCsodwZ",
+   "nome": "🧠 [SENTINELA] ACIstente v2 — Classificador de Erros",
+   "ativo": true,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Interno / transversal",
+   "noInventario2909": true,
+   "divergenciasAltas": 1,
+   "execucoes30d": {
+    "total": 0,
+    "erro": 0,
+    "ultima": null
+   }
+  },
+  {
+   "id": "H0hN2rFeWNF1g2vO",
+   "nome": "🧠 [SENTINELA] ACIstente — Classificador de Erros",
+   "ativo": false,
+   "atualizadoEm": "2026-06-18",
+   "plataforma": "Monitoramento de erros",
+   "conector": null,
+   "noCatalogo": null,
+   "categoria": "infra",
+   "papel": "infra",
+   "eventos": [],
+   "negocio": "Sem negócio identificado",
+   "noInventario2909": false,
+   "divergenciasAltas": null,
+   "execucoes30d": null
+  }
+ ]
+}
